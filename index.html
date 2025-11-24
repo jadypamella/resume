@@ -261,6 +261,37 @@
             margin-bottom: 30px;
         }
 
+        .sidebar-nav {
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgba(224, 56, 89, 0.2);
+        }
+
+        .sidebar-nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .sidebar-nav li {
+            margin-bottom: 3px;
+        }
+
+        .sidebar-nav a {
+            display: block;
+            padding: 10px 15px;
+            color: var(--bg-cream);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 15px;
+            border-radius: 6px;
+            transition: background 0.3s;
+        }
+
+        .sidebar-nav a:hover {
+            background: var(--primary-color);
+        }
+
         .sidebar-section {
             margin-bottom: 35px;
         }
@@ -1027,6 +1058,12 @@
         }
 
         /* Responsive */
+        @media (min-width: 769px) {
+            .sidebar-nav {
+                display: none;
+            }
+        }
+
         @media (max-width: 1024px) {
             .sidebar {
                 position: relative;
@@ -1073,48 +1110,54 @@
         }
 
         @media (max-width: 768px) {
-            /* Hamburger menu visible on mobile */
+            /* Hamburger menu hidden on mobile */
             .hamburger {
-                display: flex;
+                display: none;
             }
 
             .sidebar-overlay {
-                display: block;
+                display: none;
             }
 
-            /* Sidebar hidden by default on mobile */
+            /* Sidebar visible on mobile, positioned before main content */
             .sidebar {
-                transform: translateX(-100%);
-            }
-
-            .sidebar.active {
-                transform: translateX(0);
+                position: relative;
+                width: 100%;
+                height: auto;
+                transform: none;
             }
 
             /* Main content takes full width */
             .main-content {
-                margin-left: 0;
-                padding-top: 80px;
+                margin-left: 0 !important;
+                padding-top: 0 !important;
             }
 
             .hero {
-                padding: 60px 30px;
+                padding: 10px 20px 30px;
+                margin: 0;
             }
 
             .hero-content {
-                padding: 30px 25px;
+                padding: 20px;
             }
 
             .hero h2 {
-                font-size: 28px;
+                font-size: 24px;
+            }
+
+            .hero h3 {
+                font-size: 18px;
             }
 
             .hero p {
-                font-size: 16px;
+                font-size: 15px;
             }
 
             .hero-logo {
-                max-width: 200px;
+                max-width: 120px;
+                margin-bottom: 15px;
+                animation: none !important;
             }
 
             section {
@@ -1126,30 +1169,24 @@
                 padding: 10px 20px;
             }
 
+            /* Project logos centered on mobile */
+            .project-logo-placeholder,
+            .project-logo {
+                margin: 0 auto 20px !important;
+                display: flex !important;
+                justify-content: center !important;
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+
             .timeline-header {
                 flex-direction: column;
             }
 
             .timeline-header .date {
                 text-align: left;
-            }
-
-            .nav-menu ul {
-                gap: 15px;
-                flex-direction: column;
-                align-items: center;
-            }
-            
-            /* Better mobile tap targets */
-            .nav-menu a {
-                padding: 12px 20px;
-                min-height: 44px;
-            }
-            
-            .contact-item a {
-                min-height: 44px;
-                display: inline-flex;
-                align-items: center;
             }
 
             /* Timeline items stack vertically on mobile */
@@ -1320,6 +1357,17 @@
         
         <h1>Jady Pamella</h1>
         <p class="tagline">AI and Technology Leader</p>
+
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+            </ul>
+        </nav>
 
         <div class="sidebar-section">
             <h3>Contact</h3>
