@@ -1,2 +1,21 @@
-# Ignore backup folder
+# Backup files
 backup/
+
+# Python scripts (for development only)
+*.py
+__pycache__/
+*.pyc
+
+# Documentation (except README)
+*.md
+!README.md
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
