@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Block access to sensitive files
+Disallow: /update_sections.py
+Disallow: /update_education_certs.py
+Disallow: /*.py$
+
+# Sitemap location
+Sitemap: https://jadypamella.com/sitemap.xml
