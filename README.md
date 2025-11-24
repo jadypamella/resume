@@ -202,8 +202,3 @@ This portfolio is the personal website of Jady Pamella. Content is proprietary. 
 - LinkedIn: https://linkedin.com/in/jadypamella
 - GitHub: https://github.com/jadypamella
 - Location: Stockholm, Sweden
-
-## Version
-
-Current Version: 2.0
-Last Updated: November 23, 2025
