@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jady Pamella - Senior Technology Manager</title>
+    <title>Jady Pamella - Head of AI Engineering</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -17,7 +17,7 @@
 
         body {
             font-family: 'Plus Jakarta Sans', sans-serif;
-            font-size: 8pt;
+            font-size: 7.5pt;
             line-height: 1.3;
             color: #333;
             background: white;
@@ -35,8 +35,8 @@
             display: grid;
             grid-template-columns: 110px 1fr 2fr;
             gap: 10px;
-            margin-bottom: 12px;
-            padding-bottom: 8px;
+            margin-bottom: 6px;
+            padding-bottom: 4px;
             align-items: start;
         }
 
@@ -103,7 +103,7 @@
         }
 
         .about p {
-            margin-bottom: 6px;
+            margin-bottom: 3px;
         }
 
         /* Section Headers */
@@ -116,9 +116,9 @@
             font-weight: 700;
             color: #4A90B5;
             text-transform: uppercase;
-            margin-top: 12px;
-            margin-bottom: 6px;
-            padding-bottom: 3px;
+            margin-top: 8px;
+            margin-bottom: 4px;
+            padding-bottom: 2px;
             border-bottom: 3px solid #4A90B5;
             letter-spacing: 0.5px;
         }
@@ -132,8 +132,8 @@
             display: flex;
             justify-content: space-between;
             align-items: baseline;
-            margin-top: 10px;
-            margin-bottom: 5px;
+            margin-top: 6px;
+            margin-bottom: 3px;
             gap: 10px;
         }
 
@@ -169,9 +169,9 @@
         }
 
         .duties li {
-            font-size: 8pt;
-            line-height: 1.4;
-            margin-bottom: 1px;
+            font-size: 7.5pt;
+            line-height: 1.3;
+            margin-bottom: 0;
             color: #555;
             display: list-item;
         }
@@ -212,24 +212,24 @@
 
         .education-details li {
             font-size: 7.5pt;
-            line-height: 1.4;
-            margin-bottom: 1px;
+            line-height: 1.3;
+            margin-bottom: 0;
             color: #555;
             display: list-item;
         }
 
         /* Skills Section */
         .skills-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 4px;
+            column-count: 2;
+            column-gap: 16px;
         }
 
         .skill-category {
-            margin-bottom: 0px;
+            margin-bottom: 3px;
             font-size: 8pt;
             color: #555;
             line-height: 1.5;
+            break-inside: avoid;
         }
 
         .skill-category strong {
@@ -239,21 +239,29 @@
 
         /* Print Styles */
         @media print {
-            body {
+            html, body {
                 margin: 0;
                 padding: 0;
                 -webkit-print-color-adjust: exact;
                 print-color-adjust: exact;
             }
-            
+
             .container {
                 max-width: 100%;
-                padding: 0 0 0 8mm;
+                width: 100%;
+                padding: 4mm 5mm;
                 margin: 0;
             }
 
-            .section {
-                page-break-inside: avoid;
+            .date-location {
+                white-space: normal;
+                min-width: 0;
+                flex-shrink: 1;
+            }
+
+            .role-company {
+                min-width: 0;
+                word-break: break-word;
             }
 
             .experience-item,
@@ -269,10 +277,6 @@
             .header {
                 page-break-inside: avoid;
                 page-break-after: avoid;
-            }
-
-            ul {
-                page-break-inside: avoid;
             }
         }
 
@@ -301,11 +305,11 @@
             <div class="profile-photo">
                 <img src="images/profile.png" alt="Jady Pamella" class="profile-image" onerror="this.style.display='none'">
             </div>
-            
+
             <div class="header-left">
                 <h1>JADY PAMELLA</h1>
-                <div class="title">Senior Technology Manager</div>
-                
+                <div class="title">Head of AI Engineering</div>
+
                 <div class="contact-info">
                     <div>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
@@ -348,12 +352,12 @@
             </div>
 
             <div class="header-right">
+                <div class="section-title" style="margin-top: 0;">Summary</div>
                 <div class="about">
-                    <p>Senior Technology Manager with 10+ years leading AI, automation, and digital transformation across finance, government, and climate-tech. Proven track record managing $1M+ IT budgets, leading teams of 10+ engineers, and delivering measurable impact: 40% efficiency gains, 15% cost reduction, 30% reduction in manual work, and 60% faster deployments.</p>
-
-                    <p>Combines strategic leadership with hands-on expertise in AI/ML (TensorFlow, PyTorch), cloud architecture (Kubernetes, Docker, AWS, GCP), and DevSecOps. Co-founder of the climate-tech startup Tree++. Published researcher in Elsevier (Computers & Security). Swedish Institute Scholar pursuing MSc in Computer and Systems Sciences (AI and IoT) at Stockholm University.</p>
-
-                    <p>Seeking senior management and technical leadership roles where I can drive technology strategy, build high-performing teams, and scale data-driven innovation in Sweden and Europe.</p>
+                    <p>AI engineering leader with 12+ years building and scaling production systems across AI/ML, DevSecOps, cloud, and cybersecurity. Delivered AI products for 100K+ users, managed $1M+ IT budgets, and led engineering teams of 10+ across banking, government, research, and startups. Two master's degrees (AI and IoT at Stockholm University and Cybersecurity at UnB), Swedish Institute Scholar, published in Elsevier's Computers &amp; Security, and first-place winner in three hackathons in Stockholm in 2025-2026, including EpiMinds Google AI. Work-authorized in Sweden and pursuing Head of AI Engineering, Engineering Manager, or Principal Engineer roles focused on technical strategy, high-performing teams, and production-grade AI systems.</p>
+                </div>
+                <div class="skill-category" style="margin-top: 5px;">
+                    <strong>Core Competencies:</strong> AI/ML Engineering | LLM &amp; Generative AI | MLOps | DevSecOps | Cloud Architecture | Cybersecurity &amp; GDPR | IoT Systems | Team Leadership (10+) | P&amp;L Management ($1M+) | Product Strategy
                 </div>
             </div>
         </div>
@@ -365,48 +369,111 @@
             <div class="experience-item">
                 <div class="company-header">
                     <div class="role-company">
-                        <span class="company">Tree++ (Climate Tech Startup)</span> - <span class="role">Co-founder and Chief Innovation Officer</span>
+                        <span class="company">Deep Forestry AB</span> - <span class="role">AI Research Engineer (MSc Thesis)</span>
                     </div>
-                    <div class="date-location">2024 – Present (Stockholm, Sweden)</div>
+                    <div class="date-location">2026 - Present (Stockholm, Sweden)</div>
                 </div>
                 <ul class="duties">
-                    <li>Lead technical strategy, engineering roadmap, and sustainability-aligned vision for AI-powered autonomous drones for reforestation, managing fundraising, investor relations, and strategic partnerships.</li>
-                    <li>Architect end-to-end AI/IoT platform: computer vision for terrain analysis, autonomous flight control, real-time telemetry processing (1M+ events/day) using Python, TensorFlow, Kubernetes, and AWS.</li>
-                    <li>Build and mentor engineering team, overseeing hiring, performance management, delivery standards, and technical excellence.</li>
-                    <li>Manage budget allocation, burn rate optimization, and financial planning for business scalability and growth.</li>
-                </ul>
-                <div class="award">Award: Impact Cup – Drivhuset (2025)</div>
-            </div>
-
-            <div class="experience-item">
-                <div class="company-header">
-                    <div class="role-company">
-                        <span class="company">Bank of Brasília – BRB</span> - <span class="role">IT Analyst and DevOps Engineer</span>
-                    </div>
-                    <div class="date-location">2014 – Present (Brasília, Brazil)</div>
-                </div>
-                <ul class="duties">
-                    <li>Delivered value through AI and automation initiatives: built production AI chatbot (Python, TensorFlow, NLP) in Silicon Valley reducing customer response time by 40% for 100K+ users.</li>
-                    <li>Architected DevSecOps CI/CD pipelines (Jenkins, GitLab, Docker, OpenShift, Kubernetes) reducing deployment time by 60%.</li>
-                    <li>Developed Power BI executive dashboards enabling data-driven decisions for C-suite stakeholders and ensuring regulatory compliance (BACEN, LGPD).</li>
-                    <li>Collaborated directly with CIO, CFO, and COO to align IT initiatives with business strategy and objectives.</li>
+                    <li>Designed and evaluated a hybrid geometric-neural pipeline for real-time autonomous landing zone detection in below-canopy forests using LiDAR point clouds, combining RANSAC-based geometry with PointNet, PointNet++, and DGCNN models.</li>
+                    <li>Reduced end-to-end latency by 29x from 5.8s to 200ms through KD-Tree indexing and voxel downsampling optimizations on real forest flight data collected with Deep Forestry's autonomous drone platform.</li>
                 </ul>
             </div>
 
             <div class="experience-item">
                 <div class="company-header">
                     <div class="role-company">
-                        <span class="company">Bank of Brasília – BRB</span> - <span class="role">IT Manager</span>
+                        <span class="company">SoiQet - Social IQ Set</span> - <span class="role">Founder and CEO</span>
                     </div>
-                    <div class="date-location">2016 – 2024 (Brasília, Brazil)</div>
+                    <div class="date-location">2025 - Present (Stockholm, Sweden)</div>
                 </div>
                 <ul class="duties">
-                    <li>Managed $1M+ IT budget with full P&L accountability, reducing operational costs by 15% ($150K+ savings) through strategic vendor optimization and contract restructuring.</li>
-                    <li>Led team of 10+ IT professionals with full responsibility for hiring, performance management, career development, implementing COBIT, ITIL, Agile, and Lean IT frameworks.</li>
-                    <li>Improved compliance and audit accuracy by 40% redesigning Change and Configuration Management processes, reducing regulatory risk and ensuring business continuity.</li>
-                    <li>Led organizational transformation initiatives including Lean IT practices (20% waste reduction) and DevSecOps adoption across IT department.</li>
+                    <li>Founded SoiQet, an LLM-powered platform integrating 6 social networks for small businesses and influencers, combining RAG-based content generation, scheduling, and analytics on GCP.</li>
+                    <li>Built the end-to-end product from prototype to production using Lovable, Python, Node.js, Supabase, and React, improving content quality and workflow speed across integrated channels through prompt engineering and platform design.</li>
+                    <li>Own product vision, engineering execution, and go-to-market strategy, leading early validation, architecture decisions, and platform growth as Founder and Head of Engineering.</li>
                 </ul>
-                <div class="award">Award: Strategic Configuration Management – Efinance (2019)</div>
+            </div>
+
+            <div class="experience-item">
+                <div class="company-header">
+                    <div class="role-company">
+                        <span class="company">Tree++ (Tree Plus Plus, Climate Tech Startup)</span> - <span class="role">Co-founder and Chief Innovation Officer</span>
+                    </div>
+                    <div class="date-location">2024 - Present (Stockholm, Sweden)</div>
+                </div>
+                <ul class="duties">
+                    <li>Lead technical strategy and fundraising for a climate-tech platform that supported the planting of 1,000+ trees across 10 countries in 2026, connecting volunteers and landowners through an AI-powered carbon footprint calculator and QR-based carbon credit tracking.</li>
+                    <li>Built a computer vision pipeline for imagery-based carbon credit consumption monitoring and an ML matchmaking system that connects offsetting requests with volunteers and landowners across the platform ecosystem.</li>
+                    <li>Hired and led the engineering team, setting delivery standards, supporting performance management, and contributing to roadmap and budget planning.</li>
+                </ul>
+                <div class="award">Award: Impact Cup - Drivhuset (2025)</div>
+            </div>
+
+            <div class="experience-item">
+                <div class="company-header">
+                    <div class="role-company">
+                        <span class="company">Bank of Brasilia - BRB (top-5 Brazilian financial institution, 4,000+ employees)</span> - <span class="role">IT Analyst and DevOps Engineer</span>
+                    </div>
+                    <div class="date-location">2014 - Present (Brasilia, Brazil)</div>
+                </div>
+                <ul class="duties">
+                    <li>Built a production AI chatbot using Python, TensorFlow, and NLP that reduced customer response time by 40% for 100K+ users during a Silicon Valley engagement.</li>
+                    <li>Led the design and implementation of DevSecOps CI/CD pipelines across Jenkins, GitLab, Docker, OpenShift, and Kubernetes, reducing deployment time by 60% and improving release reliability.</li>
+                    <li>Built executive Power BI dashboards for C-level decision-making and supported compliance with Central Bank regulations and GDPR-equivalent data protection standards.</li>
+                    <li>Partnered directly with the CIO, CFO, and COO to align IT delivery, compliance, and investment priorities with business goals.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="company-header">
+                    <div class="role-company">
+                        <span class="company">Bank of Brasilia - BRB (top-5 Brazilian financial institution, 4,000+ employees)</span> - <span class="role">IT Manager</span>
+                    </div>
+                    <div class="date-location">2016 - 2024 (Brasilia, Brazil)</div>
+                </div>
+                <ul class="duties">
+                    <li>Managed a $1M+ IT budget with full P&amp;L accountability, reducing operating costs by 15% and generating $150K+ in savings through vendor renegotiation and contract restructuring.</li>
+                    <li>Led a team of 10+ IT professionals across hiring, performance reviews, OKR planning, career development, and adoption of COBIT, ITIL, Agile, and Lean IT practices.</li>
+                    <li>Redesigned Change and Configuration Management processes, improving compliance and audit accuracy by 40% and lowering regulatory exposure.</li>
+                    <li>Led Lean IT and DevSecOps transformation efforts that reduced operational waste by 20% and improved execution standards across the department.</li>
+                </ul>
+                <div class="award">Award: Strategic Configuration Management - Efinance (2019)</div>
+            </div>
+
+            <div class="experience-item">
+                <div class="company-header">
+                    <div class="role-company">
+                        <span class="company">LabRisk - Cybersecurity and Risk Lab, Universidade de Brasilia (UnB)</span> - <span class="role">Cybersecurity Research Engineer</span>
+                    </div>
+                    <div class="date-location">2024 - Present (Brasilia, Brazil)</div>
+                </div>
+                <ul class="duties">
+                    <li>Conduct research on cybersecurity management, risk, and privacy for the public sector, covering CIS controls, GDPR-aligned frameworks, and judiciary cybersecurity in Brazil.</li>
+                    <li>Published peer-reviewed findings in Elsevier's Computers &amp; Security journal, strengthening evidence-based cybersecurity governance for public institutions.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="company-header">
+                    <div class="role-company">
+                        <span class="company">Stockholm University - SU</span> - <span class="role">Teaching Assistant - Internet of Things</span>
+                    </div>
+                    <div class="date-location">2025 - 2026 (Stockholm, Sweden)</div>
+                </div>
+                <ul class="duties">
+                    <li>Supported 200+ students in IoT coursework covering Python, sensor integration with MQTT, edge computing, and data processing pipelines.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="company-header">
+                    <div class="role-company">
+                        <span class="company">Drivhuset Stockholm AB - Stockholm University (SU)</span> - <span class="role">Student Ambassador</span>
+                    </div>
+                    <div class="date-location">2025 - Present (Stockholm, Sweden)</div>
+                </div>
+                <ul class="duties">
+                    <li>Hackathon organizer, mentor founders and students on technology strategy, product development, and early-stage execution through Stockholm University's entrepreneurship programs.</li>
+                </ul>
             </div>
 
             <div class="experience-item">
@@ -414,99 +481,90 @@
                     <div class="role-company">
                         <span class="company">Brazilian Institute of Information in Science and Technology - IBICT</span> - <span class="role">Research Engineer</span>
                     </div>
-                    <div class="date-location">2022 (Brasília, Brazil)</div>
+                    <div class="date-location">2022 (Brasilia, Brazil)</div>
                 </div>
                 <ul class="duties">
-                    <li>Customized Archivematica for Kubernetes and OpenShift deployment, enabling scalable digital preservation infrastructure for government agencies managing millions of digital assets.</li>
-                    <li>Supported national initiatives in knowledge management, data governance, and digital transformation for public sector with improved automation workflows.</li>
+                    <li>Customized Archivematica for Kubernetes and OpenShift, enabling digital preservation infrastructure for government agencies managing millions of digital assets.</li>
                 </ul>
             </div>
 
             <div class="experience-item">
                 <div class="company-header">
                     <div class="role-company">
-                        <span class="company">Ministry of Integration and Regional Development – MCID</span> - <span class="role">Software Engineer</span>
+                        <span class="company">Ministry of Integration and Regional Development - MCID</span> - <span class="role">Software Engineer</span>
                     </div>
-                    <div class="date-location">2014 (Brasília, Brazil)</div>
+                    <div class="date-location">2014 (Brasilia, Brazil)</div>
                 </div>
                 <ul class="duties">
-                    <li>Modernized legacy PHP and MySQL systems improving scalability, maintainability, and performance for national integration services.</li>
-                    <li>Developed responsive web and mobile applications increasing citizen access to government digital services and platforms.</li>
+                    <li>Modernized legacy PHP and MySQL systems, improving scalability and performance for national integration services used by government agencies across Brazil.</li>
+                    <li>Built responsive web and mobile applications that expanded citizen access to government digital services.</li>
                 </ul>
             </div>
 
             <div class="experience-item">
                 <div class="company-header">
                     <div class="role-company">
-                        <span class="company">SENAI – National Industrial Training Service</span> - <span class="role">Web Developer and Designer</span>
+                        <span class="company">SENAI - National Industrial Training Service</span> - <span class="role">Web Developer and Designer</span>
                     </div>
-                    <div class="date-location">2010 – 2012 (Brasília, Brazil)</div>
+                    <div class="date-location">2010 - 2012 (Brasilia, Brazil)</div>
                 </div>
                 <ul class="duties">
-                    <li>Developed e-learning platforms supporting 2,000+ students with interactive learning modules, progress tracking, and assessment tools.</li>
-                    <li>Built PHP and MySQL systems for statewide education programs, optimized UX for digital curriculum delivery and multi-device access.</li>
+                    <li>Built PHP and MySQL e-learning platforms supporting 2,000+ students with interactive modules, progress tracking, and assessment tools.</li>
                 </ul>
-                <div class="award">Award: WorldSkills National Phase – Web Design (2012)</div>
+                <div class="award">Award: WorldSkills National Phase - Web Design (2012)</div>
+            </div>
+        </div>
+
+        <!-- Volunteering Section -->
+        <div class="section">
+            <div class="section-title">Volunteering</div>
+
+            <div class="experience-item">
+                <div class="company-header">
+                    <div class="role-company">
+                        <span class="company">SU Heroes - Hackathon Team, Stockholm University (SU)</span> - <span class="role">Team Leader</span>
+                    </div>
+                    <div class="date-location">2024 - Present (Stockholm, Sweden)</div>
+                </div>
+                <ul class="duties">
+                    <li>Lead multidisciplinary teams building agentic AI systems, mentoring students and engineers in AI/ML, cloud architecture, and rapid prototyping under hackathon constraints.</li>
+                </ul>
+                <div class="award">1st Place in 3 hackathons: EpiMinds Google AI Hackathon (2026), Kong AI Assisted-Coding Hackathon (2025), Kolomolo AI-Assisted Coding Hackathon (2025)</div>
             </div>
 
             <div class="experience-item">
                 <div class="company-header">
                     <div class="role-company">
-                        <span class="company">SU Heroes - Hackathon Team</span> - <span class="role">Team Leader</span>
+                        <span class="company">Alla Ska F&aring; Mat</span> - <span class="role">Volunteer and Web Developer</span>
                     </div>
-                    <div class="date-location">2024 – Present (Stockholm, Sweden)</div>
+                    <div class="date-location">2024 - Present (Stockholm, Sweden)</div>
                 </div>
                 <ul class="duties">
-                    <li>Lead multidisciplinary teams building applied AI automation and agentic AI systems, mentor students and engineers in AI/ML, cloud architecture, and rapid prototyping.</li>
-                </ul>
-                <div class="award">Awards: Kong AI Assisted-Coding Hackathon (2025), Kolomolo AI-Assisted Coding Hackathon (2025) & Nordcloud Agentic AI Software Modernization Hackathon (2025)</div>
-            </div>
-
-            <div class="experience-item">
-                <div class="company-header">
-                    <div class="role-company">
-                        <span class="company">Stockholm University – SU</span> - <span class="role">Teaching Assistant - Internet of Things</span>
-                    </div>
-                    <div class="date-location">2025 – Present (Stockholm, Sweden)</div>
-                </div>
-                <ul class="duties">
-                    <li>Support 200+ students in IoT coursework: Python programming, sensor integration (MQTT), edge computing, and data processing pipelines.</li>
-                </ul>
-            </div>
-
-            <div class="experience-item">
-                <div class="company-header">
-                    <div class="role-company">
-                        <span class="company">Drivhuset Stockholm – SU</span> - <span class="role">Student Ambassador</span>
-                    </div>
-                    <div class="date-location">2025 – Present (Stockholm, Sweden)</div>
-                </div>
-                <ul class="duties">
-                    <li>Support founders and students in entrepreneurship programs, mentor on technology strategy and product development, promote innovation activities across Stockholm University.</li>
+                    <li>Built and maintain the website for a nonprofit that distributes weekly meals to vulnerable families and homeless individuals in Stockholm, while also supporting volunteer operations on the ground.</li>
                 </ul>
             </div>
 
             <div class="experience-item">
                 <div class="company-header">
                     <div class="role-company">
-                        <span class="company">DevOpsDays Brasília</span> - <span class="role">Volunteer Organizer</span>
+                        <span class="company">DevOpsDays Brasilia</span> - <span class="role">Volunteer Organizer</span>
                     </div>
-                    <div class="date-location">2024 – Present (Brasília, Brazil)</div>
+                    <div class="date-location">2024 - Present (Brasilia, Brazil)</div>
                 </div>
                 <ul class="duties">
-                    <li>Coordinate technical conferences with 250+ participants, develop partnerships with industry and academia, curate DevSecOps and AI/ML content.</li>
+                    <li>Coordinate technical conferences for 250+ participants, build partnerships with industry and academia, and curate DevSecOps and AI/ML content.</li>
                 </ul>
             </div>
 
             <div class="experience-item">
                 <div class="company-header">
                     <div class="role-company">
-                        <span class="company">Alla Ska Få Mat</span> - <span class="role">Volunteer Organizer</span>
+                        <span class="company">Insphas - Institute of Psychology</span> - <span class="role">Volunteer IT Lead</span>
                     </div>
-                    <div class="date-location">2024 – Present (Stockholm, Sweden)</div>
+                    <div class="date-location">2018 - Present (Brazil)</div>
                 </div>
                 <ul class="duties">
-                    <li>Help volunteer teams supporting vulnerable families and people experiencing homelessness, optimize marketing and digital presence for community impact.</li>
+                    <li>Modernize digital presence and infrastructure for a mental health institute, including websites, content strategy, and communication flows for psychology services.</li>
                 </ul>
             </div>
         </div>
@@ -518,15 +576,14 @@
             <div class="education-item">
                 <div class="company-header">
                     <div class="role-company">
-                        <span class="company">Stockholm University – SU</span> - <span class="role">Master of Science in Computer and Systems Sciences (AI and IoT)</span>
+                        <span class="company">Stockholm University - SU</span> - <span class="role">Master of Science in Computer and Systems Sciences (AI and IoT)</span>
                     </div>
-                    <div class="date-location">2024 – 2026 (Stockholm, Sweden)</div>
+                    <div class="date-location">2024 - 2026 (Stockholm, Sweden)</div>
                 </div>
                 <ul class="education-details">
-                    <li>Specialization: Machine Learning, Deep Learning, Computer Vision, Natural Language Processing, IoT Systems, Autonomous Systems.</li>
-                    <li>Research collaboration with Deep Forestry on autonomous drones and computer vision for environmental monitoring.</li>
-                    <li>Student Ambassador at Drivhuset Stockholm, Teaching Assistant in Internet of Things (IoT).</li>
-                    <li>Member of the Network for Global Professionals (NFGP) by the Swedish Institute.</li>
+                    <li>Specialization: Machine Learning, Deep Learning, Computer Vision, Natural Language Processing, IoT Systems, and Autonomous Systems.</li>
+                    <li>MSc thesis in collaboration with Deep Forestry focused on a hybrid geometric-neural pipeline for real-time autonomous landing zone detection in below-canopy forests using LiDAR point clouds.</li>
+                    <li>Teaching Assistant in Internet of Things, Student Ambassador at Drivhuset Stockholm, and member of the Network for Global Professionals (NFGP) at the Swedish Institute.</li>
                 </ul>
                 <div class="award">Award: Swedish Institute Scholarship for Global Professionals (SISGP)</div>
             </div>
@@ -534,13 +591,13 @@
             <div class="education-item">
                 <div class="company-header">
                     <div class="role-company">
-                        <span class="company">University of Brasília – UnB</span> - <span class="role">Master of Engineering in Cybersecurity</span>
+                        <span class="company">University of Brasilia - UnB</span> - <span class="role">Master of Engineering in Cybersecurity</span>
                     </div>
-                    <div class="date-location">2024 – 2025 (Brasília, Brazil)</div>
+                    <div class="date-location">2024 - 2025 (Brasilia, Brazil, concluding)</div>
                 </div>
                 <ul class="education-details">
                     <li>Specialization: Risk management, AI for cybersecurity, critical infrastructure protection, and security governance frameworks.</li>
-                    <li>Published research in top-tier journal (Impact Factor: 5.6) on cybersecurity frameworks for judicial systems.</li>
+                    <li>Published peer-reviewed research in a top-tier journal on cybersecurity frameworks for judicial systems.</li>
                 </ul>
                 <div class="award">Publication: <a href="https://www.sciencedirect.com/science/article/pii/S0167404825002731" target="_blank">Elsevier's Computers & Security Journal (2025) | DOI: 10.1016/j.cose.2025.104584</a></div>
             </div>
@@ -548,61 +605,40 @@
             <div class="education-item">
                 <div class="company-header">
                     <div class="role-company">
-                        <span class="company">Massachusetts Institute of Technology – MIT</span> - <span class="role">Designing and Building AI Products</span>
+                        <span class="company">Massachusetts Institute of Technology - MIT</span> - <span class="role">Designing and Building AI Products (Executive Program)</span>
                     </div>
                     <div class="date-location">2022 (Boston, USA)</div>
                 </div>
                 <ul class="education-details">
-                    <li>Specialization: 40-hour executive program on AI product development, deployment strategies, and scaling ML systems in production environments.</li>
+                    <li>40-hour executive program focused on AI product development, ML system deployment, and scaling AI products in production environments.</li>
                 </ul>
             </div>
 
             <div class="education-item">
                 <div class="company-header">
                     <div class="role-company">
-                        <span class="company">Descomplica</span> - <span class="role">MBA in Innovation, Technology & Entrepreneurship</span>
+                        <span class="company">Descomplica</span> - <span class="role">MBA in Innovation, Technology &amp; Entrepreneurship | Postgraduate in Data Analysis</span>
                     </div>
-                    <div class="date-location">2022 – 2023 (Brasília, Brazil)</div>
+                    <div class="date-location">2022 - 2023 (Brasilia, Brazil)</div>
                 </div>
-                <ul class="education-details">
-                    <li>Focus: Business model innovation, technology strategy, startup development, and lean startup methodology.</li>
-                </ul>
             </div>
 
             <div class="education-item">
                 <div class="company-header">
                     <div class="role-company">
-                        <span class="company">Descomplica</span> - <span class="role">Postgraduate in Data Analysis</span>
+                        <span class="company">Fundação Getulio Vargas - FGV</span> - <span class="role">MBA in Project Management</span>
                     </div>
-                    <div class="date-location">2022 – 2023 (Brasília, Brazil)</div>
+                    <div class="date-location">2016 - 2018 (Brasilia, Brazil)</div>
                 </div>
-                <ul class="education-details">
-                    <li>Focus: Statistical modeling, machine learning algorithms, predictive analytics, data visualization, and business intelligence.</li>
-                </ul>
             </div>
 
             <div class="education-item">
                 <div class="company-header">
                     <div class="role-company">
-                        <span class="company">Fundação Getulio Vargas – FGV</span> - <span class="role">MBA in Project Management</span>
+                        <span class="company">Faculdades Integradas - UPIS</span> - <span class="role">BSc in Information Systems</span>
                     </div>
-                    <div class="date-location">2016 – 2018 (Brasília, Brazil)</div>
+                    <div class="date-location">2010 - 2013 (Brasilia, Brazil)</div>
                 </div>
-                <ul class="education-details">
-                    <li>Specialization: Agile methodologies, Scrum, PMBOK, risk management, stakeholder management, and change management for IT project delivery.</li>
-                </ul>
-            </div>
-
-            <div class="education-item">
-                <div class="company-header">
-                    <div class="role-company">
-                        <span class="company">Faculdades Integradas – UPIS</span> - <span class="role">BSc in Information Systems</span>
-                    </div>
-                    <div class="date-location">2010 – 2013 (Brasília, Brazil)</div>
-                </div>
-                <ul class="education-details">
-                    <li>Focus: Algorithms, data structures, software engineering, database systems, and technology entrepreneurship fundamentals.</li>
-                </ul>
             </div>
         </div>
 
@@ -612,31 +648,31 @@
             
             <div class="skills-grid">
                 <div class="skill-category">
-                    <strong>Leadership & Management:</strong> Technology Strategy, Team Leadership (10+ professionals), P&L Management ($1M+), Stakeholder Management, Cross-Functional Collaboration, Strategic Planning, Change Management, Vendor Management, Budget Optimization, Agile Delivery.
+                    <strong>Leadership &amp; Management:</strong> Technology Strategy, Team Leadership (10+ professionals), P&amp;L Management ($1M+), OKR Planning and Execution, Stakeholder Management, Cross-Functional Collaboration, Strategic Planning, Technical Hiring, Change Management, Vendor Management, Budget Optimization, Agile Delivery.
                 </div>
                 <div class="skill-category">
-                    <strong>IT Governance & Frameworks:</strong> COBIT, ITIL, CMDB, ITSM, BPMN, Lean IT, PMBOK, Risk Management, Change Management, Configuration Management, Compliance, Audit.
+                    <strong>IT Governance &amp; Frameworks:</strong> COBIT, ITIL, CMDB, ITSM, BPMN, Lean IT, PMBOK, GDPR, Risk Management, Change Management, Configuration Management, Compliance, Audit.
                 </div>
                 <div class="skill-category">
                     <strong>Programming Languages:</strong> Python, JavaScript, TypeScript, SQL, Java, PHP, Bash, R, Groovy, Erlang.
                 </div>
                 <div class="skill-category">
-                    <strong>AI & Machine Learning:</strong> TensorFlow, PyTorch, Scikit-Learn, Keras, Hugging Face Transformers, XGBoost, LightGBM, MLOps, NLP, Computer Vision, Deep Learning, Neural Networks, Model Deployment, Feature Engineering, Data Pipelines, Model Monitoring.
+                    <strong>AI &amp; Machine Learning:</strong> TensorFlow, PyTorch, Scikit-Learn, Keras, Hugging Face Transformers, LLM Fine-Tuning, RAG (Retrieval Augmented Generation), Prompt Engineering, XGBoost, LightGBM, MLOps, NLP, Computer Vision, Deep Learning, Neural Networks, Model Deployment, Feature Engineering, Data Pipelines, Model Monitoring.
                 </div>
                 <div class="skill-category">
-                    <strong>Data Engineering & Analytics:</strong> Apache Spark, Hadoop, Pandas, NumPy, Power BI, Kafka, MQTT, PostgreSQL, MySQL, MongoDB, Redis, Oracle, ETL Pipelines, Data Warehousing, Business Intelligence.
+                    <strong>Data Engineering &amp; Analytics:</strong> Apache Spark, Hadoop, Pandas, NumPy, Power BI, Kafka, MQTT, PostgreSQL, MySQL, MongoDB, Redis, Oracle, ETL Pipelines, Data Warehousing, Business Intelligence.
                 </div>
                 <div class="skill-category">
-                    <strong>Cloud, DevOps & Automation:</strong> Kubernetes, Docker, Jenkins, GitLab, GitHub, OpenShift, Terraform, Ansible, AWS, GCP, Azure, CI/CD, DevSecOps, Infrastructure as Code, Grafana, Zabbix, Observability, A/B Testing.
+                    <strong>Cloud, DevOps &amp; Automation:</strong> Kubernetes, Docker, Jenkins, GitLab, GitHub, OpenShift, Terraform, Ansible, AWS, GCP, Azure, CI/CD, DevSecOps, Infrastructure as Code, Grafana, Zabbix, Observability, A/B Testing.
                 </div>
                 <div class="skill-category">
-                    <strong>Integration & Architecture:</strong> REST APIs, GraphQL APIs, Microservices, Event-Driven Architecture, Distributed Systems, IoT Integration, Node.js, React.
+                    <strong>Integration &amp; Architecture:</strong> System Design, REST APIs, GraphQL APIs, Microservices, Event-Driven Architecture, Distributed Systems, Platform Engineering, IoT Integration, Node.js, React.
                 </div>
                 <div class="skill-category">
-                    <strong>Tools & Platforms:</strong> Jira, Trello, Teams, Git, Linux, Jupyter, MLflow, TensorBoard, SonarQube, Nexus, Lovable, Temporal, n8n.
+                    <strong>Tools &amp; Platforms:</strong> Jira, Trello, Teams, Git, Linux, Jupyter, MLflow, SonarQube, Nexus, Lovable, Temporal, n8n, Swish.
                 </div>
                 <div class="skill-category">
-                    <strong>Languages:</strong> Portuguese (Native), English (Fluent - TOEFL Certified), Spanish (Intermediate), Swedish (Beginner).
+                    <strong>Languages:</strong> Portuguese (Native), English (Fluent - TOEFL Certified), Spanish (Intermediate), Swedish (SFI Level C, actively studying).
                 </div>
             </div>
         </div>
@@ -645,7 +681,7 @@
         <div class="section">
             <div class="section-title">Certifications</div>
             <div class="skill-category">
-                <strong>Leadership:</strong> Women's Leadership Program (SOUL, 2024), Self-Leadership Program (Hyper Island & Swedish Institute, 2024), Collaborative Approaches to Societal Issues (Stockholm School of Entrepreneurship, 2024) | <strong>AI & Data:</strong> Designing & Building AI Products (MIT, 2022), Data Analysis (ENAP, 2023), Business Intelligence Foundation (Certiprof, 2024) | <strong>IT Governance:</strong> DevOps Master (EXIN, 2020), Lean IT Foundation (EXIN, 2019), COBIT 5 Foundation (ISACA, 2015), ITIL V3 Foundation (EXIN, 2015) | <strong>Agile:</strong> Scrum Foundation (Certiprof, 2019), Lean Six Sigma White Belt (Certiprof, 2024) | <strong>Language:</strong> TOEFL iBT (ETS, 2024)
+                <strong>Leadership:</strong> EA Sweden Fellowship - Effective Altruism (2026), Women's Leadership Program (SOUL, 2024), Self-Leadership Program (Hyper Island &amp; Swedish Institute, 2024), Collaborative Approaches to Societal Issues (Stockholm School of Entrepreneurship, 2024) | <strong>AI &amp; Data:</strong> Business Intelligence Foundation (Certiprof, 2024), Data Analysis (ENAP, 2023), Designing &amp; Building AI Products (MIT, 2022) | <strong>IT Governance:</strong> DevOps Master (EXIN, 2020), Lean IT Foundation (EXIN, 2019), COBIT 5 Foundation (ISACA, 2015), ITIL V3 Foundation (EXIN, 2015) | <strong>Agile:</strong> Lean Six Sigma White Belt (Certiprof, 2024), Scrum Foundation (Certiprof, 2019) | <strong>Language:</strong> TOEFL iBT (ETS, 2024)
             </div>
         </div>
         
