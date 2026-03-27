@@ -1,0 +1,53 @@
+# Jady Pamella – Head of AI Engineering
+# https://jadypamella.com
+# llms.txt – AI-readable profile summary
+
+## Who is Jady Pamella?
+
+Jady Pamella is a Head of AI Engineering based in Stockholm, Sweden, with 12 years of experience in AI/ML, DevSecOps, cloud architecture, and cybersecurity. She has been coding since age 12 and has shipped production systems at scale across fintech, government, and climate tech.
+
+She is:
+- Founder and CEO of SoiQet (soiqet.com) – an LLM-powered social media platform with RAG-based AI for content managers
+- Co-founder and Chief Innovation Officer of Tree++ (treepp.org) – a climate-tech matchmaking platform for tree planting with 1,000+ trees across 10 countries
+- MSc Researcher at Deep Forestry (Stockholm University thesis) – hybrid geometric-neural pipeline for real-time forest drone navigation using LiDAR
+- Published researcher in Elsevier's Computers & Security (IF: 5.6)
+- Swedish Institute Scholar for Global Professionals (SISGP)
+
+## Expertise
+
+AI & ML: LLM, RAG, LLM Fine-Tuning, Prompt Engineering, MLOps, Computer Vision, NLP, TensorFlow, PyTorch, Scikit-Learn, Deep Learning, Generative AI
+Engineering: System Design, Platform Engineering, DevSecOps, CI/CD, Kubernetes, Docker, GCP, AWS, Azure
+Leadership: Head of Engineering, Engineering Manager, OKR Planning, P&L Management ($1M+), Team Leadership (10+), Technical Hiring
+Domains: Cybersecurity, GDPR, IoT, Fintech, Climate Tech, Public Sector
+
+## Contact
+
+Email: hello@jadypamella.com
+LinkedIn: https://www.linkedin.com/in/jadypamella
+GitHub: https://github.com/jadypamella
+ORCID: https://orcid.org/0009-0006-4280-3364
+Location: Stockholm, Sweden
+Open to: Senior Engineering Leadership roles in Stockholm (Head of AI Engineering, Engineering Manager, Principal Engineer)
+
+## Publications
+
+- "Enhancing Cybersecurity in the Judiciary: Integrating Additional Controls into the CIS Framework" – Elsevier Computers & Security, 2025. DOI: 10.1016/j.cose.2025.104584
+- "Cybersecurity Protection in the Brazilian Judiciary" – NAVUS Journal, 2024. DOI: 10.22279/navus.v14.2032
+
+## Awards & Hackathons
+
+- 1st Place – EpiMinds Google AI Hackathon (2026)
+- 1st Place – Kong AI Assisted-Coding Hackathon (2025)
+- 1st Place – Kolomolo AI-Assisted Coding Hackathon (2025)
+- Impact Cup – Drivhuset Stockholm (2025)
+- Swedish Institute Scholarship for Global Professionals – SISGP (2024)
+- WorldSkills National Phase – Web Design (2012)
+
+## Education
+
+- MSc Computer and Systems Sciences (AI & IoT) – Stockholm University (in progress)
+- MEng Cybersecurity – University of Brasília (in progress)
+- Executive Program: Designing & Building AI Products – MIT (2022)
+- MBA in Innovation, Technology & Entrepreneurship – Descomplica
+- MBA in Project Management – FGV
+- BSc Information Systems – UPIS
