@@ -1,0 +1,150 @@
+/* OG image base styles. Renders at 1200x630 (LinkedIn, Twitter, Facebook standard). */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+    --color-primary: #E03859;
+    --color-primary-hover: #AF2348;
+    --color-secondary: #fec503;
+    --color-text-dark: hsl(222.2, 84%, 4.9%);
+    --color-text-muted: #666666;
+    --color-bg-light: #FFFFFF;
+    --color-bg-cream: #F1EADB;
+    --color-bg-dark: #222222;
+}
+
+html, body {
+    width: 1200px;
+    height: 630px;
+    overflow: hidden;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: var(--color-text-dark);
+    background: var(--color-bg-cream);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.og {
+    width: 1200px;
+    height: 630px;
+    padding: 64px 72px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 48px;
+    align-items: center;
+    background: linear-gradient(135deg, var(--color-bg-cream) 0%, #FAF5E9 100%);
+}
+
+.og .accent-bar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 12px;
+    width: 100%;
+    background: linear-gradient(90deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+}
+
+.og .left {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 760px;
+}
+
+.og .tag {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--color-primary);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.og h1 {
+    font-size: 64px;
+    font-weight: 800;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    color: var(--color-text-dark);
+}
+
+.og h1 .accent {
+    color: var(--color-primary);
+}
+
+.og .subtitle {
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--color-text-muted);
+    line-height: 1.4;
+}
+
+.og .meta {
+    margin-top: 16px;
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--color-text-dark);
+}
+
+.og .meta .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--color-primary);
+    display: inline-block;
+}
+
+.og .photo {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 12px solid #fff;
+    box-shadow: 0 20px 25px rgba(0,0,0,0.1), 0 8px 10px rgba(0,0,0,0.04);
+}
+
+.og .stats {
+    margin-top: 12px;
+    display: flex;
+    gap: 32px;
+}
+
+.og .stat {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.og .stat .num {
+    font-size: 36px;
+    font-weight: 800;
+    color: var(--color-primary);
+    line-height: 1;
+}
+
+.og .stat .label {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--color-text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.og .footer {
+    position: absolute;
+    bottom: 32px;
+    left: 72px;
+    right: 72px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    color: var(--color-text-muted);
+    font-weight: 500;
+}
+
+.og .footer .domain {
+    font-weight: 700;
+    color: var(--color-text-dark);
+}

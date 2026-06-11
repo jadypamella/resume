@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jady Pamella, AI Engineer and Founder</title>
+    <title>Jady Pamella, AI Research Engineer (Academic CV)</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -28,7 +28,7 @@
         .section { margin-bottom: 2px; }
         .section-title { font-size: 10.5pt; font-weight: 700; color: #4A90B5; text-transform: uppercase; margin-top: 4px; margin-bottom: 2px; padding-bottom: 1px; border-bottom: 2.5px solid #4A90B5; letter-spacing: 0.5px; break-after: avoid; page-break-after: avoid; }
 
-        .experience-item { margin-bottom: 2px; }
+        .experience-item { margin-bottom: 2px; page-break-inside: avoid; break-inside: avoid; }
         .company-header { display: flex; justify-content: space-between; align-items: baseline; margin-top: 3px; margin-bottom: 1px; gap: 10px; }
         .role-company { font-size: 9.5pt; font-weight: 700; line-height: 1.25; }
         .role-company .role { color: #555; }
@@ -36,6 +36,7 @@
         .date-location { font-size: 7pt; color: #999; white-space: nowrap; text-align: right; min-width: 160px; flex-shrink: 0; }
         .duties { margin-left: 0; padding-left: 14px; list-style-type: disc; }
         .duties li { font-size: 8.25pt; line-height: 1.3; color: #555; }
+        .duties li .company { color: #4A90B5; font-weight: 600; }
 
         .education-item { margin-bottom: 2px; }
         .education-line { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; font-size: 8.5pt; }
@@ -54,12 +55,18 @@
             .role-company { min-width: 0; word-break: break-word; }
             a { color: #4A90B5 !important; text-decoration: none !important; }
             .header { page-break-inside: avoid; page-break-after: avoid; }
-            .experience-item, .education-item { page-break-inside: avoid; }
+            .experience-item, .education-item { page-break-inside: avoid; break-inside: avoid; }
+            .duties, .education-details { page-break-inside: avoid; break-inside: avoid; }
+            .section-title { page-break-after: avoid; break-after: avoid; margin-top: 6px; }
+            .section-title + .experience-item, .section-title + .education-item, .section-title + .skills-grid, .section-title + .skill-category {
+                page-break-before: avoid; break-before: avoid;
+            }
+            p, .duties li, .education-details li { orphans: 2; widows: 2; }
         }
         @page { size: A4; margin: 0; }
         @media screen {
             body { background: #f5f5f5; padding: 20px; }
-            .container { box-shadow: 0 0 10px rgba(0,0,0,0.1); padding: 8mm 10mm; }
+            .container { box-shadow: 0 0 10px rgba(0,0,0,0.1); padding: 8mm 6mm 8mm 10mm; }
         }
     </style>
 </head>
@@ -73,7 +80,7 @@
 
             <div class="header-left">
                 <h1>JADY PAMELLA</h1>
-                <div class="title">AI Engineer and Founder | 12+ years shipping production | Peer-reviewed in Elsevier</div>
+                <div class="title">AI Research Engineer | AI Safety, Computer Vision, Autonomous Drones | Peer-Reviewed in Elsevier</div>
 
                 <div class="contact-info">
                     <div>
@@ -106,26 +113,78 @@
             <div class="header-right">
                 <div class="section-title" style="margin-top: 0;">Summary</div>
                 <div class="about">
-                    <p>AI Engineer with 12+ years shipping production systems across banking, climate-tech, and AI products. Currently focused on AI safety (EA Sweden Fellowship 2026, BlueDot Impact AGI Strategy and Technical AI Safety). Looking for a seed or Series A startup where I can be the technical engine. Requires Swedish visa sponsorship, delivers the output of three engineers to make it worth your while. <em>Concurrent track: completed MSc and MEng while shipping at BRB and building two startups.</em></p>
+                    <p>AI Research Engineer focused on AI safety, computer vision, and risk management for autonomous systems. Built a real-time LiDAR perception pipeline for safe drone landing below forest canopy at Deep Forestry, reaching F1 0.926 at 53 ms/frame on NVIDIA Jetson Orin NX after a 5.8s to 53ms redesign (MSc thesis defended 2026 at Stockholm University, Swedish Institute Scholar). Second master's in Cybersecurity with concentration in Risk Management from University of Brasilia (2026), co-author of a peer-reviewed Elsevier Computers and Security paper (IF 5.6). 12+ years of regulated public-sector engineering at Bank of Brasilia. First place in three hackathons. On a Swedish job-seeking visa, seeking PhD, Research Engineer, or AI Safety positions.</p>
                 </div>
-                <div class="skill-category" style="margin-top: 2px;">
-                    <strong>Core Impact:</strong> 100K+ users served | 29x latency cut | 60% faster deploys | 40% audit accuracy lift | $150K+ savings | 3 hackathon wins 2025-2026
+                <div class="skill-category" style="margin-top: 3px;">
+                    <strong>Research focus:</strong> Safety-critical autonomous perception | Point-cloud deep learning (PointNet/++/DGCNN) | Inference-latency optimization on edge | Trustworthy and verifiable AI | Cybersecurity for safety-critical and public-sector systems
                 </div>
             </div>
         </div>
 
-        <!-- Experience -->
+        <!-- Publications -->
         <div class="section">
-            <div class="section-title">Experience</div>
+            <div class="section-title">Peer-Reviewed Publications</div>
+            <div class="experience-item">
+                <div class="company-header">
+                    <div class="role-company"><span class="role">Enhancing Cybersecurity in the Judiciary: Integrating Additional Controls into the CIS Framework</span></div>
+                    <div class="date-location">2025</div>
+                </div>
+                <ul class="duties">
+                    <li><span class="company">Computers and Security (Elsevier, Impact Factor 5.6)</span>. Co-authored peer-reviewed study proposing an expanded CIS cybersecurity model for digital protection across the Brazilian judiciary. <a href="https://doi.org/10.1016/j.cose.2025.104584" target="_blank">DOI 10.1016/j.cose.2025.104584</a>.</li>
+                </ul>
+            </div>
+            <div class="experience-item">
+                <div class="company-header">
+                    <div class="role-company"><span class="role">Cybersecurity Protection in the Brazilian Judiciary: A Comparative Analysis of State Court Security Structures</span></div>
+                    <div class="date-location">2024</div>
+                </div>
+                <ul class="duties">
+                    <li><span class="company">NAVUS, Journal of Technology and Management</span>. Research analyzing cybersecurity maturity and structural gaps in state courts across Brazil. <a href="http://dx.doi.org/10.22279/navus.v14.2032" target="_blank">DOI 10.22279/navus.v14.2032</a>.</li>
+                </ul>
+            </div>
+            <div class="experience-item">
+                <div class="company-header">
+                    <div class="role-company"><span class="role">Critical Infrastructure Under Threat: Business Risks for Cybersecurity in Metropolitan Transport Systems</span></div>
+                    <div class="date-location">2025</div>
+                </div>
+                <ul class="duties">
+                    <li><span class="company">ENANGRAD 2025 (Brazilian National Meeting of Administration Programs), Technology, AI and Digital Transformation track</span>. Peer-reviewed conference paper integrating Preliminary Hazard Analysis (PHA), Bow Tie, and CIS Controls v8 to identify seven business risks and mitigation controls in metropolitan transport cybersecurity.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Research and Industry Experience -->
+        <div class="section">
+            <div class="section-title">Research and Industry Experience</div>
 
             <div class="experience-item">
                 <div class="company-header">
-                    <div class="role-company"><span class="company">Deep Forestry AB</span> - <span class="role">AI Research Engineer</span></div>
+                    <div class="role-company"><span class="company">Deep Forestry AB</span> - <span class="role">AI Research Engineer (MSc thesis collaboration with Stockholm University)</span></div>
                     <div class="date-location">2026 (Stockholm)</div>
                 </div>
                 <ul class="duties">
-                    <li>Enabled real-time autonomous landings below the forest canopy by cutting end-to-end perception latency 29x (5.8s to 200ms) and reaching F1 0.926 on a held-out flight session on NVIDIA Jetson Orin NX.</li>
-                    <li>Built the hybrid geometric and neural pipeline (RANSAC + PointNet, PointNet++, DGCNN) and a session-level evaluation harness over real LiDAR flight data.</li>
+                    <li>Designed and evaluated a hybrid geometric-neural perception pipeline (RANSAC + PointNet, PointNet++, DGCNN) for real-time autonomous landing-zone detection below the forest canopy from LiDAR point clouds, reaching F1 0.926 on a held-out flight session.</li>
+                    <li>Reduced end-to-end inference latency 29x (5.8s to 200ms, 53 ms/frame) on NVIDIA Jetson Orin NX through KD-Tree indexing and voxel downsampling, evaluated under Group K-Fold session-level cross-validation on real flight data.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="company-header">
+                    <div class="role-company"><span class="company">LabRisk, Cybersecurity and Risk Lab, University of Brasilia (UnB)</span> - <span class="role">Cybersecurity Research Engineer</span></div>
+                    <div class="date-location">2024 - Present (Brasilia)</div>
+                </div>
+                <ul class="duties">
+                    <li>Research on cybersecurity management, risk, and privacy for the public sector (CIS controls, GDPR-aligned frameworks, judiciary cybersecurity in Brazil). Three peer-reviewed publications listed above.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="company-header">
+                    <div class="role-company"><span class="company">Stockholm University and Drivhuset Stockholm</span> - <span class="role">Teaching Assistant (IoT) and Student Ambassador</span></div>
+                    <div class="date-location">2024 - 2026 (Stockholm)</div>
+                </div>
+                <ul class="duties">
+                    <li>Supported 200+ students in IoT coursework (Python, MQTT, edge computing). Co-produced student hackathons and entrepreneurship events at Stockholm University through Drivhuset.</li>
                 </ul>
             </div>
 
@@ -135,67 +194,18 @@
                     <div class="date-location">2025 - Present (Stockholm)</div>
                 </div>
                 <ul class="duties">
-                    <li>Founded and shipped a production multi-tenant LLM platform on Azure (Lovable, Python, Node.js, Supabase, React) end to end: in-house RAG, fine-tuned LLM, structured outputs, Stripe billing, Supabase row-level security, OAuth across six social networks.</li>
-                    <li>Building an evaluation harness across multiple LLM providers so model-swap, cost, and performance trade-offs (RAG vs fine-tuning vs agents) are measurable under real user inputs.</li>
+                    <li>Co-founded an LLM-powered multi-tenant SaaS on Azure with retrieval-augmented generation, agentic flows, structured outputs, fine-tuned LLM, and in-house RAG. Stabilized model quality across six providers (OpenAI, Anthropic, others) with an evaluation harness.</li>
                 </ul>
             </div>
 
             <div class="experience-item">
                 <div class="company-header">
-                    <div class="role-company"><span class="company">Bank of Brasilia (BRB)</span> - <span class="role">AI and DevSecOps Engineer</span></div>
-                    <div class="date-location">2014-2016, 2024-Present (Brasilia)</div>
+                    <div class="role-company"><span class="company">Bank of Brasilia (BRB)</span> - <span class="role">AI and Data Engineer / DevOps / IT Manager</span></div>
+                    <div class="date-location">2014 - Present (Brasilia)</div>
                 </div>
                 <ul class="duties">
-                    <li><em>Stepped away from the management track in 2024 to return to hands-on AI engineering and zero-to-one building.</em></li>
-                    <li>Delivered a production NLP chatbot (Python, TensorFlow) during a Silicon Valley engagement that cut customer response time 40% for 100K+ users, plus C-suite Power BI dashboards.</li>
-                    <li>Built GDPR-compliant analytics for the instant payments system on PySpark, supporting risk and product decisions across the bank.</li>
-                    <li>Inherited a slow, heavily-audited deployment process and architected an automated release pipeline from scratch (Jenkins, GitLab, Docker, Kubernetes, OpenShift) that cut deployment time 60% while satisfying strict Central Bank of Brazil compliance audits with zero findings.</li>
+                    <li>Production NLP chatbot (Python, TensorFlow) cutting customer response time 40% for 100K+ users during a Silicon Valley engagement. GDPR-compliant customer-data analytics for the instant payments system (PIX) on PySpark. CI/CD on Jenkins, GitLab, Docker, Kubernetes, OpenShift. Deployment time cut 60%.</li>
                 </ul>
-            </div>
-
-            <div class="experience-item">
-                <div class="company-header">
-                    <div class="role-company"><span class="company">Bank of Brasilia (BRB)</span> - <span class="role">IT Manager</span></div>
-                    <div class="date-location">2016 - 2024 (Brasilia)</div>
-                </div>
-                <ul class="duties">
-                    <li>Owned a $1M+ annual IT budget end to end with full P&amp;L responsibility, cutting operating cost 15% and improving audit accuracy 40% under direct Central Bank inspection.</li>
-                    <li>Built and led an engineering team of 10+ from scratch, including hiring, OKR planning, and a Lean-IT operational rollout that reduced operational waste 20% and unblocked daily releases.</li>
-                </ul>
-            </div>
-
-            <div class="experience-item">
-                <div class="company-header">
-                    <div class="role-company"><span class="company">Tree++ (Climate Tech Startup)</span> - <span class="role">Co-Founder and Chief Innovation Officer</span></div>
-                    <div class="date-location">2024 - Present (Stockholm)</div>
-                </div>
-                <ul class="duties">
-                    <li>Built the core computer-vision pipeline and ML matchmaking system from zero to production, enabling the planting of 1,000+ trees across 10 countries. Participated in Impact Cup, Drivhuset (2025).</li>
-                </ul>
-            </div>
-
-            <div class="experience-item">
-                <div class="company-header">
-                    <div class="role-company"><span class="company">LabRisk (Cybersecurity and Risk Lab, UnB)</span> - <span class="role">Cybersecurity Research Engineer</span></div>
-                    <div class="date-location">2024 - Present (Brasilia)</div>
-                </div>
-                <ul class="duties">
-                    <li>Co-authored peer-reviewed research in Elsevier Computers and Security (DOI 10.1016/j.cose.2025.104584) on CIS-controls-aligned cybersecurity frameworks for the Brazilian judiciary.</li>
-                </ul>
-            </div>
-
-        </div>
-
-        <!-- Skills -->
-        <div class="section">
-            <div class="section-title">Skills</div>
-            <div class="skills-grid">
-                <div class="skill-category"><strong>AI and ML:</strong> PyTorch, TensorFlow, Scikit-learn, Hugging Face, LLM fine-tuning, RAG, prompt engineering, MLOps, NLP, computer vision (PointNet/++/DGCNN), model deployment, evaluation harnesses.</div>
-                <div class="skill-category"><strong>Cloud and DevOps:</strong> Azure, GCP, AWS, Kubernetes, Docker, OpenShift, Jenkins, GitLab CI, Terraform, CI/CD, DevSecOps, observability (Grafana).</div>
-                <div class="skill-category"><strong>Data and Backend:</strong> Python, SQL, TypeScript, Node.js, PySpark, Airflow, Kafka, PostgreSQL, MongoDB, REST and GraphQL APIs, OAuth, multi-tenant RLS.</div>
-                <div class="skill-category"><strong>Cybersecurity:</strong> CIS Controls, GDPR, risk management, audit and compliance, Lean IT.</div>
-                <div class="skill-category"><strong>Leadership:</strong> Team leadership (10+ engineers), $1M+ P&amp;L, OKR planning, project management, hiring, vendor strategy, audit and compliance.</div>
-                <div class="skill-category"><strong>Languages:</strong> Portuguese (native, C2), English (C1, TOEFL 101/120), Spanish (B1), Swedish (SFI C / B1).</div>
             </div>
         </div>
 
@@ -203,15 +213,21 @@
         <div class="section">
             <div class="section-title">Education</div>
             <div class="education-item"><div class="education-line"><span><span class="inst">Stockholm University</span> <span class="deg">- MSc Computer and Systems Sciences (AI and IoT), Swedish Institute Scholar (SISGP)</span></span><span class="date">2024 - 2026 (Stockholm)</span></div></div>
-            <div class="education-item"><div class="education-line"><span><span class="inst">University of Brasilia (UnB)</span> <span class="deg">- MEng Cybersecurity. Publication: Elsevier Computers and Security (DOI 10.1016/j.cose.2025.104584)</span></span><span class="date">2024 - 2026 (Brasilia)</span></div></div>
+            <div class="education-item"><div class="education-line"><span><span class="inst">University of Brasilia (UnB)</span> <span class="deg">- MEng Cybersecurity, peer-reviewed in Elsevier</span></span><span class="date">2024 - 2026 (Brasilia)</span></div></div>
             <div class="education-item"><div class="education-line"><span><span class="inst">UPIS Faculdades Integradas</span> <span class="deg">- BSc Information Systems</span></span><span class="date">2010 - 2013 (Brasilia)</span></div></div>
         </div>
 
-        <!-- Certifications and Awards -->
+        <!-- Awards, Certifications, Skills -->
         <div class="section">
-            <div class="section-title">Certifications and Awards</div>
-            <div class="skill-category"><strong>Certifications:</strong> <em>Leadership:</em> EA Sweden Fellowship in Effective Altruism (2026), Women's Leadership (SOUL, 2024), Self-Leadership (Hyper Island and Swedish Institute, 2024), Collaborative Approaches to Societal Issues (SSE, 2024). <em>IT and AI:</em> EXIN DevOps Master (2020), Lean IT Foundation (2019), COBIT 5 (ISACA, 2015), ITIL V3 (2015), Designing and Building AI Products (MIT, 2022), TOEFL iBT 101/120 (ETS, 2024).</div>
-            <div class="skill-category"><strong>Awards:</strong> 1st place, EpiMinds Google AI Hackathon (2026), Kong AI-Assisted Coding (2025), Kolomolo AI-Assisted Coding (2025). Swedish Institute Scholarship for Global Professionals (2024). Strategic Configuration Management, Efinance (2019). WorldSkills National Phase, Web Design (2012).</div>
+            <div class="section-title">Awards, Certifications, and Skills</div>
+            <div class="skills-grid">
+                <div class="skill-category"><strong>Awards:</strong> 1st place EpiMinds Google AI Hackathon (2026), Kong AI-Assisted Coding (2025), Kolomolo AI-Assisted Coding (2025). Swedish Institute Scholarship for Global Professionals (2024). Impact Cup, Drivhuset (2025). Strategic Configuration Management, Efinance (2019).</div>
+                <div class="skill-category"><strong>Certifications:</strong> EA Sweden Fellowship in Effective Altruism (2026), Designing and Building AI Products (MIT, 2022), EXIN DevOps Master (2020), Lean IT Foundation (2019), COBIT 5 (ISACA, 2015), ITIL V3 (2015), TOEFL iBT 101/120 (ETS, 2024).</div>
+                <div class="skill-category"><strong>Research and ML:</strong> PyTorch, TensorFlow, Scikit-learn, Hugging Face, PointNet/++/DGCNN, RANSAC, KD-Tree, voxel downsampling, LLM fine-tuning, RAG, NLP, MLOps, model deployment, evaluation harnesses.</div>
+                <div class="skill-category"><strong>Programming and Platform:</strong> Python, SQL, TypeScript, JavaScript, Bash. Azure, GCP, AWS, Kubernetes, Docker, Spark, Airflow, Kafka, PostgreSQL, MongoDB.</div>
+                <div class="skill-category"><strong>Cybersecurity and Governance:</strong> CIS Controls v8, GDPR, Risk Management, Audit and Compliance, COBIT, ITIL, Preliminary Hazard Analysis (PHA), Bow Tie.</div>
+                <div class="skill-category"><strong>Languages:</strong> Portuguese (native), English (fluent, TOEFL 101/120), Spanish (intermediate), Swedish (SFI Level C).</div>
+            </div>
         </div>
 
     </div>

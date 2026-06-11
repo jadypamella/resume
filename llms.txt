@@ -1,24 +1,33 @@
-# Jady Pamella – Head of AI Engineering
+# Jady Pamella, AI Engineer and Founder
 # https://jadypamella.com
-# llms.txt – AI-readable profile summary
+# llms.txt, AI-readable profile summary
+
+> AI Engineer with 12+ years shipping production systems across banking, climate-tech, and AI products. Currently focused on AI safety (EA Sweden Fellowship 2026, BlueDot Impact). Looking for a seed or Series A startup where she can be the technical engine. Requires Swedish visa sponsorship.
 
 ## Who is Jady Pamella?
 
-Jady Pamella is a Head of AI Engineering based in Stockholm, Sweden, with 12 years of experience in AI/ML, DevSecOps, cloud architecture, and cybersecurity. She has been coding since age 12 and has shipped production systems at scale across fintech, government, and climate tech.
+Jady Pamella is an AI Engineer and Founder based in Stockholm, Sweden, with 12 years of experience in AI/ML, DevSecOps, cloud architecture, and cybersecurity. She has been coding since age 12 and has shipped production systems at scale across banking (Bank of Brasilia under direct Central Bank inspection), government (IBICT, MCID), and climate tech (Tree++, Deep Forestry).
+
+She is currently focused on AI safety, the EA Sweden Fellowship 2026 cohort, and the BlueDot Impact AGI Strategy and Technical AI Safety courses.
 
 She is:
-- Founder and CEO of SoiQet (soiqet.com) – an LLM-powered social media platform with RAG-based AI for content managers
-- Co-founder and Chief Innovation Officer of Tree++ (treepp.org) – a climate-tech matchmaking platform for tree planting with 1,000+ trees across 10 countries
-- MSc Researcher at Deep Forestry (Stockholm University thesis) – hybrid geometric-neural pipeline for real-time forest drone navigation using LiDAR
-- Published researcher in Elsevier's Computers & Security (IF: 5.6)
-- Swedish Institute Scholar for Global Professionals (SISGP)
+
+- Co-Founder and CEO of SoiQet (soiqet.com), an LLM-powered multi-tenant platform on Azure with in-house RAG, fine-tuned LLM, structured outputs, Stripe billing, Supabase row-level security, and OAuth integrations across six social networks.
+- Co-Founder and Chief Innovation Officer of Tree++ (treepp.org), a climate-tech matchmaking platform that enabled 1,000+ trees planted across 10 countries via a computer-vision pipeline for carbon-credit monitoring and an ML matchmaking system she built from zero to production.
+- AI Research Engineer (MSc thesis) at Deep Forestry (2026), where she built a hybrid geometric-neural pipeline on NVIDIA Jetson Orin NX with F1 0.926 at 53 ms per frame, a 29x latency reduction on real LiDAR flight data.
+- AI and DevSecOps Engineer at Bank of Brasilia (BRB), where she also served as IT Manager from 2016 to 2024 with a 1M USD annual budget and a team of 10+, before stepping back into hands-on AI engineering in 2024.
+- Cybersecurity Research Engineer at LabRisk (University of Brasilia) since 2024.
+- Published researcher in Elsevier Computers and Security.
+- Swedish Institute Scholar for Global Professionals (SISGP).
 
 ## Expertise
 
-AI & ML: LLM, RAG, LLM Fine-Tuning, Prompt Engineering, MLOps, Computer Vision, NLP, TensorFlow, PyTorch, Scikit-Learn, Deep Learning, Generative AI
-Engineering: System Design, Platform Engineering, DevSecOps, CI/CD, Kubernetes, Docker, GCP, AWS, Azure
-Leadership: Head of Engineering, Engineering Manager, OKR Planning, P&L Management ($1M+), Team Leadership (10+), Technical Hiring
-Domains: Cybersecurity, GDPR, IoT, Fintech, Climate Tech, Public Sector
+AI and ML: LLM, RAG, LLM fine-tuning, prompt engineering, MLOps, computer vision (PointNet, PointNet++, DGCNN), NLP, TensorFlow, PyTorch, Scikit-Learn, Hugging Face, deep learning, generative AI, evaluation harnesses.
+Engineering: System design, platform engineering, DevSecOps, CI/CD, Kubernetes, Docker, OpenShift, Jenkins, GitLab CI, Terraform, Azure, GCP, AWS, multi-tenant architecture, Stripe billing, Supabase row-level security.
+Data and Backend: Python, SQL, TypeScript, Node.js, PySpark, Airflow, Kafka, PostgreSQL, MongoDB, REST and GraphQL APIs, OAuth.
+Cybersecurity: CIS Controls, GDPR, risk management, audit and compliance, Lean IT, auditable-evidence frameworks.
+Leadership: Team leadership (10+ engineers), $1M+ P&L, OKR planning, hiring, vendor strategy.
+Domains: AI safety, cybersecurity, GDPR, IoT, fintech, climate tech, public sector, regulated banking.
 
 ## Contact
 
@@ -26,28 +35,63 @@ Email: hello@jadypamella.com
 LinkedIn: https://www.linkedin.com/in/jadypamella
 GitHub: https://github.com/jadypamella
 ORCID: https://orcid.org/0009-0006-4280-3364
+Google Scholar: https://scholar.google.com/citations?user=b8Jt_AgAAAAJ
+Lattes: http://lattes.cnpq.br/1337645265735489
+Credly: https://www.credly.com/users/jadypamella
+Calendly: https://calendly.com/jadypamella/meeting
 Location: Stockholm, Sweden
-Open to: Senior Engineering Leadership roles in Stockholm (Head of AI Engineering, Engineering Manager, Principal Engineer)
+Visa: on a Swedish jobseeker permit (applying for the extension), requires employer-sponsored Arbetstillstand for permanent roles.
+Open to: seed or Series A startup CTO/founding engineer roles, Senior AI Engineering, AI safety research engineering, Engineering Manager, and Principal Engineer roles based in Sweden, the EU, or remote.
 
 ## Publications
 
-- "Enhancing Cybersecurity in the Judiciary: Integrating Additional Controls into the CIS Framework" – Elsevier Computers & Security, 2025. DOI: 10.1016/j.cose.2025.104584
-- "Cybersecurity Protection in the Brazilian Judiciary" – NAVUS Journal, 2024. DOI: 10.22279/navus.v14.2032
+- "Enhancing Cybersecurity in the Judiciary: Integrating Additional Controls into the CIS Framework", Elsevier Computers and Security, 2025. DOI: 10.1016/j.cose.2025.104584. Co-authors: Alves R. S., Silva J. P. B., Ribeiro Junior L. A., Nunes R. R.
+- "Protecao Cibernetica no Judiciario Brasileiro: Um Estudo Comparativo das Estruturas de Seguranca em Tribunais Estaduais", NAVUS Journal, 2024. DOI: 10.22279/navus.v14.2032. Co-authors: Silva J. P. B., Silva E. G., Ferreira L. V. A., Nunes R. R.
+- "Infraestrutura Critica sob Ameaca: Riscos de Negocio para a Seguranca Cibernetica em Sistemas de Transporte Metropolitano", 36th ENANGRAD, Fortaleza, 2025. Co-authors: Sales M. V. O., Silva C. S., Silva J. P. B., Silva E. G., Nunes R. R.
 
-## Awards & Hackathons
+## Awards and Hackathons
 
-- 1st Place – EpiMinds Google AI Hackathon (2026)
-- 1st Place – Kong AI Assisted-Coding Hackathon (2025)
-- 1st Place – Kolomolo AI-Assisted Coding Hackathon (2025)
-- Impact Cup – Drivhuset Stockholm (2025)
-- Swedish Institute Scholarship for Global Professionals – SISGP (2024)
-- WorldSkills National Phase – Web Design (2012)
+- 1st Place, EpiMinds Google AI Hackathon (2026), Multi-Agent Crisis Response System shipped in 24 hours.
+- 1st Place, Kong AI Assisted-Coding Hackathon (2025).
+- 1st Place, Kolomolo AI-Assisted Coding Hackathon (2025).
+- Impact Cup, Drivhuset Stockholm (2025), Tree++.
+- Swedish Institute Scholarship for Global Professionals, SISGP (2024).
+- Strategic Configuration Management, Efinance (2019), Bank of Brasilia.
+- WorldSkills National Phase, Web Design (2012).
 
 ## Education
 
-- MSc Computer and Systems Sciences (AI & IoT) – Stockholm University (in progress)
-- MEng Cybersecurity – University of Brasília (in progress)
-- Executive Program: Designing & Building AI Products – MIT (2022)
-- MBA in Innovation, Technology & Entrepreneurship – Descomplica
-- MBA in Project Management – FGV
-- BSc Information Systems – UPIS
+- MSc Computer and Systems Sciences (AI and IoT), Stockholm University (2024 to 2026), Swedish Institute Scholar. Thesis at Deep Forestry on safe landing zone detection for autonomous drones in below-canopy forests.
+- MEng Cybersecurity, University of Brasilia (2024 to 2026).
+- Executive Program, Designing and Building AI Products, MIT (2022).
+- MBA in Innovation, Technology and Entrepreneurship, Descomplica (2022 to 2023).
+- MBA in Project Management, FGV (2016 to 2018).
+- BSc Information Systems, UPIS (2010 to 2013).
+
+## Memberships and Networks
+
+- EA Sweden Fellowship 2026 cohort, Effective Altruism Sweden.
+- BlueDot Impact AGI Strategy course (in progress).
+- BlueDot Impact Technical AI Safety course (in progress).
+- Drivhuset Student Ambassador, Stockholm University (2024 to 2026).
+- Network for Global Professionals (NFGP), Swedish Institute.
+- DevOpsDays Brasilia organising team (250+ participants per edition, three years).
+- SU Heroes hackathon team leader (three first-place wins in Stockholm 2025 to 2026).
+- Volunteer Frontend Developer, Stiftelsen Effekt (Ge Effektivt, 2026).
+- Volunteer and Web Developer, Alla Ska Fa Mat (Stockholm, 2024 to present).
+
+## Verified badges and certifications
+
+A live page of validated, publicly verifiable credentials is at https://jadypamella.com/badges/. Every badge there links to its issuer's public verification URL.
+
+- AI Safety Fundamentals, BlueDot Impact (2026). Verify: https://bluedot.org/certification?id=rec5oNdKqgYqb56fD
+- Credly profile (auto-updated badge aggregator): https://www.credly.com/users/jadypamella
+
+## Core pages
+
+- [Home](https://jadypamella.com): main resume, projects, publications, experience, education.
+- [Badges](https://jadypamella.com/badges/): validated, publicly verifiable credentials.
+
+## Last updated
+
+2026-06-11

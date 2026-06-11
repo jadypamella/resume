@@ -1,0 +1,25 @@
+# Responsible Disclosure Policy for jadypamella.com
+# RFC 9116 compliant security contact
+
+Contact: mailto:hello@jadypamella.com
+Expires: 2027-06-11T00:00:00.000Z
+Preferred-Languages: en, pt
+Canonical: https://jadypamella.com/.well-known/security.txt
+Policy: https://jadypamella.com/#contact
+
+# Scope
+# This file applies to vulnerabilities found in:
+# - jadypamella.com and all subdomains
+# - Public projects linked from jadypamella.com (where Jady Pamella is the maintainer)
+#
+# Out of scope:
+# - Third-party services (Credly, ORCID, Lattes, Google Scholar, BlueDot, etc.)
+# - Hosting provider infrastructure (Vercel/Netlify edge)
+#
+# When reporting, please include:
+# - Affected URL and reproduction steps
+# - Impact assessment (data exposure, account takeover, etc.)
+# - Suggested mitigation (optional)
+#
+# Acknowledgment: I will respond within 5 business days. Coordinated disclosure preferred.
+# This is a personal portfolio site, not an enterprise product, but I take responsible disclosure seriously.
