@@ -715,6 +715,85 @@
 
         
 
+        /* Testimonials */
+        .testimonials-section {
+            margin-bottom: 60px;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .testimonial-card {
+            background: var(--bg-light);
+            padding: 28px;
+            border-radius: 8px;
+            border: 1px solid #e0e0e0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .testimonial-quote {
+            font-style: italic;
+            color: var(--text);
+            line-height: 1.6;
+            margin-bottom: 22px;
+            font-size: 15px;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            border-top: 1px solid #eee;
+            padding-top: 16px;
+        }
+
+        .testimonial-author-photo {
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+            background: #f5f5f5;
+            overflow: hidden;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .testimonial-author-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .testimonial-author-info {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .testimonial-name {
+            font-weight: 600;
+            color: var(--text-dark);
+            margin: 0;
+            font-size: 14px;
+        }
+
+        .testimonial-role {
+            color: var(--text-muted);
+            margin: 0;
+            font-size: 13px;
+        }
+
+        @media (max-width: 640px) {
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
         /* Publications */
         .publications-list {
             display: grid;
