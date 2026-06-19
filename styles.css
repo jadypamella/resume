@@ -715,6 +715,28 @@
 
         
 
+        /* Badges CTA inside Certifications */
+        .certifications-cta {
+            margin-bottom: 24px;
+        }
+
+        .badges-button {
+            display: inline-block;
+            background: var(--primary, #4A90B5);
+            color: #fff;
+            padding: 10px 22px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            transition: background 0.2s ease, transform 0.1s ease;
+        }
+
+        .badges-button:hover {
+            background: var(--primary-hover, #357ABD);
+            transform: translateY(-1px);
+        }
+
         /* Testimonials */
         .testimonials-section {
             margin-bottom: 60px;
