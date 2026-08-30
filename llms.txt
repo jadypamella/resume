@@ -17,7 +17,7 @@ She is:
 - AI Research Engineer (MSc thesis) at Deep Forestry (2026), where she built a hybrid geometric-neural pipeline on NVIDIA Jetson Orin NX with F1 0.926 at 53 ms per frame, a 29x latency reduction on real LiDAR flight data.
 - AI and DevSecOps Engineer at Bank of Brasilia (BRB), where she also served as IT Manager from 2016 to 2024 with a 1M USD annual budget and a team of 10+, before stepping back into hands-on AI engineering in 2024.
 - Cybersecurity Research Engineer at LabRisk (University of Brasilia) since 2024.
-- Published researcher in Elsevier Computers and Security.
+- Peer-reviewed researcher in Elsevier Computers and Security (2025) and Revista Tecnologia e Sociedade (UTFPR, 2026).
 - Swedish Institute Scholar for Global Professionals (SISGP).
 
 ## Expertise
@@ -45,6 +45,7 @@ Open to: seed or Series A startup CTO/founding engineer roles, Senior AI Enginee
 
 ## Publications
 
+- "Desafios da seguranca cibernetica: uma analise da administracao publica brasileira" (Cybersecurity Challenges: An Analysis of the Brazilian Public Administration), Revista Tecnologia e Sociedade (UTFPR), v. 22, n. 69, 2026. DOI: 10.3895/rts.v22n69.20157. Co-authors: Silva J. P. B., Ferreira L. V. A., Nunes R. R.
 - "Enhancing Cybersecurity in the Judiciary: Integrating Additional Controls into the CIS Framework", Elsevier Computers and Security, 2025. DOI: 10.1016/j.cose.2025.104584. Co-authors: Alves R. S., Silva J. P. B., Ribeiro Junior L. A., Nunes R. R.
 - "Protecao Cibernetica no Judiciario Brasileiro: Um Estudo Comparativo das Estruturas de Seguranca em Tribunais Estaduais", NAVUS Journal, 2024. DOI: 10.22279/navus.v14.2032. Co-authors: Silva J. P. B., Silva E. G., Ferreira L. V. A., Nunes R. R.
 - "Infraestrutura Critica sob Ameaca: Riscos de Negocio para a Seguranca Cibernetica em Sistemas de Transporte Metropolitano", 36th ENANGRAD, Fortaleza, 2025. Co-authors: Sales M. V. O., Silva C. S., Silva J. P. B., Silva E. G., Nunes R. R.
