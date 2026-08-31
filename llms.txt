@@ -1,18 +1,19 @@
-# Jady Pamella, AI Engineer and Founder
+# Jady Pamella, AI Engineer focused on AI Safety, PhD Researcher in Digital Twins
 # https://jadypamella.com
 # llms.txt, AI-readable profile summary
 
-> AI Engineer with 12+ years shipping production systems across banking, climate-tech, and AI products. Currently focused on AI safety (EA Sweden Fellowship 2026, BlueDot Impact). Looking for a seed or Series A startup where she can be the technical engine. Requires Swedish visa sponsorship.
+> AI Engineer focused on AI Safety and PhD researcher in digital twins for critical-infrastructure trust at Aarhus University. 12+ years shipping production systems across banking, climate-tech, and AI products. Her work turns on one question: can you trust what the machine says is real, from a deepfake in the feed to a digital twin of a water plant?
 
 ## Who is Jady Pamella?
 
-Jady Pamella is an AI Engineer and Founder based in Stockholm, Sweden, with 12 years of experience in AI/ML, DevSecOps, cloud architecture, and cybersecurity. She has been coding since age 12 and has shipped production systems at scale across banking (Bank of Brasilia under direct Central Bank inspection), government (IBICT, MCID), and climate tech (Tree++, Deep Forestry).
+Jady Pamella is an AI Engineer focused on AI Safety and a PhD researcher at Aarhus University, based in Aarhus, Denmark, with 12 years of experience in AI/ML, DevSecOps, cloud architecture, and cybersecurity. She has been coding since age 12 and has shipped production systems at scale across banking (Bank of Brasilia), government (IBICT, MCID), and climate tech (Tree++, Deep Forestry). Her PhD studies digital twins for trust and security in critical infrastructure such as water and cooling systems.
 
-She is currently focused on AI safety, the EA Sweden Fellowship 2026 cohort, and the BlueDot Impact AGI Strategy and Technical AI Safety courses.
+She is also focused on AI safety and digital twins, part of the EA Sweden Fellowship 2026 cohort and the BlueDot Impact AI safety courses.
 
 She is:
 
-- Co-Founder and CEO of SoiQet (soiqet.com), an LLM-powered multi-tenant platform on Azure with in-house RAG, fine-tuned LLM, structured outputs, Stripe billing, Supabase row-level security, and OAuth integrations across six social networks.
+- PhD Researcher at Aarhus University (2026 to present), working on digital twins for trust and security in critical infrastructure, at the intersection of AI safety, cybersecurity, and critical-infrastructure resilience.
+- Founder and CEO of SoiQet (soiqet.com), an LLM-powered multi-tenant platform on Azure with in-house RAG, fine-tuned LLM, structured outputs, Stripe billing, Supabase row-level security, and OAuth integrations across six social networks.
 - Co-Founder and Chief Innovation Officer of Tree++ (treepp.org), a climate-tech matchmaking platform that enabled 1,000+ trees planted across 10 countries via a computer-vision pipeline for carbon-credit monitoring and an ML matchmaking system she built from zero to production.
 - AI Research Engineer (MSc thesis) at Deep Forestry (2026), where she built a hybrid geometric-neural pipeline on NVIDIA Jetson Orin NX with F1 0.926 at 53 ms per frame, a 29x latency reduction on real LiDAR flight data.
 - AI and DevSecOps Engineer at Bank of Brasilia (BRB), where she also served as IT Manager from 2016 to 2024 with a 1M USD annual budget and a team of 10+, before stepping back into hands-on AI engineering in 2024.
@@ -27,7 +28,7 @@ Engineering: System design, platform engineering, DevSecOps, CI/CD, Kubernetes, 
 Data and Backend: Python, SQL, TypeScript, Node.js, PySpark, Airflow, Kafka, PostgreSQL, MongoDB, REST and GraphQL APIs, OAuth.
 Cybersecurity: CIS Controls, GDPR, risk management, audit and compliance, Lean IT, auditable-evidence frameworks.
 Leadership: Team leadership (10+ engineers), $1M+ P&L, OKR planning, hiring, vendor strategy.
-Domains: AI safety, cybersecurity, GDPR, IoT, fintech, climate tech, public sector, regulated banking.
+Domains: AI safety, digital twins, critical-infrastructure trust, cybersecurity, GDPR, IoT, fintech, climate tech, public sector, regulated banking.
 
 ## Contact
 
@@ -39,9 +40,9 @@ Google Scholar: https://scholar.google.com/citations?user=b8Jt_AgAAAAJ
 Lattes: http://lattes.cnpq.br/1337645265735489
 Credly: https://www.credly.com/users/jadypamella
 Calendly: https://calendly.com/jadypamella/meeting
-Location: Stockholm, Sweden
-Visa: on a Swedish jobseeker permit (applying for the extension), requires employer-sponsored Arbetstillstand for permanent roles.
-Open to: seed or Series A startup CTO/founding engineer roles, Senior AI Engineering, AI safety research engineering, Engineering Manager, and Principal Engineer roles based in Sweden, the EU, or remote.
+Location: Aarhus, Denmark
+Work authorization: Danish residence and work permit as a PhD researcher at Aarhus University.
+Open to: research collaboration on AI safety, digital twins, and trustworthy critical-infrastructure AI, plus speaking and advisory work.
 
 ## Publications
 
@@ -95,4 +96,4 @@ A live page of validated, publicly verifiable credentials is at https://jadypame
 
 ## Last updated
 
-2026-06-11
+2026-08-31
