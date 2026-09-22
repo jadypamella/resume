@@ -184,7 +184,8 @@
             margin-bottom: 35px;
         }
 
-        .sidebar-section h3 {
+        .sidebar-section h3,
+        .sidebar-section .sidebar-heading {
             font-size: 16px;
             font-weight: 700;
             color: var(--primary-color);
@@ -1076,7 +1077,8 @@
             flex: 1;
         }
 
-        .publication-item h4 {
+        .publication-item h4,
+        .publication-item h3 {
             font-size: 18px;
             font-weight: 600;
             color: var(--primary-color);
@@ -1225,7 +1227,8 @@
             margin-bottom: 0;
         }
 
-        .cert-section h4 {
+        .cert-section h4,
+        .cert-section h3 {
             font-size: 18px;
             font-weight: 700;
             color: var(--primary-color);
