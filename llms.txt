@@ -56,8 +56,8 @@ Open to: research collaboration on AI safety, digital twins, and trustworthy cri
 ## Datasets and Theses
 
 - "Security Controls for Judiciary Risk Management", dataset, IEEE DataPort, 2025. DOI: 10.21227/h9q6-sv58. Co-authors: Alves R. S., Silva J. P. B., Ribeiro Junior L. A., Nunes R. R. The data behind the Computers and Security study.
-- "Automated Detection of Safe Landing Locations in Below-Canopy Forest Conditions", MSc thesis, Department of Computer and Systems Sciences (DSV), Stockholm University, 2026, with Deep Forestry AB.
-- "Proposta de uma Linha de Base de Controles de Seguranca da Informacao para Mitigacao dos Riscos de Negocio no Setor de Saneamento", professional master's dissertation, PPEE, University of Brasilia, 2026, record PPEE.DM-124/2026. Co-author: Nunes R. R.
+- "Automated Detection of Safe Landing Locations in Below-Canopy Forest Conditions", MSc thesis, Department of Computer and Systems Sciences (DSV), Stockholm University, 2026, with Deep Forestry AB. Supervisor: Prof. Rahim Rahmani.
+- "Proposta de uma Linha de Base de Controles de Seguranca da Informacao para Mitigacao dos Riscos de Negocio no Setor de Saneamento", professional master's dissertation, PPEE, University of Brasilia, 2026, record PPEE.DM-124/2026. Supervisor: Prof. Rafael Rabelo Nunes.
 
 ## Awards and Hackathons
 
