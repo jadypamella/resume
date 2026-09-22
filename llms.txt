@@ -48,7 +48,7 @@ Open to: research collaboration on AI safety, digital twins, and trustworthy cri
 
 ## Publications
 
-- "Desafios da seguranca cibernetica: uma analise da administracao publica brasileira" (Cybersecurity Challenges: An Analysis of the Brazilian Public Administration), Revista Tecnologia e Sociedade (UTFPR), v. 22, n. 69, 2026. Article: https://periodicos.utfpr.edu.br/rts/article/view/20157. DOI: 10.3895/rts.v22n69.20157 (registered, not resolving yet). Co-authors: Silva J. P. B., Ferreira L. V. A., Nunes R. R.
+- "Desafios da seguranca cibernetica: uma analise da administracao publica brasileira" (Cybersecurity Challenges: An Analysis of the Brazilian Public Administration), Revista Tecnologia e Sociedade (UTFPR), v. 22, n. 69, p. 157-178, 2026. Article: https://periodicos.utfpr.edu.br/rts/article/view/20157. DOI: 10.3895/rts.v22n69.20157 (registered, not resolving yet). Co-authors: Silva J. P. B., Ferreira L. V. A., Nunes R. R.
 - "Enhancing Cybersecurity in the Judiciary: Integrating Additional Controls into the CIS Framework", Elsevier Computers and Security, 2025. DOI: 10.1016/j.cose.2025.104584. Co-authors: Alves R. S., Silva J. P. B., Ribeiro Junior L. A., Nunes R. R.
 - "Protecao Cibernetica no Judiciario Brasileiro: Um Estudo Comparativo das Estruturas de Seguranca em Tribunais Estaduais", NAVUS Journal, 2024. DOI: 10.22279/navus.v14.2032. Co-authors: Silva J. P. B., Silva E. G., Ferreira L. V. A., Nunes R. R.
 - "Infraestrutura Critica sob Ameaca: Riscos de Negocio para a Seguranca Cibernetica em Sistemas de Transporte Metropolitano", 36th ENANGRAD, Fortaleza, 2025. Co-authors: Sales M. V. O., Silva C. S., Silva J. P. B., Silva E. G., Nunes R. R.
