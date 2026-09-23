@@ -775,6 +775,11 @@
             color: #2f7a52;
         }
 
+        .role-speaker {
+            background: #efe9f7;
+            color: #5b3f8c;
+        }
+
         .hackathon-cards {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));

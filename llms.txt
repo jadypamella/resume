@@ -64,6 +64,8 @@ Open to: research collaboration on AI safety, digital twins, and trustworthy cri
 - 1st Place, EpiMinds Google AI Hackathon (2026), Multi-Agent Crisis Response System shipped in 24 hours.
 - 1st Place, Kong AI Assisted-Coding Hackathon (2025).
 - 1st Place, Kolomolo AI-Assisted Coding Hackathon (2025).
+- Judge, Apart Research Global South AI Safety Hackathon (2026), Technical AI Safety, AI Governance and AI Security tracks.
+- Speaker, "New Tech, Old Rules" panel, Nordic Tech Week, Stockholm (2026), on proving identity once faces, voices and documents can be generated.
 - Impact Cup, Drivhuset Stockholm (2025), Tree++.
 - Swedish Institute Scholarship for Global Professionals, SISGP (2024).
 - Strategic Configuration Management, Efinance (2019), Bank of Brasilia.
