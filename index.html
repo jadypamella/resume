@@ -1,2030 +1,375 @@
-<!--
-    ================================================================
-
-    ❤️ This website was developed with love and dedication by Jady Pamella
-    🌐 Portfolio: https://jadypamella.com
-
-    ================================================================
--->
-
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <meta name="description" content="AI Engineer and PhD Fellow in digital twins for district cooling at Aarhus University. I build systems that verify what is real.">
-    <meta name="keywords" content="Jady Pamella, AI Engineer, AI Safety, Digital Twins, Critical Infrastructure, Trustworthy AI, Aarhus University, PhD Fellow, AI, Machine Learning, LLM, RAG, Generative AI, MLOps, Climate Tech, Tree++, SoiQet, DevSecOps, Cybersecurity, Python, GCP, AWS">
-    <meta name="author" content="Jady Pamella">
-    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-    <meta name="theme-color" content="#E03859">
-    <meta name="color-scheme" content="light">
-    
-    <!-- Security Headers -->
-    <meta http-equiv="X-Content-Type-Options" content="nosniff">
-    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
-    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
-    <meta name="referrer" content="strict-origin-when-cross-origin">
-    
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://jadypamella.com">
-    <meta property="og:title" content="Jady Pamella - AI Engineer focused on AI Safety | PhD Fellow in Digital Twins">
-    <meta property="og:description" content="AI Engineer focused on AI Safety and PhD Fellow in digital twins for district cooling at Aarhus University. I build systems that verify what is real. Founder of SoiQet, co-founder of Tree++, published in Elsevier's Computers &amp; Security.">
-    <meta property="og:image" content="https://jadypamella.com/og/home.png">
-    <meta property="og:image:alt" content="Jady Pamella - AI Engineer focused on AI Safety">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:site_name" content="Jady Pamella Portfolio">
-    <meta property="og:locale" content="en_US">
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-36QG0DNDJ0"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-36QG0DNDJ0');
-    </script>
-    
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://jadypamella.com">
-    <meta name="twitter:title" content="Jady Pamella - AI Engineer focused on AI Safety | PhD Fellow in Digital Twins">
-    <meta name="twitter:description" content="AI Engineer focused on AI Safety and PhD Fellow in digital twins for district cooling at Aarhus University. I build systems that verify what is real. Founder of SoiQet, co-founder of Tree++.">
-    <meta name="twitter:image" content="https://jadypamella.com/og/home.png">
-    <meta name="twitter:image:alt" content="Jady Pamella - AI Engineer focused on AI Safety">
-    <meta name="twitter:creator" content="@jadypamella">
-    
-    <!-- LinkedIn -->
-    <meta property="article:author" content="Jady Pamella">
-    
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://jadypamella.com">
-    
-    <!-- Page Title -->
-    <title>Jady Pamella - AI Engineer, AI Safety and Digital Twins</title>
-    
-    <!-- Favicons -->
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon.png">
-    <link rel="manifest" href="/site.webmanifest">
-    
-    <!-- Preconnect for Performance -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
-    
-    <!-- Fonts with display=swap for performance -->
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
-    <!-- Structured Data for SEO -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Jady Pamella",
-      "url": "https://jadypamella.com",
-      "image": "https://jadypamella.com/og/home.png",
-      "jobTitle": "AI Engineer focused on AI Safety, PhD Fellow in Digital Twins",
-      "description": "AI Engineer focused on AI Safety and PhD Fellow in digital twins for district cooling at Aarhus University. Founder of SoiQet, co-founder of Tree++. Published in Elsevier's Computers & Security.",
-      "homeLocation": {
-        "@type": "Place",
-        "name": "Aarhus, Denmark"
-      },
-      "nationality": "Brazilian",
-      "alumniOf": [
-        {
-          "@type": "EducationalOrganization",
-          "name": "Stockholm University",
-          "url": "https://www.su.se"
-        },
-        {
-          "@type": "EducationalOrganization",
-          "name": "University of Brasília",
-          "url": "https://www.unb.br"
-        },
-        {
-          "@type": "EducationalOrganization",
-          "name": "Massachusetts Institute of Technology",
-          "url": "https://www.mit.edu"
-        }
-      ],
-      "knowsAbout": ["Artificial Intelligence", "Machine Learning", "LLM", "LLM Fine-Tuning", "RAG", "Generative AI", "MLOps", "Prompt Engineering", "Digital Transformation", "DevSecOps", "Cybersecurity", "GDPR", "Cloud Architecture", "System Design", "Platform Engineering", "OKR", "Python", "TensorFlow", "PyTorch", "GCP", "AWS", "IoT", "Computer Vision", "NLP"],
-      "knowsLanguage": ["Portuguese", "English", "Spanish", "Swedish"],
-      "award": [
-        "Swedish Institute Scholarship for Global Professionals (SISGP) 2024",
-        "1st Place EpiMinds Google AI Hackathon (2026)",
-        "1st Place Kong AI Assisted-Coding Hackathon (2025)",
-        "1st Place Kolomolo AI-Assisted Coding Hackathon (2025)",
-        "Impact Cup Drivhuset Stockholm (2025)",
-        "WorldSkills National Phase Web Design (2012)"
-      ],
-      "publication": [
-        {
-          "@type": "ScholarlyArticle",
-          "name": "Cybersecurity Challenges: An Analysis of the Brazilian Public Administration",
-          "url": "https://periodicos.utfpr.edu.br/rts/article/view/20157",
-          "isPartOf": {
-            "@type": "Periodical",
-            "name": "Revista Tecnologia e Sociedade",
-            "publisher": "UTFPR"
-          },
-          "datePublished": "2026"
-        },
-        {
-          "@type": "ScholarlyArticle",
-          "name": "Enhancing Cybersecurity in the Judiciary: Integrating Additional Controls into the CIS Framework",
-          "url": "https://doi.org/10.1016/j.cose.2025.104584",
-          "isPartOf": {
-            "@type": "Periodical",
-            "name": "Computers & Security",
-            "publisher": "Elsevier"
-          },
-          "datePublished": "2025"
-        }
-      ],
-      "sameAs": [
-        "https://www.linkedin.com/in/jadypamella",
-        "https://github.com/jadypamella",
-        "https://medium.com/@jadypamella",
-        "https://orcid.org/0009-0006-4280-3364",
-        "https://scholar.google.com/citations?user=b8Jt_AgAAAAJ",
-        "https://www.researchgate.net/profile/Jady-Barbacena-Da-Silva",
-        "https://www.scopus.com/authid/detail.uri?authorId=59970410700"
-      ],
-      "worksFor": {
-        "@type": "Organization",
-        "name": "Aarhus University",
-        "url": "https://international.au.dk",
-        "description": "PhD Fellow in digital twins for district cooling"
-      }
-    }
-    </script>
-
-    <!-- FAQ Schema for LLM visibility -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Who is Jady Pamella?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Jady Pamella is an AI Engineer focused on AI Safety and a PhD Fellow at Aarhus University, working on digital twins for district cooling, verifying that installations run as they were designed. She has 12 years of experience in AI, machine learning, DevSecOps, and cybersecurity. She is founder of SoiQet, co-founder of Tree++, a Swedish Institute Scholar, and a published researcher in Elsevier's Computers & Security journal. Her work turns on one question: can you trust what the machine says is real?"
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What is Jady Pamella's expertise in AI and machine learning?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Jady Pamella specializes in LLM (Large Language Models), RAG (Retrieval-Augmented Generation), LLM Fine-Tuning, Prompt Engineering, MLOps, Computer Vision, NLP, TensorFlow, PyTorch, and Generative AI. She has built production AI systems including an LLM-powered social media platform (SoiQet), a computer vision pipeline for carbon credit analysis (Tree++), and a real-time LiDAR-based forest navigation system (Deep Forestry MSc thesis)."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Where does Jady Pamella work?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Jady Pamella is based in Aarhus, Denmark. She is a PhD Fellow at Aarhus University, working on digital twins for district cooling. She is also the Founder of SoiQet and Co-founder of Tree++. Previously she was an AI Research Engineer at Deep Forestry for her MSc thesis at Stockholm University, and led IT and DevSecOps at the Bank of Brasilia."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What is SoiQet?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "SoiQet (Social IQ Set) is an LLM-powered platform founded by Jady Pamella in 2025. It integrates 6 social networks for content managers at small businesses and influencers, using RAG-based AI content generation, scheduling, and analytics running on GCP. It was prototyped on Lovable and migrated to production using Python, Node.js, Supabase, and React."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What is Tree++?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Tree++ is a climate-tech startup co-founded by Jady Pamella. It is a matchmaking platform for tree planting volunteers and landowners, with 1,000+ trees planted across 10 countries by 2026. It features an AI-powered carbon footprint calculator, QR-based carbon credit tracking, and a computer vision pipeline for carbon credit consumption analysis."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is Jady Pamella available for research collaboration and speaking?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Jady Pamella is a PhD Fellow at Aarhus University and is open to research collaboration on AI safety, digital twins, and trustworthy critical-infrastructure AI, as well as speaking and advisory work. Contact her at hello@jadypamella.com or via LinkedIn at linkedin.com/in/jadypamella."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What hackathons has Jady Pamella won?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Jady Pamella has won 1st place in three hackathons: EpiMinds Google AI Hackathon (2026), Kong AI Assisted-Coding Hackathon (2025), and Kolomolo AI-Assisted Coding Hackathon (2025). She leads the SU Heroes hackathon team at Stockholm University."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What has Jady Pamella published?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Jady Pamella has co-authored peer-reviewed research on cybersecurity and public-sector governance. In 2026 she published 'Cybersecurity Challenges: An Analysis of the Brazilian Public Administration' in Revista Tecnologia e Sociedade (UTFPR, v. 22, n. 69, DOI: 10.3895/rts.v22n69.20157). In 2025 she co-authored 'Enhancing Cybersecurity in the Judiciary: Integrating Additional Controls into the CIS Framework' in Elsevier's Computers & Security journal (Impact Factor 5.6, DOI: 10.1016/j.cose.2025.104584). She also published research in NAVUS Journal of Technology and Management in 2024."
-          }
-        }
-      ]
-    }
-    </script>
-
-    <!-- WebSite Schema -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "Jady Pamella, AI Engineer focused on AI Safety",
-      "url": "https://jadypamella.com",
-      "description": "Portfolio of Jady Pamella, AI Engineer focused on AI Safety and PhD Fellow in digital twins for district cooling. Based in Aarhus, Denmark.",
-      "author": {
-        "@type": "Person",
-        "name": "Jady Pamella"
-      }
-    }
-    </script>
-
-    <!-- ScholarlyArticle: ENANGRAD 2025 (Critical Infrastructure Cybersecurity, Metropolitan Transport Systems) -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ScholarlyArticle",
-      "headline": "Infraestrutura Critica sob Ameaca: Riscos de Negocio para a Seguranca Cibernetica em Sistemas de Transporte Metropolitano",
-      "alternativeHeadline": "Critical Infrastructure Under Threat: Business Risks for Cybersecurity in Metropolitan Transport Systems",
-      "inLanguage": "pt-BR",
-      "datePublished": "2025",
-      "url": "https://doity.com.br/anais/36-enangrad/trabalho/482875",
-      "isPartOf": {
-        "@type": "PublicationEvent",
-        "name": "36th ENANGRAD (Encontro Nacional dos Cursos de Graduacao em Administracao)",
-        "location": {
-          "@type": "Place",
-          "name": "Fortaleza, Ceara, Brazil"
-        },
-        "startDate": "2025"
-      },
-      "author": [
-        {"@type": "Person", "name": "Manuela Veras de Oliveira Sales"},
-        {"@type": "Person", "name": "Carolina Santos Silva"},
-        {"@type": "Person", "name": "Jady Pamella Barbacena da Silva", "url": "https://jadypamella.com", "sameAs": ["https://orcid.org/0009-0006-4280-3364"]},
-        {"@type": "Person", "name": "Edvan Gomes da Silva"},
-        {"@type": "Person", "name": "Rafael Rabelo Nunes"}
-      ],
-      "about": [
-        "Critical Infrastructure",
-        "Cybersecurity",
-        "Metropolitan Transport Systems",
-        "Business Risk Management",
-        "CIS Controls",
-        "Brazil"
-      ],
-      "keywords": "critical infrastructure, cybersecurity, metropolitan transport, business risk, Brazilian Federal District, CIS Controls, judiciary cybersecurity"
-    }
-    </script>
-
-    <!-- ScholarlyArticle: Revista Tecnologia e Sociedade 2026 (UTFPR, peer-reviewed) -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ScholarlyArticle",
-      "headline": "Desafios da seguranca cibernetica: uma analise da administracao publica brasileira",
-      "alternativeHeadline": "Cybersecurity Challenges: An Analysis of the Brazilian Public Administration",
-      "inLanguage": "pt-BR",
-      "datePublished": "2026",
-      "url": "https://periodicos.utfpr.edu.br/rts/article/view/20157",
-      "sameAs": "https://doi.org/10.3895/rts.v22n69.20157",
-      "isPartOf": {
-        "@type": "Periodical",
-        "name": "Revista Tecnologia e Sociedade",
-        "publisher": {"@type": "Organization", "name": "Universidade Tecnologica Federal do Parana (UTFPR)"}
-      },
-      "author": [
-        {"@type": "Person", "name": "Jady Pamella Barbacena da Silva", "url": "https://jadypamella.com", "sameAs": ["https://orcid.org/0009-0006-4280-3364"]},
-        {"@type": "Person", "name": "Lucas Vinicius Andrade Ferreira"},
-        {"@type": "Person", "name": "Rafael Rabelo Nunes"}
-      ],
-      "about": [
-        "Cybersecurity Governance",
-        "Brazilian Public Administration",
-        "IT Governance",
-        "Security Culture",
-        "Data Protection",
-        "Cyber Maturity"
-      ],
-      "keywords": "governanca de TI, cultura de seguranca, ataques ciberneticos, protecao de dados, maturidade cibernetica, administracao publica"
-    }
-    </script>
-
-    <!-- ScholarlyArticle: Computers and Security 2025 (Elsevier, peer-reviewed) -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ScholarlyArticle",
-      "headline": "Enhancing Cybersecurity in the Judiciary: Integrating Additional Controls into the CIS Framework",
-      "inLanguage": "en",
-      "datePublished": "2025",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0167404825002731",
-      "sameAs": "https://doi.org/10.1016/j.cose.2025.104584",
-      "isPartOf": {
-        "@type": "Periodical",
-        "name": "Computers and Security",
-        "publisher": {"@type": "Organization", "name": "Elsevier"},
-        "issn": "0167-4048"
-      },
-      "author": [
-        {"@type": "Person", "name": "Ryan Sandes Alves"},
-        {"@type": "Person", "name": "Jady Pamella Barbacena da Silva", "url": "https://jadypamella.com", "sameAs": ["https://orcid.org/0009-0006-4280-3364"]},
-        {"@type": "Person", "name": "Luis Augusto Ribeiro Junior"},
-        {"@type": "Person", "name": "Rafael Rabelo Nunes"}
-      ],
-      "about": [
-        "Judicial Cybersecurity",
-        "CIS Controls",
-        "Auditable Evidence",
-        "Brazilian Judiciary",
-        "Public Sector Cybersecurity"
-      ]
-    }
-    </script>
-
-    <!-- Dataset: IEEE DataPort 2025, the data behind the Computers and Security study -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Dataset",
-      "name": "Security Controls for Judiciary Risk Management",
-      "description": "Open dataset of the security controls assessed across Brazilian state courts, published so the analysis behind the Computers and Security study can be reproduced and reused.",
-      "inLanguage": "en",
-      "datePublished": "2025",
-      "url": "https://doi.org/10.21227/h9q6-sv58",
-      "sameAs": "https://doi.org/10.21227/h9q6-sv58",
-      "identifier": "10.21227/h9q6-sv58",
-      "includedInDataCatalog": {"@type": "DataCatalog", "name": "IEEE DataPort"},
-      "creator": [
-        {"@type": "Person", "name": "Ryan Sandes Alves"},
-        {"@type": "Person", "name": "Jady Pamella Barbacena da Silva", "url": "https://jadypamella.com", "sameAs": ["https://orcid.org/0009-0006-4280-3364"]},
-        {"@type": "Person", "name": "Luis Augusto Ribeiro Junior"},
-        {"@type": "Person", "name": "Rafael Rabelo Nunes"}
-      ]
-    }
-    </script>
-
-    <!-- Thesis: MSc, Stockholm University 2026, with Deep Forestry -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Thesis",
-      "name": "Automated Detection of Safe Landing Locations in Below-Canopy Forest Conditions",
-      "inSupportOf": "Master of Science in Computer and Systems Sciences",
-      "inLanguage": "en",
-      "datePublished": "2026",
-      "author": {"@type": "Person", "name": "Jady Pamella Barbacena da Silva", "url": "https://jadypamella.com", "sameAs": ["https://orcid.org/0009-0006-4280-3364"]},
-      "publisher": {"@type": "CollegeOrUniversity", "name": "Stockholm University, Department of Computer and Systems Sciences"},
-      "contributor": {"@type": "Person", "name": "Rahim Rahmani", "sameAs": ["https://orcid.org/0000-0001-5924-5457", "https://www.su.se/english/profiles/r/rrahm"]},
-      "about": ["LiDAR Perception", "Autonomous Landing", "Forestry Robotics", "Point Cloud Segmentation"]
-    }
-    </script>
-
-    <!-- Thesis: Professional Master's, University of Brasilia 2026 -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Thesis",
-      "name": "Proposta de uma Linha de Base de Controles de Seguranca da Informacao para Mitigacao dos Riscos de Negocio no Setor de Saneamento",
-      "alternativeHeadline": "An Information Security Control Baseline to Mitigate Business Risk in the Sanitation Sector",
-      "inSupportOf": "Professional Master's in Electrical Engineering",
-      "inLanguage": "pt-BR",
-      "datePublished": "2026",
-      "identifier": "PPEE.DM-124/2026",
-      "author": {"@type": "Person", "name": "Jady Pamella Barbacena da Silva", "url": "https://jadypamella.com", "sameAs": ["https://orcid.org/0009-0006-4280-3364"]},
-      "publisher": {"@type": "CollegeOrUniversity", "name": "University of Brasilia, PPEE"},
-      "contributor": {"@type": "Person", "name": "Rafael Rabelo Nunes"},
-      "about": ["Information Security Controls", "Sanitation Sector", "Business Risk", "Critical Infrastructure"]
-    }
-    </script>
-    <link rel="stylesheet" href="styles.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Jady Pamella, AI Engineer Focused on Digital Twins and AI Safety</title>
+<meta content="Jady Pamella is an AI Engineer Focused on Digital Twins and AI Safety and a PhD Fellow at Aarhus University, building trustworthy AI, digital twins and cybersecurity research." name="description"/>
+<link href="https://jadypamella.com/" rel="canonical"/>
+<meta content="index, follow" name="robots"/>
+<meta content="#222222" name="theme-color"/>
+<meta content="Jady Pamella, AI Engineer Focused on Digital Twins and AI Safety" property="og:title"/>
+<meta content="Jady Pamella is an AI Engineer Focused on Digital Twins and AI Safety and a PhD Fellow at Aarhus University, building trustworthy AI, digital twins and cybersecurity research." property="og:description"/>
+<meta content="https://jadypamella.com/assets/img/og.png" property="og:image"/>
+<meta content="https://jadypamella.com/" property="og:url"/>
+<meta content="website" property="og:type"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<link href="/assets/img/favicon.png" rel="icon" type="image/png"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500&amp;display=swap" rel="stylesheet"/>
+<link href="/css/site.css" rel="stylesheet"/>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Person", "@id": "https://jadypamella.com/#person", "name": "Jady Pamella", "jobTitle": "AI Engineer Focused on Digital Twins and AI Safety", "description": "I build production AI you can trust, from LLMs and RAG to digital twins, so people can still tell what is real. My PhD at Aarhus University is on digital twins for district cooling, checking that critical infrastructure runs as it was designed.", "email": "mailto:hello@jadypamella.com", "image": "https://jadypamella.com/assets/img/profile.png", "url": "https://jadypamella.com/", "affiliation": {"@type": "CollegeOrUniversity", "name": "Aarhus University"}, "address": {"@type": "PostalAddress", "addressLocality": "Aarhus", "addressCountry": "DK"}, "sameAs": ["https://linkedin.com/in/jadypamella", "https://github.com/jadypamella", "https://medium.com/@jadypamella", "https://calendly.com/jadypamella/meeting", "https://orcid.org/0009-0006-4280-3364", "https://scholar.google.com/citations?user=b8Jt_AgAAAAJ", "https://www.researchgate.net/profile/Jady-Barbacena-Da-Silva", "https://www.scopus.com/authid/detail.uri?authorId=59970410700"]}, {"@type": "WebSite", "@id": "https://jadypamella.com/#website", "url": "https://jadypamella.com/", "name": "Jady Pamella", "author": {"@id": "https://jadypamella.com/#person"}}]}</script>
+<script>try{var t=localStorage.getItem("theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
 </head>
 <body>
-    <!-- Skip to main content for accessibility -->
-    <a href="#main-content" class="skip-to-main" style="position: absolute; left: -9999px; z-index: 999;">Skip to main content</a>
-    
-    <noscript>
-        <div style="padding: 20px; background: #fff3cd; color: #856404; text-align: center;">
-            This website works best with JavaScript enabled. Some features may not work properly without it.
-        </div>
-    </noscript>
-    
-    <!-- Hamburger Menu Button -->
-    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
-    </button>
-
-    <!-- Sidebar Overlay -->
-    <div class="sidebar-overlay" id="sidebarOverlay"></div>
-    
-    <script>
-        console.log(
-            '❤️ This website was developed with love and dedication by Jady Pamella\n' +
-            '🌐 Portfolio: https://jadypamella.com'
-        );
-
-        // Hamburger menu toggle
-        const hamburger = document.getElementById('hamburger');
-        const sidebar = document.querySelector('.sidebar');
-        const sidebarOverlay = document.getElementById('sidebarOverlay');
-
-        function toggleMenu() {
-            hamburger.classList.toggle('active');
-            sidebar.classList.toggle('active');
-            sidebarOverlay.classList.toggle('active');
-            
-            // Update aria-expanded
-            const isExpanded = hamburger.classList.contains('active');
-            hamburger.setAttribute('aria-expanded', isExpanded);
-            
-            // Prevent body scroll when menu is open
-            document.body.style.overflow = isExpanded ? 'hidden' : '';
-        }
-
-        hamburger.addEventListener('click', toggleMenu);
-        sidebarOverlay.addEventListener('click', toggleMenu);
-
-        // Close menu when clicking on navigation links
-        document.querySelectorAll('.sidebar a').forEach(link => {
-            link.addEventListener('click', () => {
-                if (window.innerWidth <= 768) {
-                    toggleMenu();
-                }
-            });
-        });
-
-        function toggleAccordion(index) {
-            const accordionContents = document.querySelectorAll('.accordion-content');
-            const accordionIcons = document.querySelectorAll('.accordion-icon');
-            
-            const content = accordionContents[index];
-            const icon = accordionIcons[index];
-            
-            const isActive = content.classList.contains('active');
-            
-            // Close all accordions
-            accordionContents.forEach(c => c.classList.remove('active'));
-            accordionIcons.forEach(i => i.classList.remove('active'));
-            
-            // Open clicked accordion if it was closed
-            if (!isActive) {
-                content.classList.add('active');
-                icon.classList.add('active');
-            }
-        }
-
-        // Smooth scroll for navigation
-        document.addEventListener('DOMContentLoaded', function() {
-            const navLinks = document.querySelectorAll('.nav-menu a');
-            navLinks.forEach(link => {
-                link.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    const targetId = this.getAttribute('href');
-                    const targetSection = document.querySelector(targetId);
-                    if (targetSection) {
-                        targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                    }
-                });
-            });
-            
-            // Lazy load images for performance
-            if ('loading' in HTMLImageElement.prototype) {
-                const images = document.querySelectorAll('img[loading="lazy"]');
-                images.forEach(img => {
-                    img.src = img.dataset.src || img.src;
-                });
-            }
-        });
-    </script>
-    <!-- Sidebar -->
-    <aside class="sidebar" role="navigation" aria-label="Main navigation">
-        <div class="profile-photo">
-            <img src="images/profile.png" alt="Jady Pamella" onerror="this.style.display='none'">
-        </div>
-        
-        <h1>Jady Pamella</h1>
-        <p class="tagline">AI Engineer focused on AI Safety · PhD in Digital Twins, Aarhus University</p>
-
-        <nav class="sidebar-nav">
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#hackathons">Hackathons</a></li>
-                <li><a href="#publications">Publications</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#certifications">Certifications</a></li>
-            </ul>
-        </nav>
-
-        <div class="sidebar-section">
-            <h2 class="sidebar-heading">Contact</h2>
-            <div class="contact-item">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
-                </svg>
-                Aarhus, Denmark
-            </div>
-            <div class="contact-item">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
-                </svg>
-                <a href="mailto:hello@jadypamella.com">hello@jadypamella.com</a>
-            </div>
-            <div class="contact-item">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"/>
-                </svg>
-                <a href="https://linkedin.com/in/jadypamella" target="_blank">LinkedIn</a>
-            </div>
-            <div class="contact-item">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                </svg>
-                <a href="https://github.com/jadypamella" target="_blank">GitHub</a>
-            </div>
-            <div class="contact-item">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/>
-                </svg>
-                <a href="https://medium.com/@jadypamella" target="_blank">Medium</a>
-            </div>
-            <div class="contact-item">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 22C6.486 22 2 17.514 2 12S6.486 2 12 2s10 4.486 10 10-4.486 10-10 10zm1-17h-2v7h7v-2h-5V5z"/>
-                </svg>
-                <a href="https://calendly.com/jadypamella/meeting" target="_blank">Calendly</a>
-            </div>
-            <div class="contact-item">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
-                </svg>
-                <a href="https://orcid.org/0009-0006-4280-3364" target="_blank">ORCID</a>
-            </div>
-            <div class="contact-item">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M12 3 1 9l11 6 9-4.91V17h2V9L12 3zm0 13.72L4.16 12.5 12 8.28l7.84 4.22L12 16.72zM6 13.18v3.72L12 20l6-3.1v-3.72L12 16.5l-6-3.32z"/>
-                </svg>
-                <a href="https://scholar.google.com/citations?user=b8Jt_AgAAAAJ" target="_blank">Google Scholar</a>
-            </div>
-            <div class="contact-item">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M12 6.5C10.5 5 8 4.5 5.5 4.5c-1 0-2 .1-3 .4v13c1-.3 2-.4 3-.4 2.5 0 5 .5 6.5 2 1.5-1.5 4-2 6.5-2 1 0 2 .1 3 .4v-13c-1-.3-2-.4-3-.4-2.5 0-5 .5-6.5 2zm0 0v13"/>
-                </svg>
-                <a href="https://www.researchgate.net/profile/Jady-Barbacena-Da-Silva" target="_blank">ResearchGate</a>
-            </div>
-            <div class="contact-item">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M12 2C7.6 2 4 3.3 4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5c0-1.7-3.6-3-8-3zm6 17c0 .5-2.3 1.5-6 1.5s-6-1-6-1.5v-2.3c1.5.8 3.7 1.3 6 1.3s4.5-.5 6-1.3V19zm0-4.5c0 .5-2.3 1.5-6 1.5s-6-1-6-1.5v-2.3c1.5.8 3.7 1.3 6 1.3s4.5-.5 6-1.3v2.3zM12 9c-3.7 0-6-1-6-1.5S8.3 6 12 6s6 1 6 1.5S15.7 9 12 9z"/>
-                </svg>
-                <a href="https://www.scopus.com/authid/detail.uri?authorId=59970410700" target="_blank">Scopus</a>
-            </div>
-        </div>
-
-        <div class="sidebar-section">
-            <h3>Skills</h3>
-            <div class="accordion">
-                <div class="accordion-item">
-                    <div class="accordion-header" onclick="toggleAccordion(0)">
-                        <h4>Leadership & Management</h4>
-                        <span class="accordion-icon">▼</span>
-                    </div>
-                    <div class="accordion-content">
-                        <ul class="skills-list">
-                            <li>Technology Strategy</li>
-                            <li>Team Leadership (10+ professionals)</li>
-                            <li>P&L Management ($1M+)</li>
-                            <li>OKR Planning and Execution</li>
-                            <li>Technical Hiring</li>
-                            <li>Stakeholder Management</li>
-                            <li>Strategic Planning</li>
-                            <li>Change Management</li>
-                            <li>Vendor Management</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="accordion-item">
-                    <div class="accordion-header" onclick="toggleAccordion(1)">
-                        <h4>IT Governance</h4>
-                        <span class="accordion-icon">▼</span>
-                    </div>
-                    <div class="accordion-content">
-                        <ul class="skills-list">
-                            <li>COBIT & ITIL</li>
-                            <li>CMDB & ITSM</li>
-                            <li>Risk Management</li>
-                            <li>Compliance & Audit</li>
-                            <li>Lean IT & PMBOK</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <div class="accordion-header" onclick="toggleAccordion(2)">
-                        <h4>Programming</h4>
-                        <span class="accordion-icon">▼</span>
-                    </div>
-                    <div class="accordion-content">
-                        <ul class="skills-list">
-                            <li>Python</li>
-                            <li>JavaScript & TypeScript</li>
-                            <li>SQL & Java</li>
-                            <li>PHP & Bash</li>
-                            <li>R & Groovy</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <div class="accordion-header" onclick="toggleAccordion(3)">
-                        <h4>AI & Machine Learning</h4>
-                        <span class="accordion-icon">▼</span>
-                    </div>
-                    <div class="accordion-content">
-                        <ul class="skills-list">
-                            <li>TensorFlow & PyTorch</li>
-                            <li>LLM & Generative AI</li>
-                            <li>LLM Fine-Tuning</li>
-                            <li>RAG (Retrieval Augmented Generation)</li>
-                            <li>Prompt Engineering</li>
-                            <li>Scikit-Learn & Keras</li>
-                            <li>Deep Learning & CNNs</li>
-                            <li>Computer Vision & NLP</li>
-                            <li>MLOps & Model Deployment</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <div class="accordion-header" onclick="toggleAccordion(4)">
-                        <h4>Data Engineering</h4>
-                        <span class="accordion-icon">▼</span>
-                    </div>
-                    <div class="accordion-content">
-                        <ul class="skills-list">
-                            <li>Apache Spark & Hadoop</li>
-                            <li>PostgreSQL & MongoDB</li>
-                            <li>ETL Pipelines & Kafka</li>
-                            <li>Power BI & Analytics</li>
-                            <li>Data Warehousing</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <div class="accordion-header" onclick="toggleAccordion(5)">
-                        <h4>Cloud & DevOps</h4>
-                        <span class="accordion-icon">▼</span>
-                    </div>
-                    <div class="accordion-content">
-                        <ul class="skills-list">
-                            <li>Kubernetes & Docker</li>
-                            <li>AWS, GCP & Azure</li>
-                            <li>CI/CD & Jenkins</li>
-                            <li>Terraform & Ansible</li>
-                            <li>GitLab & GitHub</li>
-                            <li>DevSecOps</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <div class="accordion-header" onclick="toggleAccordion(6)">
-                        <h4>Architecture</h4>
-                        <span class="accordion-icon">▼</span>
-                    </div>
-                    <div class="accordion-content">
-                        <ul class="skills-list">
-                            <li>System Design</li>
-                            <li>Platform Engineering</li>
-                            <li>Microservices</li>
-                            <li>REST & GraphQL APIs</li>
-                            <li>Event-Driven Architecture</li>
-                            <li>Distributed Systems</li>
-                            <li>IoT Integration</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <div class="accordion-header" onclick="toggleAccordion(7)">
-                        <h4>Languages</h4>
-                        <span class="accordion-icon">▼</span>
-                    </div>
-                    <div class="accordion-content">
-                        <ul class="skills-list">
-                            <li>Portuguese (Native)</li>
-                            <li>English (Fluent - TOEFL)</li>
-                            <li>Spanish (Intermediate)</li>
-                            <li>Swedish (SFI Level C)</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </aside>
-
-    <!-- Main Content -->
-    <main class="main-content" id="main-content" role="main">
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="hero-logo">
-                <img src="images/logo.png" alt="Jady Pamella">
-            </div>
-            <div class="hero-content">
-                <h2>Jady Pamella</h2>
-                <h3>AI Engineer focused on AI Safety · I build trustworthy production AI</h3>
-                <p>I build production AI you can trust, from LLMs and RAG to digital twins, so people can still tell what is real. My PhD at Aarhus University is on digital twins for district cooling, checking that critical infrastructure runs as it was designed.</p>
-                <a href="https://calendly.com/jadypamella/meeting" class="hero-cta-button" target="_blank" rel="noopener noreferrer">Let's Build Something Meaningful Together!</a>
-            </div>
-        </section>
-
-        <!-- Navigation Menu -->
-        <nav class="nav-menu">
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#hackathons">Hackathons</a></li>
-                <li><a href="#publications">Publications</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#certifications">Certifications</a></li>
-            </ul>
-        </nav>
-
-        <!-- About Me Section -->
-<!-- About Me Section -->
-<section id="about" class="about-section">
-    <div class="about-content">
-        <h2>About Me</h2>
-
-        <p class="about-intro">
-            I am an AI Engineer who builds AI systems people can trust. For twelve years I have shipped production AI across finance, government, and climate tech, from LLM platforms and RAG pipelines to computer vision. My focus is AI Safety: making sure you can trust what the machine says is real, from a deepfake in the feed to a digital twin of a water plant, which is the subject of my PhD at Aarhus University.
-        </p>
-        
-        <p class="about-location">
-            Based in <strong>Aarhus, Denmark</strong>. With 12 years of experience across finance, government, and climate tech, I’ve built my career from software development to engineering leadership, shipping AI systems at scale and managing teams and budgets in complex environments.
-        </p>
-
-        <p class="about-intro">
-            I believe in technology as a force for meaningful change, whether verifying what is real, securing critical infrastructure, or building climate-tech solutions that support a more resilient future.
-        </p>
-
-        <!-- Career Highlights -->
-        <div class="career-highlights">
-            <h3>Career Highlights</h3>
-            <div class="highlights-grid">
-
-                <div class="highlight-item">
-                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5" />
-                    </svg>
-                    <div class="content">
-                        <h4>PhD Fellow, Aarhus University</h4>
-                        <div class="date">2026 - Present</div>
-                        <p>SWiM project, funded by the Grundfos Foundation: verifying that district cooling installations run as they were designed, with BIM, AI and digital twins.</p>
-                    </div>
-                </div>
-
-                <div class="highlight-item">
-                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418" />
-                    </svg>
-                    <div class="content">
-                        <h4>Co-founder, Tree++</h4>
-                        <div class="date">2024 - Present</div>
-                        <p>Climate-tech platform with 1,000+ trees planted across 10 countries, connecting volunteers and landowners via AI-powered carbon footprint tracking.</p>
-                    </div>
-                </div>
-
-                <div class="highlight-item">
-                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 0 0 .75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 0 0-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0 1 12 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 0 1-.673-.38m0 0A2.18 2.18 0 0 1 3 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 0 1 3.413-.387m7.5 0V5.25A2.25 2.25 0 0 0 13.5 3h-3a2.25 2.25 0 0 0-2.25 2.25v.894m7.5 0a48.667 48.667 0 0 0-7.5 0M12 12.75h.008v.008H12v-.008Z" />
-                    </svg>
-                    <div class="content">
-                        <h4>IT Manager, Bank of Brasília</h4>
-                        <div class="date">2016 - 2024</div>
-                        <p>Managed USD 1M+ budgets and led AI, automation, and governance initiatives.</p>
-                    </div>
-                </div>
-
-                <div class="highlight-item">
-                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5" />
-                    </svg>
-                    <div class="content">
-                        <h4>Dual Master's Degrees</h4>
-                        <div class="date">Defended May 2026</div>
-                        <p>Computer Science (Stockholm) & Cybersecurity (Brasília).</p>
-                    </div>
-                </div>
-
-                <div class="highlight-item">
-                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 18.75h-9m9 0a3 3 0 0 1 3 3h-15a3 3 0 0 1 3-3m9 0v-3.375c0-.621-.503-1.125-1.125-1.125h-.871M7.5 18.75v-3.375c0-.621.504-1.125 1.125-1.125h.872m5.007 0H9.497m5.007 0a7.454 7.454 0 0 1-.982-3.172M9.497 14.25a7.454 7.454 0 0 0 .981-3.172M5.25 4.236c-.982.143-1.954.317-2.916.52A6.003 6.003 0 0 0 7.73 9.728M5.25 4.236V4.5c0 2.108.966 3.99 2.48 5.228M5.25 4.236V2.721C7.456 2.41 9.71 2.25 12 2.25c2.291 0 4.545.16 6.75.47v1.516M7.73 9.728a6.726 6.726 0 0 0 2.748 1.35m8.272-6.842V4.5c0 2.108-.966 3.99-2.48 5.228m2.48-5.492a46.32 46.32 0 0 1 2.916.52 6.003 6.003 0 0 1-5.395 4.972m0 0a6.726 6.726 0 0 1-2.749 1.35m0 0a6.772 6.772 0 0 1-3.044 0" />
-                    </svg>
-                    <div class="content">
-                        <h4>Swedish Institute Scholar</h4>
-                        <div class="date">2024</div>
-                        <p>Awarded for outstanding global professional impact.</p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="core-expertise">
-            <h4>Core Expertise</h4>
-            <div class="expertise-tags">
-                <span class="expertise-tag">AI & Machine Learning</span>
-                <span class="expertise-tag">LLM & Generative AI</span>
-                <span class="expertise-tag">RAG Systems</span>
-                <span class="expertise-tag">MLOps</span>
-                <span class="expertise-tag">Cybersecurity</span>
-                <span class="expertise-tag">DevSecOps</span>
-                <span class="expertise-tag">System Design</span>
-                <span class="expertise-tag">Team Leadership</span>
-                <span class="expertise-tag">OKR Delivery</span>
-                <span class="expertise-tag">Climate Technology</span>
-                <span class="expertise-tag">Fintech Innovation</span>
-                <span class="expertise-tag">P&L Management</span>
-            </div>
-        </div>
-
-    </div>
+<a class="skip" href="#main">Skip to Content</a>
+<!--
+  ❤️ This website was developed with love and dedication by Jady Pamella
+  🌐 Portfolio: https://jadypamella.com
+-->
+<header class="site-header">
+<a aria-label="Jady Pamella, Home" class="brand" href="/"><img alt="" decoding="async" height="36" loading="lazy" src="/assets/img/logo.png" width="36"/><span>Jady Pamella</span></a>
+<button aria-label="Switch Colour Theme" class="theme-btn" type="button"><svg aria-hidden="true" fill="none" height="20" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24" width="20"><circle cx="12" cy="12" r="8"></circle><path d="M12 4a8 8 0 0 0 0 16z" fill="currentColor"></path></svg></button>
+<button aria-controls="site-nav" aria-expanded="false" class="menu-toggle" type="button">
+<span aria-hidden="true" class="menu-icon"></span><span class="menu-label">Menu</span>
+</button>
+<nav aria-label="Main" class="site-nav" id="site-nav"><ul><li><a href="/#about">About</a></li><li><a href="/#projects">Projects</a></li><li><a href="/#events">Events</a></li><li><a href="/#publications">Publications</a></li><li><a href="/#experience">Experience</a></li><li><a href="/#skills">Skills</a></li><li><a href="/blog/">Writing</a></li><li><a href="/#contact">Contact</a></li></ul></nav>
+</header>
+<main id="main">
+<section aria-labelledby="hero-title" class="hero">
+<div class="wrap hero-grid">
+<p class="eyebrow reveal">Aarhus, Denmark · PhD Fellow at Aarhus University</p>
+<div class="name-block">
+<h1 class="hero-name" id="hero-title"><span class="line reveal">Jady</span><span class="line reveal">Pamella</span></h1>
+<figure class="portrait reveal">
+<img alt="Portrait of Jady Pamella" fetchpriority="high" height="406" src="/assets/img/profile.png" width="404"/>
+<svg aria-hidden="true" class="ring" viewbox="0 0 300 300">
+<defs><path d="M150,150 m-128,0 a128,128 0 1,1 256,0 a128,128 0 1,1 -256,0" id="ring-path"></path></defs>
+<text><textpath href="#ring-path" lengthadjust="spacing" textlength="800">AI Safety · Digital Twins · Cybersecurity · AI Engineering · </textpath></text>
+</svg>
+</figure>
+</div>
+<div class="hero-copy">
+<p class="hero-role reveal">AI Engineer Focused on Digital Twins and AI Safety</p>
+<p class="hero-lead reveal">I build production AI you can trust, from LLMs and RAG to digital twins, so people can still tell what is real. My PhD at Aarhus University is on digital twins for district cooling, checking that critical infrastructure runs as it was designed.</p>
+<div class="cta-row reveal">
+<a class="btn btn-primary" download="" href="/assets/cv/Jady_Pamella_CV.pdf"><svg aria-hidden="true" height="18" viewbox="0 0 24 24" width="18"><path d="M12 4v11m0 0-4-4m4 4 4-4M5 20h14" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg><span>Professional CV</span></a>
+<a class="btn btn-ghost" href="https://calendly.com/jadypamella/meeting" rel="noopener" target="_blank"><svg aria-hidden="true" height="18" viewbox="0 0 24 24" width="18"><rect fill="none" height="15" rx="2" stroke="currentColor" stroke-width="2" width="16" x="4" y="5"></rect><path d="M4 10h16M9 3v4M15 3v4" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path></svg><span>Book a Meeting</span></a>
+</div>
+</div>
+</div>
 </section>
-
-
-
-        <!-- Featured Projects -->
-<section id="projects">
-    <h2 class="section-title">Featured Projects</h2>
-
-    <div class="projects-grid">
-        <!-- SoiQet -->
-        <div class="project-card">
-            <div class="project-logo">
-                <img src="images/logos/soiqet-logo.png" alt="SoiQet logo">
-            </div>
-            <h3>SoiQet</h3>
-            <p class="project-type">LLM-Powered Social Media Platform</p>
-            <p>
-                RAG-based AI platform integrating 6 social networks for content managers at small businesses
-                and influencers. Prototyped on Lovable, migrated to production on GCP with prompt engineering
-                to optimize LLM outputs across all networks.
-            </p>
-            <div class="tech-stack">
-                <span class="tech-tag">RAG</span>
-                <span class="tech-tag">LLM</span>
-                <span class="tech-tag">React</span>
-                <span class="tech-tag">Node.js</span>
-                <span class="tech-tag">Python</span>
-                <span class="tech-tag">GCP</span>
-                <span class="tech-tag">Supabase</span>
-            </div>
-            <a href="https://www.soiqet.com" class="project-button" target="_blank" rel="noopener">
-                Learn More
-            </a>
-        </div>
-
-        <!-- Tree++ -->
-        <div class="project-card">
-            <div class="project-logo">
-                <img src="images/logos/treepp-logo.png" alt="Tree++ logo">
-            </div>
-            <h3>Tree++</h3>
-            <p class="project-type">Climate Tech Carbon Credit Platform</p>
-            <p>
-                Platform with 1,000+ trees planted across 10 countries (2026), connecting volunteers and
-                landowners for tree planting via an AI-powered carbon footprint calculator, QR-based carbon
-                credit tracking, and an ML matchmaking system.
-            </p>
-            <div class="tech-stack">
-                <span class="tech-tag">Python</span>
-                <span class="tech-tag">Computer Vision</span>
-                <span class="tech-tag">TensorFlow</span>
-                <span class="tech-tag">AWS</span>
-                <span class="tech-tag">Kubernetes</span>
-            </div>
-            <a href="https://treepp.org/" class="project-button" target="_blank" rel="noopener">
-                Learn More
-            </a>
-        </div>
-
-        <!-- Deep Forestry collaboration -->
-        <div class="project-card">
-            <div class="project-logo">
-                <img src="images/logos/deepforestry-logo.png" alt="Deep Forestry logo">
-            </div>
-            <h3>Deep Forestry</h3>
-            <p class="project-type">AI Research MSc Thesis</p>
-            <p>
-                MSc thesis: hybrid geometric-neural pipeline for real-time autonomous landing zone detection
-                in below-canopy forests using LiDAR point clouds (RANSAC, PointNet, PointNet++, DGCNN).
-                Achieved 29x latency reduction from 5.8s to 200ms through KD-Tree and voxel-downsampling optimizations.
-            </p>
-            <div class="tech-stack">
-                <span class="tech-tag">LiDAR</span>
-                <span class="tech-tag">PointNet</span>
-                <span class="tech-tag">DGCNN</span>
-                <span class="tech-tag">Computer Vision</span>
-                <span class="tech-tag">Python</span>
-            </div>
-            <a href="https://www.deepforestry.com" class="project-button" target="_blank" rel="noopener">
-                Learn More
-            </a>
-        </div>
-
-        <!-- D2B Dream to Business -->
-        <div class="project-card">
-            <div class="project-logo">
-                <img src="images/logos/d2b-logo.png" alt="D2B logo">
-            </div>
-            <h3>D2B - Dream to Business</h3>
-            <p class="project-type">Idea Validation Platform (archived)</p>
-            <p>
-                Platform that helps founders validate business ideas through short video pitches, structured
-                feedback, and gamified evaluation, using AI to cluster feedback and highlight next actions.
-            </p>
-            <div class="tech-stack">
-                <span class="tech-tag">TypeScript</span>
-                <span class="tech-tag">React</span>
-                <span class="tech-tag">Node.js</span>
-                <span class="tech-tag">PostgreSQL</span>
-                <span class="tech-tag">LLM</span>
-            </div>
-        </div>
-
-        <!-- FactOrFakeAI -->
-        <div class="project-card">
-            <div class="project-logo">
-                <img src="images/logos/factorfakeai-logo.png" alt="FactOrFakeAI logo">
-            </div>
-            <h3>FactOrFakeAI</h3>
-            <p class="project-type">AI Literacy and Content Authenticity</p>
-            <p>
-                Educational project that compares real content and AI generated content to discuss detection,
-                bias, and responsible AI, helping non technical audiences understand how modern AI works.
-            </p>
-            <div class="tech-stack">
-                <span class="tech-tag">Python</span>
-                <span class="tech-tag">LLM</span>
-                <span class="tech-tag">Video</span>
-                <span class="tech-tag">Education</span>
-            </div>
-            <a href="https://www.tiktok.com/@factororfakeai" class="project-button" target="_blank" rel="noopener">
-                Learn More
-            </a>
-        </div>
-
-        <!-- Independent Consulting (Anonymous, AI consumer product) -->
-        <div class="project-card">
-            <div class="project-logo">
-                <img src="images/logos/consulting-logo.png" alt="Independent Consulting" onerror="this.style.display='none'">
-            </div>
-            <h3>AI Audit and Security Advisory</h3>
-            <p class="project-type">Independent Consulting Engagement (AI-powered consumer product, anonymised by NDA)</p>
-            <p>
-                Delivered a 60-page technical audit (Decision Summary + Executive Report + Technical Report) of
-                an AI-powered consumer product MVP. Identified critical data exposure (20 of 21 Supabase tables
-                without Row Level Security, verified with a real exploit using only the public API key), 29 missing
-                AI and security guardrails, and AI cost runaway risk in unbounded chat history. Delivered product
-                strategy reframe and 8-week prioritised roadmap.
-            </p>
-            <div class="tech-stack">
-                <span class="tech-tag">Security Audit</span>
-                <span class="tech-tag">AI Cost Modeling</span>
-                <span class="tech-tag">Supabase RLS</span>
-                <span class="tech-tag">GDPR</span>
-                <span class="tech-tag">Next.js</span>
-                <span class="tech-tag">OpenAI APIs</span>
-            </div>
-        </div>
-
-        <!-- LabRisk -->
-        <div class="project-card">
-            <div class="project-logo">
-                <img src="images/logos/labrisk-logo.png" alt="LabRisk logo">
-            </div>
-            <h3>LabRisk</h3>
-            <p class="project-type">Cybersecurity and Risk Lab</p>
-            <p>
-                Research lab focused on cybersecurity management, risk, and privacy in the public sector,
-                including work on CIS controls, GDPR-aligned frameworks, and judiciary cybersecurity in Brazil.
-            </p>
-            <div class="tech-stack">
-                <span class="tech-tag">Cybersecurity</span>
-                <span class="tech-tag">Risk Management</span>
-                <span class="tech-tag">Python</span>
-                <span class="tech-tag">Data Analysis</span>
-            </div>
-            <a href="https://labrisk.unb.br" class="project-button" target="_blank" rel="noopener">
-                Learn More
-            </a>
-        </div>
-
-        <!-- Infosfera - Prêmio Infosfera (LabRisk + Infojus) -->
-        <div class="project-card">
-            <div class="project-logo">
-                <img src="images/logos/infosfera-logo.png" alt="Infosfera logo" onerror="this.style.display='none'">
-            </div>
-            <h3>Prêmio Infosfera</h3>
-            <p class="project-type">Freelance Web Development for Public-Sector Information Award (LabRisk/UnB + Infojus/UFPR)</p>
-            <p>
-                Built and delivered the official website for the Prêmio Infosfera de Boas Práticas em Gestão da
-                Informação na Esfera Pública, a Brazilian award partnership between LabRisk (UnB) and Infojus
-                (UFPR). Full site delivery: hero, award rules, evaluation criteria, application flow, publication
-                calendar, and timeline pages. Closed engagement, delivered March 2026.
-            </p>
-            <div class="tech-stack">
-                <span class="tech-tag">Web Development</span>
-                <span class="tech-tag">Content Strategy</span>
-                <span class="tech-tag">Public Sector</span>
-                <span class="tech-tag">Brazilian Governance</span>
-            </div>
-        </div>
-
-        <!-- IBEPES - WordPress Theme -->
-        <div class="project-card">
-            <div class="project-logo">
-                <img src="images/logos/ibepes-logo.png" alt="IBEPES logo" onerror="this.style.display='none'">
-            </div>
-            <h3>IBEPES</h3>
-            <p class="project-type">Freelance — Custom WordPress Theme for Brazilian Social Research Institute</p>
-            <p>
-                Designed and shipped a custom WordPress theme for the Instituto Brasileiro de Estudos e Pesquisas
-                Sociais (IBEPES). Full custom theme architecture, content modelling, and deployment. Closed
-                freelance engagement.
-            </p>
-            <div class="tech-stack">
-                <span class="tech-tag">WordPress</span>
-                <span class="tech-tag">PHP</span>
-                <span class="tech-tag">Custom Theme</span>
-                <span class="tech-tag">Content Modelling</span>
-            </div>
-        </div>
-
-        <!-- Ge Effektivt / Stiftelsen Effekt -->
-        <div class="project-card">
-            <div class="project-logo">
-                <img src="images/logos/geeffektivt-logo.svg" alt="Ge Effektivt logo" onerror="this.style.display='none'">
-            </div>
-            <h3>Ge Effektivt</h3>
-            <p class="project-type">Open Source Contributor Effective Giving Platform (Stiftelsen Effekt)</p>
-            <p>
-                Open-source contributor to the Stiftelsen Effekt main-site (Next.js + Sanity CMS, shared across the
-                Norwegian, Swedish, and Danish effective-giving sites). Shipped mobile layout fixes including a
-                dynamic CSS variable (<code>--cookie-banner-height</code>) driven by a ResizeObserver to align the
-                navbar, the floating Give button, and the cookie banner across breakpoints. PR #1100.
-            </p>
-            <div class="tech-stack">
-                <span class="tech-tag">Next.js</span>
-                <span class="tech-tag">TypeScript</span>
-                <span class="tech-tag">SCSS</span>
-                <span class="tech-tag">Sanity CMS</span>
-                <span class="tech-tag">React</span>
-            </div>
-            <a href="https://geeffektivt.se" class="project-button" target="_blank" rel="noopener">
-                Learn More
-            </a>
-        </div>
-
-        <!-- Alla Ska Få Mat -->
-        <div class="project-card">
-            <div class="project-logo">
-                <img src="images/logos/allaskafamat-logo.png" alt="Alla Ska Få Mat logo">
-            </div>
-            <h3>Alla Ska Få Mat</h3>
-            <p class="project-type">Social Impact Initiative</p>
-            <p>
-                Community project in Sweden that organizes donations, volunteers, and communication to support
-                families facing food insecurity, using digital tools for coordination and outreach.
-            </p>
-            <div class="tech-stack">
-                <span class="tech-tag">Coordination</span>
-                <span class="tech-tag">Digital Campaigns</span>
-                <span class="tech-tag">Social Impact</span>
-            </div>
-            <a href="https://allaskafamat.se" class="project-button" target="_blank" rel="noopener">
-                Learn More
-            </a>
-        </div>
-
-        <!-- Insphas -->
-        <div class="project-card">
-            <div class="project-logo">
-                <img src="images/logos/insphas-logo.png" alt="Insphas logo">
-            </div>
-            <h3>Insphas</h3>
-            <p class="project-type">Digital Transformation for Mental Health Institute</p>
-            <p>
-                Volunteer IT leadership for Insphas Institute of Psychology, modernizing digital presence and
-                infrastructure, including websites, content, and communication flows for mental health services.
-            </p>
-            <div class="tech-stack">
-                <span class="tech-tag">Web</span>
-                <span class="tech-tag">WordPress</span>
-                <span class="tech-tag">Social Media</span>
-                <span class="tech-tag">IT Management</span>
-            </div>
-            <a href="https://insphas.com.br" class="project-button" target="_blank" rel="noopener">
-                Learn More
-            </a>
-        </div>
-    </div>
+<div aria-hidden="true" class="marquee"><div class="marquee-track"><span>Real.</span><s>Generated.</s><span>Verified.</span><i></i><span>Real.</span><s>Generated.</s><span>Verified.</span><i></i><span>Real.</span><s>Generated.</s><span>Verified.</span><i></i><span>Real.</span><s>Generated.</s><span>Verified.</span><i></i><span>Real.</span><s>Generated.</s><span>Verified.</span><i></i><span>Real.</span><s>Generated.</s><span>Verified.</span><i></i><span>Real.</span><s>Generated.</s><span>Verified.</span><i></i><span>Real.</span><s>Generated.</s><span>Verified.</span><i></i></div></div><section aria-labelledby="about-title" class="section about" id="about">
+<div class="wrap">
+<h2 class="sr-only" id="about-title">About</h2>
+<p class="statement reveal"><strong>I am an AI Engineer who builds AI systems people can trust.</strong> For twelve years I have shipped production AI across finance, government, and climate tech, from LLM platforms and RAG pipelines to computer vision. My research focus is digital twins for district cooling: at Aarhus University I work on locating faults in cooling networks where sensors are sparse, on testing the fault monitors a digital twin relies on, and on bringing building models into digital twin platforms. It is the same question that drives my work on AI Safety: can you trust what the machine says is real?</p>
+<details class="more reveal"><summary>Read More About Me</summary><div class="more-body"><p>Based in Aarhus, Denmark. With 12 years of experience across finance, government, and climate tech, I’ve built my career from software development to engineering leadership, shipping AI systems at scale and managing teams and budgets in complex environments.</p><p>I believe in technology as a force for meaningful change, whether verifying what is real, securing critical infrastructure, or building climate-tech solutions that support a more resilient future.</p></div></details>
+<ol aria-label="Career Highlights" class="highlights"><li class="reveal"><span class="mono">2026 to Present</span><strong>PhD Fellow, Aarhus University</strong><span>SWiM project, funded by the Grundfos Foundation: verifying that district cooling installations run as they were designed, with BIM, AI and digital twins.</span></li><li class="reveal"><span class="mono">2024 to Present</span><strong>Co-Founder, Tree++</strong><span>Tree-planting initiative with 1,000+ trees planted across 10 countries.</span></li><li class="reveal"><span class="mono">2016 to 2024</span><strong>IT Manager, Bank of Brasília</strong><span>Managed USD 1M+ budgets and led AI, automation, and governance initiatives.</span></li><li class="reveal"><span class="mono">Defended May 2026</span><strong>Dual Master's Degrees</strong><span>Computer Science (Stockholm) &amp; Cybersecurity (Brasília).</span></li><li class="reveal"><span class="mono">2024</span><strong>Swedish Institute Scholar</strong><span>Awarded for outstanding global professional impact.</span></li></ol>
+</div>
+</section><section aria-labelledby="projects-title" class="section" id="projects">
+<div class="wrap">
+<div class="section-head"><h2 class="reveal" id="projects-title">Featured Work</h2><p class="mono reveal">Research · Product · Security · Climate</p></div>
+<div class="projects"><article class="project reveal">
+<div class="project-media tile-cream"><img alt="Digital Twins for District Cooling (SWiM) logo" decoding="async" height="120" loading="lazy" src="/assets/img/logos/aarhus-university-logo.png" width="120"/></div>
+<p class="eyebrow">Digital Twins · BIM · Formal Verification · Critical Infrastructure</p>
+<h3>Digital Twins for District Cooling (SWiM)</h3>
+<p class="project-type">PhD Research, Aarhus University</p>
+<p class="project-problem">District cooling keeps buildings such as hospitals and data centres running in hot, dense cities, and small faults can waste energy for a long time before anyone notices.</p>
+<p class="project-result"><span class="mono">Result</span> In progress since August 2026.</p>
+<details class="more"><summary>How It Was Built</summary><div class="more-body"><p>PhD Fellow in the Software Engineering and Computing Systems section, supervised by Peter Gorm Larsen and Carl Peter Leslie Schultz. Part of SWiM, Sustainable Water-based Cooling in Megacities, a five-year project funded by the Grundfos Foundation with partners in Denmark and Singapore.</p><ul><li>Start each digital twin from the building model (BIM) of the installation.</li><li>Run the twins on the Digital Twin as a Service platform.</li><li>Keep AI support verifiable, so operators can rely on what it tells them.</li></ul></div></details>
+<div class="links"><a class="pill" href="https://ingenioer.au.dk/en/current/news/view/artikel/singapore-becomes-testbed-for-danish-water-based-cooling-technologies" rel="noopener" target="_blank">SWiM Project News <svg aria-hidden="true" height="16" viewbox="0 0 24 24" width="16"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path></svg></a></div>
+</article><article class="project reveal">
+<div class="project-media tile-coral"><img alt="FactOrFakeAI logo" decoding="async" height="120" loading="lazy" src="/assets/img/logos/factorfakeai-logo.png" width="120"/></div>
+<p class="eyebrow">Python · Generative AI · Content Authenticity · AI Literacy</p>
+<h3>FactOrFakeAI</h3>
+<p class="project-type">AI Literacy and Content Authenticity</p>
+<p class="project-problem">People can no longer easily tell real images, videos and claims from AI-generated ones.</p>
+<p class="project-result"><span class="mono">Result</span> Educational posts on Instagram and TikTok as @factororfakeai.</p>
+<details class="more"><summary>How It Was Built</summary><div class="more-body"><p>Creator. I run the account and the content pipeline behind it.</p><ul><li>Every claim is fabricated by an invented outlet and published together with its reveal, never attributed to a real outlet.</li><li>Generated images never depict a real person.</li><li>One generation interface in front of the image models, so the models can change without changing the pipeline.</li></ul></div></details>
+<div class="links"><a class="pill" href="https://www.tiktok.com/@factororfakeai" rel="noopener" target="_blank">Watch on TikTok <svg aria-hidden="true" height="16" viewbox="0 0 24 24" width="16"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path></svg></a></div>
+</article><article class="project reveal">
+<div class="project-media tile-gold"><img alt="LabRisk logo" decoding="async" height="120" loading="lazy" src="/assets/img/logos/labrisk-logo.png" width="120"/></div>
+<p class="eyebrow">Cybersecurity · CIS Controls · Risk Management · Open Data</p>
+<h3>LabRisk</h3>
+<p class="project-type">Cybersecurity and Risk Lab, University of Brasília</p>
+<p class="project-problem">Brazilian public bodies, courts included, need cybersecurity frameworks fitted to their own risks.</p>
+<p class="project-result"><span class="mono">Result</span> Paper published in Computers and Security, Elsevier, 2025, with the open dataset on IEEE DataPort.</p>
+<details class="more"><summary>How It Was Built</summary><div class="more-body"><p>Cybersecurity Research Engineer since August 2024.</p><ul><li>Extend the CIS Controls with additional controls for the judiciary.</li><li>Publish the assessed controls as an open dataset, so the analysis can be reproduced and reused.</li></ul></div></details>
+<div class="links"><a class="pill" href="https://labrisk.unb.br" rel="noopener" target="_blank">LabRisk <svg aria-hidden="true" height="16" viewbox="0 0 24 24" width="16"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path></svg></a><a class="pill" href="https://doi.org/10.1016/j.cose.2025.104584" rel="noopener" target="_blank">Read the Paper <svg aria-hidden="true" height="16" viewbox="0 0 24 24" width="16"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path></svg></a><a class="pill" href="https://doi.org/10.21227/h9q6-sv58" rel="noopener" target="_blank">Dataset <svg aria-hidden="true" height="16" viewbox="0 0 24 24" width="16"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path></svg></a></div>
+</article><article class="project reveal">
+<div class="project-media tile-ink"><img alt="Tree++ logo" decoding="async" height="120" loading="lazy" src="/assets/img/logos/treepp-logo.png" width="120"/></div>
+<p class="eyebrow">Volunteering · Reforestation · Community</p>
+<h3>Tree++</h3>
+<p class="project-type">Impact and Philanthropy</p>
+<p class="project-problem">Planting trees needs people on the ground, and people who want to help rarely know where to start.</p>
+<p class="project-result"><span class="mono">Result</span> 1,000+ trees planted across 10 countries.</p>
+<div class="links"><a class="pill" href="https://treepp.org/" rel="noopener" target="_blank">Visit Tree++ <svg aria-hidden="true" height="16" viewbox="0 0 24 24" width="16"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path></svg></a></div>
+</article></div>
+<div class="section-head sub"><h3 class="h-sub reveal">More Projects</h3></div>
+<ul class="minis"><li class="mini reveal"><img alt="" class="mini-logo" decoding="async" height="48" loading="lazy" src="/assets/img/logos/soiqet-logo.png" width="48"/>
+<h4>SoiQet</h4>
+<p class="project-type">LLM-Powered Social Media Platform</p>
+<details class="more"><summary>Details</summary><div class="more-body"><p>RAG-based AI platform integrating 6 social networks for content managers at small businesses and influencers. Prototyped on Lovable, migrated to production on GCP with prompt engineering to optimize LLM outputs across all networks.</p></div></details>
+<div class="links"><a class="pill" href="https://www.soiqet.com" rel="noopener" target="_blank">Visit SoiQet <svg aria-hidden="true" height="16" viewbox="0 0 24 24" width="16"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path></svg></a></div>
+</li><li class="mini reveal"><img alt="" class="mini-logo" decoding="async" height="48" loading="lazy" src="/assets/img/logos/allaskafamat-logo.png" width="48"/>
+<h4>Alla Ska Få Mat</h4>
+<p class="project-type">Social Impact Initiative</p>
+<details class="more"><summary>Details</summary><div class="more-body"><p>Community project in Sweden that organizes donations, volunteers, and communication to support families facing food insecurity, using digital tools for coordination and outreach.</p></div></details>
+<div class="links"><a class="pill" href="https://allaskafamat.se" rel="noopener" target="_blank">Visit Alla Ska Få Mat <svg aria-hidden="true" height="16" viewbox="0 0 24 24" width="16"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path></svg></a></div>
+</li><li class="mini reveal"><img alt="" class="mini-logo" decoding="async" height="48" loading="lazy" src="/assets/img/logos/consulting-logo.png" width="48"/>
+<h4>AI Audit and Security Advisory</h4>
+<p class="project-type">Independent Consulting Engagement (AI-Powered Consumer Product, Anonymised by NDA)</p>
+<details class="more"><summary>Details</summary><div class="more-body"><p>Delivered a 60-page technical audit (Decision Summary + Executive Report + Technical Report) of an AI-powered consumer product MVP. Identified critical data exposure (20 of 21 Supabase tables without Row Level Security, verified with a real exploit using only the public API key), 29 missing AI and security guardrails, and AI cost runaway risk in unbounded chat history. Delivered product strategy reframe and 8-week prioritised roadmap.</p></div></details>
+</li><li class="mini reveal"><img alt="" class="mini-logo" decoding="async" height="48" loading="lazy" src="/assets/img/logos/infosfera-logo.png" width="48"/>
+<h4>Infosfera</h4>
+<p class="project-type">Freelance Web Development for Public-Sector Information Award (LabRisk/UnB + Infojus/UFPR)</p>
+<details class="more"><summary>Details</summary><div class="more-body"><p>Built and delivered the official website for the Prêmio Infosfera de Boas Práticas em Gestão da Informação na Esfera Pública, a Brazilian award partnership between LabRisk (UnB) and Infojus (UFPR). Full site delivery: hero, award rules, evaluation criteria, application flow, publication calendar, and timeline pages. Closed engagement, delivered March 2026.</p></div></details>
+</li><li class="mini reveal"><img alt="" class="mini-logo" decoding="async" height="48" loading="lazy" src="/assets/img/logos/ibepes-logo.png" width="48"/>
+<h4>IBEPES</h4>
+<p class="project-type">Freelance, Custom WordPress Theme for Brazilian Social Research Institute</p>
+<details class="more"><summary>Details</summary><div class="more-body"><p>Designed and shipped a custom WordPress theme for the Instituto Brasileiro de Estudos e Pesquisas Sociais (IBEPES). Full custom theme architecture, content modelling, and deployment. Closed freelance engagement.</p></div></details>
+</li><li class="mini reveal"><img alt="" class="mini-logo" decoding="async" height="48" loading="lazy" src="/assets/img/logos/insphas-logo.png" width="48"/>
+<h4>Insphas</h4>
+<p class="project-type">Digital Transformation for Mental Health Institute</p>
+<details class="more"><summary>Details</summary><div class="more-body"><p>Volunteer IT leadership for Insphas Institute of Psychology, modernizing digital presence and infrastructure, including websites, content, and communication flows for mental health services.</p></div></details>
+<div class="links"><a class="pill" href="https://insphas.com.br" rel="noopener" target="_blank">Visit Insphas <svg aria-hidden="true" height="16" viewbox="0 0 24 24" width="16"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path></svg></a></div>
+</li></ul>
+</div>
+</section><section aria-labelledby="ev-title" class="section" id="events">
+<div class="wrap">
+<div class="section-head"><h2 class="reveal" id="ev-title">Events</h2></div>
+<p class="intro reveal">Hands-on experience across the full event lifecycle: shipping under time pressure as a competitor, building the operational backbone as an organizer, evaluating projects as a judge, and supporting teams as a mentor.</p>
+<div class="stack"><div class="stack-row reveal" data-open="true">
+<h3><button aria-controls="ev-0" aria-expanded="true" class="stack-btn" type="button">
+<span class="stack-word">Won</span><span class="stack-meta mono">Competitor · 4</span><span aria-hidden="true" class="stack-plus"></span>
+</button></h3>
+<div class="stack-panel" id="ev-0"><div><ul class="ev-list"><li><div class="ev-top"><strong>EpiMinds Google AI Hackathon</strong><span class="mono">2026</span></div>
+<p>1st place. SU Heroes team leader. Built a multi-agent crisis-response system in under 24 hours.</p><p class="mono muted">Stockholm</p></li><li><div class="ev-top"><strong>Kong AI-Assisted Coding Hackathon</strong><span class="mono">2025</span></div>
+<p>1st place. Agentic-coding track.</p><p class="mono muted">Stockholm</p></li><li><div class="ev-top"><strong>Kolomolo AI-Assisted Coding Hackathon</strong><span class="mono">2025</span></div>
+<p>1st place. AI-coding pairing track.</p><p class="mono muted">Stockholm</p></li><li><div class="ev-top"><strong>Drivhuset Impact Cup</strong><span class="mono">2025</span></div>
+<p>Tree++ entry. Pitched the volunteer tree-planting initiative to founders, mentors, and impact-investor judges.</p><p class="mono muted">Stockholm</p></li></ul></div></div>
+</div><div class="stack-row reveal" data-open="false">
+<h3><button aria-controls="ev-1" aria-expanded="false" class="stack-btn" type="button">
+<span class="stack-word">Organized</span><span class="stack-meta mono">Co-Organizer · 2</span><span aria-hidden="true" class="stack-plus"></span>
+</button></h3>
+<div class="stack-panel" id="ev-1"><div><ul class="ev-list"><li><div class="ev-top"><strong>DevOpsDays Brasília</strong><span class="mono">4 editions</span></div>
+<p>Co-organizer across four editions. ~250 participants per edition, 30+ speakers per edition, ~1,000 total attendees. Owned speaker coordination, schedule, A/V logistics, online streaming setup, and sponsor coordination. Developed partnerships with industry and academia and curated DevSecOps and AI/ML content.</p><p class="mono muted">Brasília, Brazil</p></li><li><div class="ev-top"><strong>Drivhuset Ideathon</strong><span class="mono">2025</span></div>
+<p>Co-organizer in partnership with the Drivhuset incubator network in Stockholm. Owned format design, applicant selection, mentor pairing, and judge coordination. The event surfaced new climate-tech and AI ventures inside the Stockholm student-founder community.</p><p class="mono muted">Stockholm</p></li></ul></div></div>
+</div><div class="stack-row reveal" data-open="false">
+<h3><button aria-controls="ev-2" aria-expanded="false" class="stack-btn" type="button">
+<span class="stack-word">Judged</span><span class="stack-meta mono">Judge and Reviewer · 2</span><span aria-hidden="true" class="stack-plus"></span>
+</button></h3>
+<div class="stack-panel" id="ev-2"><div><ul class="ev-list"><li><div class="ev-top"><strong>Apart Research Global South AI Safety Hackathon</strong><span class="mono">2026</span></div>
+<p>Judge on the Global Track. Primary track: Technical AI Safety. Secondary: AI Governance and AI Security. Reviewed projects spanning Latin America, Africa, and Asia hubs against the official Apart Sprint rubric (Impact, Execution, Presentation, 1-5 scale).</p><p class="mono muted">Remote, partner orgs: Electric Sheep + Schmidt Sciences</p></li><li><div class="ev-top"><strong>IRC-KDU 2026 Conference</strong><span class="mono">2026</span></div><p>Paper reviewer for the conference programme.</p><p class="mono muted">Remote</p></li></ul></div></div>
+</div><div class="stack-row reveal" data-open="false">
+<h3><button aria-controls="ev-3" aria-expanded="false" class="stack-btn" type="button">
+<span class="stack-word">Speaker</span><span class="stack-meta mono">Talks · 2</span><span aria-hidden="true" class="stack-plus"></span>
+</button></h3>
+<div class="stack-panel" id="ev-3"><div><ul class="ev-list"><li><div class="ev-top"><strong>Nordic Tech Week, "New Tech, Old Rules" Panel</strong><span class="mono">2026</span></div>
+<p>Talk on AI safety and cybersecurity, built around one question: how do you prove that you are you once a face, a voice, a document and a video call can all be generated? Shown as a recorded talk at an event with 200 registered attendees and a waitlist, alongside Dr. Vijeta Sharma (RISE) and Jakub Kreft.</p><p class="mono muted">Stockholm, 8 September 2026, event page</p><div class="links"><a class="pill" href="https://luma.com/55sbsi4s" rel="noopener" target="_blank">Event Page <svg aria-hidden="true" height="16" viewbox="0 0 24 24" width="16"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path></svg></a></div></li><li><div class="ev-top"><strong>36th ENANGRAD</strong><span class="mono">2025</span></div><p>Oral presentation of the peer-reviewed paper on cybersecurity business risk in metropolitan transport systems.</p><p class="mono muted">Fortaleza, Brazil</p><div class="links"><a class="pill" href="https://doity.com.br/anais/36-enangrad/trabalho/482875" rel="noopener" target="_blank">View the Proceedings <svg aria-hidden="true" height="16" viewbox="0 0 24 24" width="16"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path></svg></a></div></li></ul></div></div>
+</div><div class="stack-row reveal" data-open="false">
+<h3><button aria-controls="ev-4" aria-expanded="false" class="stack-btn" type="button">
+<span class="stack-word">Mentor</span><span class="stack-meta mono">Team Support · 1</span><span aria-hidden="true" class="stack-plus"></span>
+</button></h3>
+<div class="stack-panel" id="ev-4"><div><ul class="ev-list"><li><div class="ev-top"><strong>Hack for the Futures</strong><span class="mono">2026</span></div>
+<p>Mentor supporting student and early-career teams on AI and tech-for-good projects. Guidance on technical scoping, prototyping under time pressure, and pitching to judges.</p><p class="mono muted">hackforthefutures.org</p><div class="links"><a class="pill" href="https://www.hackforthefutures.org/mentor" rel="noopener" target="_blank">hackforthefutures.org <svg aria-hidden="true" height="16" viewbox="0 0 24 24" width="16"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path></svg></a></div></li></ul></div></div>
+</div></div>
+</div>
+</section><section aria-labelledby="pub-title" class="section paper" id="publications">
+<div class="wrap paper-card">
+<div class="section-head"><h2 class="reveal" id="pub-title">Publications</h2><p class="mono reveal">7 Works, 2024 to 2026</p></div>
+<ol class="pubs"><li class="pub reveal">
+<img alt="" decoding="async" height="36" loading="lazy" src="/assets/img/logos/utfpr-logo.png" width="36"/>
+<div><h3>Cybersecurity Challenges: An Analysis of the Brazilian Public Administration</h3><p class="pub-meta">Revista Tecnologia e Sociedade (UTFPR) | 2026 | Published in Portuguese | DOI: 10.3895/rts.v22n69.20157</p>
+<div class="pub-actions"><details class="more"><summary>Summary</summary><div class="more-body"><p>Peer-reviewed study identifying the main cybersecurity governance challenges faced by the Brazilian public administration, from the perspective of managers and specialists in the field.</p></div></details>
+<div class="links"><a class="pill pill-dark" href="https://periodicos.utfpr.edu.br/rts/article/view/20157" rel="noopener" target="_blank">Read the Paper <svg aria-hidden="true" height="16" viewbox="0 0 24 24" width="16"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path></svg></a></div></div></div>
+</li><li class="pub reveal">
+<img alt="" decoding="async" height="36" loading="lazy" src="/assets/img/logos/stockholm-university-logo.png" width="36"/>
+<div><h3>Automated Detection of Safe Landing Locations in Below-Canopy Forest Conditions</h3><p class="pub-meta">MSc Thesis, Department of Computer and Systems Sciences (DSV), Stockholm University | with Deep Forestry AB | Supervisor: Prof. Rahim Rahmani | 2026</p>
+<div class="pub-actions"><details class="more"><summary>Summary</summary><div class="more-body"><p>Master's thesis on finding where a drone can safely land under the forest canopy, from sensor data collected in real stands. Written inside an industrial research project and defended at DSV.</p></div></details>
+</div></div>
+</li><li class="pub reveal">
+<img alt="" decoding="async" height="36" loading="lazy" src="/assets/img/logos/unb-logo.png" width="36"/>
+<div><h3>An Information Security Control Baseline to Mitigate Business Risk in the Sanitation Sector</h3><p class="pub-meta">Professional Master's Dissertation, PPEE, University of Brasilia | record PPEE.DM-124/2026 | Supervisor: Prof. Rafael Rabelo Nunes | 2026</p>
+<div class="pub-actions"><details class="more"><summary>Summary</summary><div class="more-body"><p>Dissertation proposing a baseline of information security controls for water and sanitation utilities, built from the business risks the sector actually carries rather than from a generic framework.</p></div></details>
+</div></div>
+</li><li class="pub reveal">
+<img alt="" decoding="async" height="36" loading="lazy" src="/assets/img/logos/elsevier-logo.png" width="36"/>
+<div><h3>Enhancing Cybersecurity in the Judiciary: Integrating Additional Controls into the CIS Framework</h3><p class="pub-meta">Computers and Security (Elsevier) | 2025 | DOI: 10.1016/j.cose.2025.104584</p>
+<div class="pub-actions"><details class="more"><summary>Summary</summary><div class="more-body"><p>Co-authored peer-reviewed study proposing an expanded CIS cybersecurity model for digital protection across the Brazilian judiciary.</p></div></details>
+<div class="links"><a class="pill pill-dark" href="https://doi.org/10.1016/j.cose.2025.104584" rel="noopener" target="_blank">Read the Paper <svg aria-hidden="true" height="16" viewbox="0 0 24 24" width="16"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path></svg></a></div></div></div>
+</li><li class="pub reveal">
+<img alt="" decoding="async" height="36" loading="lazy" src="/assets/img/logos/ieee-logo.png" width="36"/>
+<div><h3>Security Controls for Judiciary Risk Management</h3><p class="pub-meta">Dataset, IEEE DataPort | 2025 | DOI: 10.21227/h9q6-sv58</p>
+<div class="pub-actions"><details class="more"><summary>Summary</summary><div class="more-body"><p>Open dataset of the security controls assessed in the judiciary study, published so the analysis behind the Computers &amp; Security paper can be reproduced and reused.</p></div></details>
+<div class="links"><a class="pill pill-dark" href="https://doi.org/10.21227/h9q6-sv58" rel="noopener" target="_blank">View the Dataset <svg aria-hidden="true" height="16" viewbox="0 0 24 24" width="16"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path></svg></a></div></div></div>
+</li><li class="pub reveal">
+<img alt="" decoding="async" height="36" loading="lazy" src="/assets/img/logos/navus-logo.png" width="36"/>
+<div><h3>Cybersecurity Protection in the Brazilian Judiciary: A Comparative Study of State Court Security Structures</h3><p class="pub-meta">NAVUS Journal of Technology and Management | 2024 | Published in Portuguese | DOI: 10.22279/navus.v14.2032</p>
+<div class="pub-actions"><details class="more"><summary>Summary</summary><div class="more-body"><p>Research analyzing cybersecurity maturity and structural gaps in state courts across Brazil. Provides recommendations on governance, risk, and compliance to strengthen digital resilience.</p></div></details>
+<div class="links"><a class="pill pill-dark" href="https://doi.org/10.22279/navus.v14.2032" rel="noopener" target="_blank">Read the Paper <svg aria-hidden="true" height="16" viewbox="0 0 24 24" width="16"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path></svg></a></div></div></div>
+</li><li class="pub reveal">
+<img alt="" decoding="async" height="36" loading="lazy" src="/assets/img/logos/enangrad-logo.png" width="36"/>
+<div><h3>Critical Infrastructure Under Threat: Business Risks for Cybersecurity in Metropolitan Transport Systems</h3><p class="pub-meta">ENANGRAD 2025, Brazilian National Meeting of Administration Programs | Technology, AI and Digital Transformation Track | Published in Portuguese</p>
+<div class="pub-actions"><details class="more"><summary>Summary</summary><div class="more-body"><p>Peer-reviewed conference paper on cybersecurity business risk in metropolitan transport systems. Examines operational and governance exposures in critical-infrastructure environments and the controls needed to mitigate them.</p></div></details>
+</div></div>
+</li></ol>
+</div>
+</section><section aria-labelledby="exp-title" class="section" id="experience"><div class="wrap"><div class="section-head"><h2 class="reveal" id="exp-title">Experience</h2></div><ol class="timeline"><li class="role"><img alt="" class="logo-mark" decoding="async" height="40" loading="lazy" src="/assets/img/logos/aarhus-university-logo.png" width="40"/><div>
+<h3>PhD Fellow, Digital Twins for District Cooling (SWiM)</h3>
+<p class="org">Aarhus University</p>
+<p class="when">2026 to Present | Aarhus, Denmark</p>
+<p class="first">Verifying that district cooling installations are commissioned as they were designed, combining Building Information Modelling, AI and digital twins.</p><details class="more"><summary>Details</summary><ul class="dots"><li>Part of SWiM, funded by the Grundfos Foundation, supervised by Peter Gorm Larsen and Carl Peter Leslie Schultz, at the intersection of AI safety, cybersecurity, and critical-infrastructure resilience.</li></ul></details>
+</div></li><li class="role"><img alt="" class="logo-mark" decoding="async" height="40" loading="lazy" src="/assets/img/logos/soiqet-logo.png" width="40"/><div>
+<h3>Founder and CEO</h3>
+<p class="org">SoiQet Social IQ Set</p>
+<p class="when">2025 to Present | Aarhus, Denmark</p>
+<p class="first">Founded SoiQet, an LLM-powered platform integrating 6 social networks for content managers at small businesses and influencers: RAG-based AI content generation, scheduling, and analytics on GCP.</p><details class="more"><summary>Details</summary><ul class="dots"><li>Prototyped full product on Lovable, then migrated to production on GCP (Python, Node.js, Supabase, React), applying prompt engineering to optimize LLM outputs for content quality across all integrated networks.</li><li>Own product vision, engineering, and go-to-market as Head of Engineering and CEO, from early validation through platform growth.</li></ul></details>
+</div></li><li class="role"><img alt="" class="logo-mark" decoding="async" height="40" loading="lazy" src="/assets/img/logos/treepp-logo.png" width="40"/><div>
+<h3>Co-Founder and Head of Innovation</h3>
+<p class="org">Tree++ (Climate Tech Startup)</p>
+<p class="when">2024 to Present | Aarhus, Denmark</p>
+<p class="first">Lead technical strategy and fundraising for a climate-tech platform with 1,000+ trees planted across 10 countries (2026), connecting volunteers and landowners via an AI-powered carbon footprint calculator and QR-based carbon credit tracking.</p><details class="more"><summary>Details</summary><ul class="dots"><li>Built computer vision pipeline to analyze imagery for carbon credit consumption monitoring, and an ML matchmaking system connecting offsetting requests to volunteers and landowners.</li><li>Hired and lead the engineering team, handling performance management, delivery standards, and budget planning.</li></ul></details>
+</div></li><li class="role"><img alt="" class="logo-mark" decoding="async" height="40" loading="lazy" src="/assets/img/logos/brb-logo.png" width="40"/><div>
+<h3>IT Analyst and DevOps Engineer</h3>
+<p class="org">Bank of Brasília BRB</p>
+<p class="when">2014 to 2016, 2024 to Present | Brasília, Brazil</p>
+<p class="first">Built a production AI chatbot (Python, TensorFlow, NLP) during a Silicon Valley engagement that cut customer response time by 40% for 100K+ users.</p><details class="more"><summary>Details</summary><ul class="dots"><li>Led system design and implementation of DevSecOps CI/CD pipelines across Jenkins, GitLab, Docker, OpenShift, and Kubernetes, reducing deployment time by 60%.</li><li>Built Power BI dashboards for the C-suite and maintained compliance with BACEN and GDPR-equivalent data protection standards.</li><li>Partnered directly with the CIO, CFO, and COO to align IT delivery, compliance, and investment priorities with business goals.</li></ul></details>
+</div></li><li class="role"><img alt="" class="logo-mark" decoding="async" height="40" loading="lazy" src="/assets/img/logos/brb-logo.png" width="40"/><div>
+<h3>IT Manager</h3>
+<p class="org">Bank of Brasília BRB</p>
+<p class="when">2016 to 2024 | Brasília, Brazil</p>
+<p class="first">Managed a $1M+ IT budget with full P&amp;L accountability, reducing operating costs by 15% and generating $150K+ in savings through vendor renegotiation and contract restructuring.</p><details class="more"><summary>Details</summary><ul class="dots"><li>Led a team of 10+ IT professionals across hiring, performance reviews, OKR planning, career development, and adoption of COBIT, ITIL, Agile, and Lean IT practices.</li><li>Redesigned Change and Configuration Management processes, improving compliance and audit accuracy by 40% and lowering regulatory exposure.</li><li>Led Lean IT and DevSecOps transformation efforts that reduced operational waste by 20% and improved execution standards across the department.</li></ul></details>
+</div></li><li class="role"><img alt="" class="logo-mark" decoding="async" height="40" loading="lazy" src="/assets/img/logos/ibict-logo.png" width="40"/><div>
+<h3>Research Engineer</h3>
+<p class="org">Brazilian Institute of Information in Science and Technology - IBICT</p>
+<p class="when">2022 | Brasília, Brazil</p>
+<p class="first">Customized Archivematica for Kubernetes and OpenShift deployment, enabling scalable digital preservation infrastructure for government agencies managing millions of digital assets.</p><details class="more"><summary>Details</summary><ul class="dots"><li>Supported national initiatives in knowledge management, data governance, and digital transformation for public sector with improved automation workflows.</li></ul></details>
+</div></li></ol><details class="show-all"><summary>Show Earlier Roles</summary><ol class="timeline"><li class="role"><img alt="" class="logo-mark" decoding="async" height="40" loading="lazy" src="/assets/img/logos/mcid-logo.png" width="40"/><div>
+<h3>Software Engineer</h3>
+<p class="org">Ministry of Integration and Regional Development MCID</p>
+<p class="when">2014 | Brasília, Brazil</p>
+<p class="first">Modernized legacy PHP and MySQL systems improving scalability, maintainability, and performance for national integration services.</p><details class="more"><summary>Details</summary><ul class="dots"><li>Developed responsive web and mobile applications increasing citizen access to government digital services and platforms.</li></ul></details>
+</div></li><li class="role"><img alt="" class="logo-mark" decoding="async" height="40" loading="lazy" src="/assets/img/logos/senai-logo.png" width="40"/><div>
+<h3>Web Developer and Designer</h3>
+<p class="org">SENAI National Industrial Training Service</p>
+<p class="when">2010 to 2012 | Brasília, Brazil</p>
+<p class="first">Developed e-learning platforms supporting 2,000+ students with interactive learning modules, progress tracking, and assessment tools.</p><details class="more"><summary>Details</summary><ul class="dots"><li>Built PHP and MySQL systems for statewide education programs, optimized UX for digital curriculum delivery and multi-device access.</li></ul></details>
+</div></li><li class="role"><img alt="" class="logo-mark" decoding="async" height="40" loading="lazy" src="/assets/img/logos/deepforestry-logo.png" width="40"/><div>
+<h3>AI Research Engineer (MSc Thesis)</h3>
+<p class="org">Deep Forestry</p>
+<p class="when">Jan to May 2026 | Stockholm, Sweden</p>
+<p class="first">MSc thesis: designed and evaluated a hybrid geometric-neural pipeline for real-time autonomous landing zone detection in below-canopy forests using LiDAR point clouds (RANSAC, PointNet, PointNet++, DGCNN).</p><details class="more"><summary>Details</summary><ul class="dots"><li>Achieved 29x latency reduction (5.8s to 200ms) through KD-Tree and voxel-downsampling optimizations on real forest flight data collected with Deep Forestry's autonomous drone platform.</li><li>deepforestry.com</li><li><a href="https://www.deepforestry.com" rel="noopener" target="_blank">deepforestry.com</a></li></ul></details>
+</div></li><li class="role"><img alt="" class="logo-mark" decoding="async" height="40" loading="lazy" src="/assets/img/logos/su-heroes-logo.png" width="40"/><div>
+<h3>Team Leader</h3>
+<p class="org">SU Heroes - Hackathon Team</p>
+<p class="when"></p>
+<p class="first">Lead multidisciplinary teams building applied AI automation and agentic AI systems, mentor students and engineers in AI/ML, cloud architecture, and rapid prototyping.</p><details class="more"><summary>Details</summary><ul class="dots"><li>Hackathon results are listed under Hackathons.</li></ul></details>
+</div></li><li class="role"><img alt="" class="logo-mark" decoding="async" height="40" loading="lazy" src="/assets/img/logos/stockholm-university-logo.png" width="40"/><div>
+<h3>Teaching Assistant - Internet of Things</h3>
+<p class="org">Stockholm University SU</p>
+<p class="when"></p>
+<p class="first">Support 200+ students in IoT coursework: Python programming, sensor integration (MQTT), edge computing, and data processing pipelines.</p>
+</div></li><li class="role"><img alt="" class="logo-mark" decoding="async" height="40" loading="lazy" src="/assets/img/logos/drivhuset-logo.png" width="40"/><div>
+<h3>Student Ambassador</h3>
+<p class="org">Drivhuset Stockholm SU</p>
+<p class="when"></p>
+<p class="first">Support founders and students in entrepreneurship programs, mentor on technology strategy and product development, promote innovation activities across Stockholm University.</p>
+</div></li><li class="role"><img alt="" class="logo-mark" decoding="async" height="40" loading="lazy" src="/assets/img/logos/allaskafamat-logo.png" width="40"/><div>
+<h3>Volunteer and Web Developer</h3>
+<p class="org">Alla Ska Få Mat</p>
+<p class="when"></p>
+<p class="first">Built and maintain the website for a nonprofit that distributes weekly meals to vulnerable families and homeless individuals in Stockholm. Also support volunteer operations on the ground.</p><details class="more"><summary>Details</summary><ul class="dots"><li>allaskafamat.se</li><li><a href="https://allaskafamat.se" rel="noopener" target="_blank">allaskafamat.se</a></li></ul></details>
+</div></li><li class="role"><img alt="" class="logo-mark" decoding="async" height="40" loading="lazy" src="/assets/img/logos/geeffektivt-logo.svg" width="40"/><div>
+<h3>Volunteer Frontend Developer</h3>
+<p class="org">Ge Effektivt Stiftelsen Effekt</p>
+<p class="when">2026</p>
+<p class="first">Contributed mobile layout fixes to geeffektivt.se (Next.js + Sanity CMS, multi-country effective-altruism donation platform): replaced overflow:scroll with overflow-x:hidden on the mobile navbar, published a --cookie-banner-height CSS custom property via ResizeObserver to dynamically reposition the floating Give button above the cookie banner, restored fixed-bottom mobile button group with 2rem footer margin. Reviewed and approved by the in-house designer.</p><details class="more"><summary>Details</summary><ul class="dots"><li>geeffektivt.se</li><li><a href="https://geeffektivt.se" rel="noopener" target="_blank">geeffektivt.se</a></li></ul></details>
+</div></li></ol></details></div></section><section aria-labelledby="edu-title" class="section" id="education"><div class="wrap"><div class="section-head"><h2 class="reveal" id="edu-title">Education</h2></div><ol class="timeline"><li class="role"><img alt="" class="logo-mark" decoding="async" height="40" loading="lazy" src="/assets/img/logos/aarhus-university-logo.png" width="40"/><div>
+<h3>PhD Fellow, Digital Twins for District Cooling (SWiM)</h3>
+<p class="org">Aarhus University</p>
+<p class="when">2026 to Present | Aarhus, Denmark</p>
+<p class="first">SWiM project, funded by the Grundfos Foundation.</p><details class="more"><summary>Details</summary><ul class="dots"><li>Supervised by Peter Gorm Larsen and Carl Peter Leslie Schultz.</li></ul></details>
+</div></li><li class="role"><img alt="" class="logo-mark" decoding="async" height="40" loading="lazy" src="/assets/img/logos/stockholm-university-logo.png" width="40"/><div>
+<h3>Master of Science in Computer and Systems Sciences (AI and IoT)</h3>
+<p class="org">Stockholm University SU</p>
+<p class="when">Completed 2026 | Stockholm, Sweden</p>
+<p class="first">Specialization: Machine Learning, Deep Learning, Computer Vision, Natural Language Processing, IoT Systems, Autonomous Systems.</p><details class="more"><summary>Details</summary><ul class="dots"><li>MSc thesis in collaboration with Deep Forestry: hybrid geometric-neural pipeline for real-time autonomous landing zone detection in below-canopy forests using LiDAR point clouds.</li><li>Student Ambassador at Drivhuset Stockholm, Teaching Assistant in Internet of Things (IoT).</li><li>Member of the Network for Global Professionals (NFGP) by the Swedish Institute.</li></ul></details>
+</div></li><li class="role"><img alt="" class="logo-mark" decoding="async" height="40" loading="lazy" src="/assets/img/logos/unb-logo.png" width="40"/><div>
+<h3>Professional Master's in Electrical Engineering, Cybersecurity Area (PPEE)</h3>
+<p class="org">University of Brasília UnB</p>
+<p class="when">Completed May 2026 | Brasília, Brazil</p>
+<p class="first">Specialization: Risk management, AI for cybersecurity, critical infrastructure protection, and security governance frameworks.</p><details class="more"><summary>Details</summary><ul class="dots"><li>Published in Computers and Security, Elsevier, 2025, on cybersecurity frameworks for judicial systems.</li><li><a href="https://www.sciencedirect.com/science/article/pii/S0167404825002731" rel="noopener" target="_blank">Elsevier's Computers &amp; Security Journal (2025)</a></li></ul></details>
+</div></li><li class="role"><img alt="" class="logo-mark" decoding="async" height="40" loading="lazy" src="/assets/img/logos/upis-logo.png" width="40"/><div>
+<h3>BSc in Information Systems</h3>
+<p class="org">Faculdades Integradas UPIS</p>
+<p class="when"></p>
+<p class="first">Focus: Algorithms, data structures, software engineering, database systems, and technology entrepreneurship fundamentals.</p>
+</div></li></ol><details class="show-all"><summary>Other Education</summary><ol class="timeline"><li class="role"><img alt="" class="logo-mark" decoding="async" height="40" loading="lazy" src="/assets/img/logos/mit-logo.png" width="40"/><div>
+<h3>Designing and Building AI Products</h3>
+<p class="org">Massachusetts Institute of Technology MIT</p>
+<p class="when"></p>
+<p class="first">Specialization: 40-hour executive program on AI product development, deployment strategies, and scaling ML systems in production environments.</p>
+</div></li><li class="role"><img alt="" class="logo-mark" decoding="async" height="40" loading="lazy" src="/assets/img/logos/descomplica-logo.png" width="40"/><div>
+<h3>MBA in Innovation, Technology &amp; Entrepreneurship</h3>
+<p class="org">Descomplica</p>
+<p class="when"></p>
+<p class="first">Focus: Business model innovation, technology strategy, startup development, and lean startup methodology.</p>
+</div></li><li class="role"><img alt="" class="logo-mark" decoding="async" height="40" loading="lazy" src="/assets/img/logos/descomplica-logo.png" width="40"/><div>
+<h3>Postgraduate in Data Analysis</h3>
+<p class="org">Descomplica</p>
+<p class="when"></p>
+<p class="first">Focus: Statistical modeling, machine learning algorithms, predictive analytics, data visualization, and business intelligence.</p>
+</div></li><li class="role"><img alt="" class="logo-mark" decoding="async" height="40" loading="lazy" src="/assets/img/logos/fgv-logo.png" width="40"/><div>
+<h3>MBA in Project Management</h3>
+<p class="org">Fundação Getulio Vargas FGV</p>
+<p class="when"></p>
+<p class="first">Specialization: Agile methodologies, Scrum, PMBOK, risk management, stakeholder management, and change management for IT project delivery.</p>
+</div></li></ol></details><details class="more certs reveal"><summary>Show 16 Certifications</summary><div class="more-body cert-grid"><div class="cert-group"><h4>Leadership</h4><ul><li>EA Sweden Fellowship, Effective Altruism (2026)</li><li>Women's Leadership Program (SOUL, 2024)</li><li>Self-Leadership Program (Hyper Island and Swedish Institute, 2024)</li><li>Collaborative Approaches to Societal Issues (Stockholm School of Entrepreneurship, 2024)</li></ul></div><div class="cert-group"><h4>AI &amp; Data</h4><ul><li>BlueDot Impact AI Safety Fellowship, AGI Strategy (2026)</li><li>BlueDot Impact AI Safety Fellowship, Technical AI Safety (2026)</li><li>Business Intelligence Foundation (Certiprof, 2024)</li><li>Data Analysis (ENAP, 2023)</li><li>Designing and Building AI Products (MIT, 2022)</li></ul></div><div class="cert-group"><h4>IT Governance</h4><ul><li>DevOps Master (EXIN, 2020)</li><li>Lean IT Foundation (EXIN, 2019)</li><li>COBIT 5 Foundation (ISACA, 2015)</li><li>ITIL V3 Foundation (EXIN, 2015)</li></ul></div><div class="cert-group"><h4>Agile &amp; Process</h4><ul><li>Lean Six Sigma White Belt (Certiprof, 2024)</li><li>Scrum Foundation (Certiprof, 2019)</li></ul></div><div class="cert-group"><h4>Language</h4><ul><li>TOEFL iBT (ETS, 2024)</li></ul></div></div></details></div></section><section aria-labelledby="skills-title" class="section" id="skills">
+<div class="wrap">
+<div class="section-head"><h2 class="reveal" id="skills-title">Skills</h2></div>
+<div class="skills"><div class="skill-group reveal"><h3 class="mono">Focus Areas</h3><ul class="tags"><li>AI Safety</li><li>Trustworthy and Verifiable AI</li><li>Digital Twins</li><li>Cybersecurity</li><li>Critical-Infrastructure Resilience</li><li>AI Engineering</li></ul></div><div class="skill-group reveal"><h3 class="mono">PhD and Research</h3><ul class="tags"><li>Building Information Modelling (BIM)</li><li>Formal Verification</li><li>Digital Twin as a Service (DTaaS)</li><li>District Cooling Systems</li><li>LiDAR Perception</li><li>Point-Cloud Deep Learning (PointNet, PointNet++, DGCNN)</li><li>Edge Inference (NVIDIA Jetson Orin NX)</li><li>Evaluation Harnesses</li></ul></div><div class="skill-group reveal"><h3 class="mono">AI and Machine Learning</h3><ul class="tags"><li>PyTorch</li><li>TensorFlow</li><li>Keras</li><li>Scikit-Learn</li><li>Hugging Face</li><li>LLMs and Generative AI</li><li>LLM Fine-Tuning</li><li>RAG</li><li>Prompt Engineering</li><li>Structured Outputs</li><li>Computer Vision</li><li>NLP</li><li>Deep Learning and CNNs</li><li>MLOps and Model Deployment</li></ul></div><div class="skill-group reveal"><h3 class="mono">Cybersecurity and Governance</h3><ul class="tags"><li>CIS Controls</li><li>NIST</li><li>GDPR</li><li>Risk Management</li><li>Compliance and Audit</li><li>COBIT</li><li>ITIL</li><li>CMDB and ITSM</li><li>Lean IT</li><li>PMBOK</li><li>DevSecOps</li></ul></div><div class="skill-group reveal"><h3 class="mono">Programming</h3><ul class="tags"><li>Python</li><li>TypeScript</li><li>JavaScript</li><li>SQL</li><li>Java</li><li>PHP</li><li>Bash</li><li>R</li><li>Groovy</li></ul></div><div class="skill-group reveal"><h3 class="mono">Data Engineering</h3><ul class="tags"><li>Apache Spark and PySpark</li><li>Hadoop</li><li>Airflow</li><li>Kafka</li><li>ETL Pipelines</li><li>PostgreSQL</li><li>MongoDB</li><li>Power BI</li><li>Data Warehousing</li></ul></div><div class="skill-group reveal"><h3 class="mono">Cloud and DevOps</h3><ul class="tags"><li>Azure</li><li>AWS</li><li>GCP</li><li>Kubernetes</li><li>Docker</li><li>OpenShift</li><li>Jenkins</li><li>GitLab CI</li><li>GitHub</li><li>Terraform</li><li>Ansible</li><li>CI/CD</li><li>Observability (Grafana)</li><li>Supabase</li></ul></div><div class="skill-group reveal"><h3 class="mono">Architecture</h3><ul class="tags"><li>System Design</li><li>Platform Engineering</li><li>Multi-Tenant SaaS</li><li>Microservices</li><li>REST and GraphQL APIs</li><li>OAuth</li><li>Event-Driven Architecture</li><li>Distributed Systems</li><li>IoT Integration</li></ul></div><div class="skill-group reveal"><h3 class="mono">Leadership</h3><ul class="tags"><li>Technology Strategy</li><li>Team Leadership (10+ Engineers)</li><li>P&amp;L Management ($1M+)</li><li>OKR Planning and Execution</li><li>Technical Hiring</li><li>Stakeholder Management</li><li>Strategic Planning</li><li>Change Management</li><li>Vendor Management</li></ul></div><div class="skill-group reveal"><h3 class="mono">Languages</h3><ul class="tags"><li>Portuguese (Native)</li><li>English (C1, TOEFL 101/120)</li><li>Spanish (B1)</li><li>Swedish (B1)</li><li>Danish (Beginner)</li></ul></div></div>
+</div>
+</section><section aria-labelledby="writing-title" class="section writing" id="writing"><div class="wrap">
+<div class="section-head"><h2 class="section-title" id="writing-title">Writing</h2><a class="src" href="/blog/">All Posts</a></div>
+<div class="post-list"><article class="post-card reveal">
+<a aria-hidden="true" class="pc-img" href="/blog/quantum-computing-whats-the-fuss-about/" tabindex="-1"><img alt="" height="340" loading="lazy" src="/blog/quantum-computing-whats-the-fuss-about/image-1.png" width="640"/></a>
+<div><p class="when"><time datetime="2026-02-10">10 February 2026</time></p>
+<h3><a href="/blog/quantum-computing-whats-the-fuss-about/">Quantum Computing: What’s the Fuss About</a></h3>
+<p>For a long time, quantum computing sounded like one of those topics people mention to sound futuristic: Qubits. Superposition. Entanglement. Big words, big promises…</p>
+<p class="sources"><a class="src" href="https://medium.com/@jadypamella/quantum-computing-whats-the-fuss-about-116c62fc3dca" rel="noopener" target="_blank">Read on Medium</a></p></div>
+</article><article class="post-card reveal">
+<a aria-hidden="true" class="pc-img" href="/blog/brandlens-brand-sentiment-analysis-using-bert/" tabindex="-1"><img alt="" height="340" loading="lazy" src="/blog/brandlens-brand-sentiment-analysis-using-bert/image-1.png" width="640"/></a>
+<div><p class="when"><time datetime="2025-06-15">15 June 2025</time></p>
+<h3><a href="/blog/brandlens-brand-sentiment-analysis-using-bert/">BrandLens: Brand Sentiment Analysis Using BERT</a></h3>
+<p>Sesame Workshop Introduction Understanding how people perceive a brand is essential for businesses in today’s digital and highly connected world. Public sentiment…</p>
+<p class="sources"><a class="src" href="https://medium.com/@jadypamella/brandlens-brand-sentiment-analysis-using-bert-020064c2c0b9" rel="noopener" target="_blank">Read on Medium</a></p></div>
+</article><article class="post-card reveal">
+<a aria-hidden="true" class="pc-img" href="/blog/what-do-you-need-to-know-about-erlang/" tabindex="-1"><img alt="" height="340" loading="lazy" src="/blog/what-do-you-need-to-know-about-erlang/image-1.png" width="640"/></a>
+<div><p class="when"><time datetime="2025-03-17">17 March 2025</time></p>
+<h3><a href="/blog/what-do-you-need-to-know-about-erlang/">What Do You Need to Know About Erlang</a></h3>
+<p>Concurrent and distributed computing has become essential in our digital age. Modern systems must handle multiple tasks simultaneously in an efficient and secure way…</p>
+<p class="sources"><a class="src" href="https://medium.com/@jadypamella/what-do-you-need-to-know-about-erlang-1ea40df675e0" rel="noopener" target="_blank">Read on Medium</a></p></div>
+</article></div>
+</div></section><section aria-labelledby="contact-title" class="contact" id="contact">
+<div class="wrap">
+<p class="mono reveal">Open to AI Safety, Research and Engineering Conversations</p>
+<h2 class="contact-title reveal" id="contact-title"><a href="mailto:hello@jadypamella.com">Let's Talk <span aria-hidden="true" class="arrow-circle"><svg aria-hidden="true" height="16" viewbox="0 0 24 24" width="16"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path></svg></span></a></h2>
+<p class="contact-line mono reveal"><a href="mailto:hello@jadypamella.com">hello@jadypamella.com</a> · Aarhus, Denmark</p>
+<div class="cta-row reveal"><a class="btn btn-dark" download="" href="/assets/cv/Jady_Pamella_CV.pdf"><svg aria-hidden="true" height="18" viewbox="0 0 24 24" width="18"><path d="M12 4v11m0 0-4-4m4 4 4-4M5 20h14" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg><span>Professional CV (PDF)</span></a><a class="btn btn-dark" download="" href="/assets/cv/Jady_Pamella_CV_Academic.pdf"><svg aria-hidden="true" height="18" viewbox="0 0 24 24" width="18"><path d="M12 4v11m0 0-4-4m4 4 4-4M5 20h14" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg><span>Academic CV (PDF)</span></a><a class="btn btn-outline-dark" href="https://calendly.com/jadypamella/meeting" rel="noopener" target="_blank"><svg aria-hidden="true" height="18" viewbox="0 0 24 24" width="18"><rect fill="none" height="15" rx="2" stroke="currentColor" stroke-width="2" width="16" x="4" y="5"></rect><path d="M4 10h16M9 3v4M15 3v4" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path></svg><span>Book a Meeting</span></a></div>
+<ul aria-label="Profiles" class="profiles reveal"><li><a href="mailto:hello@jadypamella.com">hello@jadypamella.com</a></li><li><a href="https://linkedin.com/in/jadypamella" rel="noopener" target="_blank">LinkedIn</a></li><li><a href="https://github.com/jadypamella" rel="noopener" target="_blank">GitHub</a></li><li><a href="https://medium.com/@jadypamella" rel="noopener" target="_blank">Medium</a></li><li><a href="https://calendly.com/jadypamella/meeting" rel="noopener" target="_blank">Calendly</a></li><li><a href="https://orcid.org/0009-0006-4280-3364" rel="noopener" target="_blank">ORCID</a></li><li><a href="https://scholar.google.com/citations?user=b8Jt_AgAAAAJ" rel="noopener" target="_blank">Google Scholar</a></li><li><a href="https://www.researchgate.net/profile/Jady-Barbacena-Da-Silva" rel="noopener" target="_blank">ResearchGate</a></li><li><a href="https://www.scopus.com/authid/detail.uri?authorId=59970410700" rel="noopener" target="_blank">Scopus</a></li></ul>
+</div>
 </section>
-
-
-        <!-- Hackathons & Innovation Events -->
-<section id="hackathons" class="hackathons-section">
-    <h2 class="section-title">Hackathons &amp; Innovation Events</h2>
-    <p class="section-intro">
-        Hands-on experience across the full event lifecycle: shipping under time pressure as a competitor, building the operational backbone as an organizer, evaluating projects as a judge, and supporting teams as a mentor.
-    </p>
-
-    <!-- WON -->
-    <div class="hackathon-block">
-        <h3 class="hackathon-block-title"><span class="role-badge role-won">Won</span> Competitor</h3>
-        <div class="hackathon-cards">
-
-            <div class="hackathon-card">
-                <div class="hackathon-card-header">
-                    <h4>EpiMinds Google AI Hackathon</h4>
-                    <span class="hackathon-year">2026</span>
-                </div>
-                <p class="hackathon-result"><strong>1st place.</strong> SU Heroes team leader. Built a multi-agent crisis-response system in under 24 hours.</p>
-                <div class="hackathon-meta">Stockholm</div>
-            </div>
-
-            <div class="hackathon-card">
-                <div class="hackathon-card-header">
-                    <h4>Kong AI-Assisted Coding Hackathon</h4>
-                    <span class="hackathon-year">2025</span>
-                </div>
-                <p class="hackathon-result"><strong>1st place.</strong> Agentic-coding track.</p>
-                <div class="hackathon-meta">Stockholm</div>
-            </div>
-
-            <div class="hackathon-card">
-                <div class="hackathon-card-header">
-                    <h4>Kolomolo AI-Assisted Coding Hackathon</h4>
-                    <span class="hackathon-year">2025</span>
-                </div>
-                <p class="hackathon-result"><strong>1st place.</strong> AI-coding pairing track.</p>
-                <div class="hackathon-meta">Stockholm</div>
-            </div>
-
-            <div class="hackathon-card">
-                <div class="hackathon-card-header">
-                    <h4>Drivhuset Impact Cup</h4>
-                    <span class="hackathon-year">2025</span>
-                </div>
-                <p class="hackathon-result">Tree++ entry. Pitched the climate-tech computer-vision and ML matchmaking pipeline to founders, mentors, and impact-investor judges.</p>
-                <div class="hackathon-meta">Stockholm</div>
-            </div>
-
-        </div>
-    </div>
-
-    <!-- ORGANIZED -->
-    <div class="hackathon-block">
-        <h3 class="hackathon-block-title"><span class="role-badge role-organized">Organized</span> Co-organizer</h3>
-        <div class="hackathon-cards">
-
-            <div class="hackathon-card">
-                <div class="hackathon-card-header">
-                    <h4>DevOpsDays Brasília</h4>
-                    <span class="hackathon-year">3 editions</span>
-                </div>
-                <p class="hackathon-result">Co-organizer across three editions. ~250 participants per edition, 30+ speakers per edition, ~750 total attendees. Owned speaker coordination, schedule, A/V logistics, online streaming setup, and sponsor coordination.</p>
-                <div class="hackathon-meta">Brasília, Brazil</div>
-            </div>
-
-            <div class="hackathon-card">
-                <div class="hackathon-card-header">
-                    <h4>Drivhuset Ideathon</h4>
-                    <span class="hackathon-year">2025</span>
-                </div>
-                <p class="hackathon-result">Co-organizer in partnership with the Drivhuset incubator network in Stockholm. Owned format design, applicant selection, mentor pairing, and judge coordination. The event surfaced new climate-tech and AI ventures inside the Stockholm student-founder community.</p>
-                <div class="hackathon-meta">Stockholm</div>
-            </div>
-
-        </div>
-    </div>
-
-    <!-- JUDGED -->
-    <div class="hackathon-block">
-        <h3 class="hackathon-block-title"><span class="role-badge role-judged">Judged</span> Panel reviewer</h3>
-        <div class="hackathon-cards">
-
-            <div class="hackathon-card">
-                <div class="hackathon-card-header">
-                    <h4>Apart Research Global South AI Safety Hackathon</h4>
-                    <span class="hackathon-year">2026</span>
-                </div>
-                <p class="hackathon-result">Judge on the Global Track. Primary track: Technical AI Safety. Secondary: AI Governance and AI Security. Reviewed projects spanning Latin America, Africa, and Asia hubs against the official Apart Sprint rubric (Impact, Execution, Presentation, 1-5 scale).</p>
-                <div class="hackathon-meta">Remote, partner orgs: Electric Sheep + Schmidt Sciences</div>
-            </div>
-
-        </div>
-    </div>
-
-    <!-- SPOKE -->
-    <div class="hackathon-block">
-        <h3 class="hackathon-block-title"><span class="role-badge role-speaker">Speaker</span> Panel talk</h3>
-        <div class="hackathon-cards">
-
-            <div class="hackathon-card">
-                <div class="hackathon-card-header">
-                    <h4>Nordic Tech Week, "New Tech, Old Rules" Panel</h4>
-                    <span class="hackathon-year">2026</span>
-                </div>
-                <p class="hackathon-result">Talk on AI safety and cybersecurity, built around one question: how do you prove that you are you once a face, a voice, a document and a video call can all be generated? Shown as a recorded talk at an event with 200 registered attendees and a waitlist, alongside Dr. Vijeta Sharma (RISE) and Jakub Kreft.</p>
-                <div class="hackathon-meta">Stockholm, 8 September 2026, <a href="https://luma.com/55sbsi4s" target="_blank" rel="noopener">event page</a></div>
-            </div>
-
-        </div>
-    </div>
-
-    <!-- MENTORED -->
-    <div class="hackathon-block">
-        <h3 class="hackathon-block-title"><span class="role-badge role-mentored">Mentor</span> Team support</h3>
-        <div class="hackathon-cards">
-
-            <div class="hackathon-card">
-                <div class="hackathon-card-header">
-                    <h4>Hack for the Futures</h4>
-                    <span class="hackathon-year">2026</span>
-                </div>
-                <p class="hackathon-result">Mentor supporting student and early-career teams on AI and tech-for-good projects. Guidance on technical scoping, prototyping under time pressure, and pitching to judges.</p>
-                <div class="hackathon-meta"><a href="https://www.hackforthefutures.org/mentor" target="_blank" rel="noopener">hackforthefutures.org</a></div>
-            </div>
-
-        </div>
-    </div>
-
-</section>
-
-
-        <!-- Testimonials Carousel -->
-<section id="testimonials" class="testimonials-section" hidden>
-    <h2 class="section-title">Testimonials</h2>
-    <div class="testimonials-carousel" data-carousel>
-        <button class="carousel-arrow carousel-prev" data-carousel-prev aria-label="Previous testimonial">&#10094;</button>
-
-        <div class="carousel-track" data-carousel-track>
-
-            <!-- Testimonial 1 -->
-            <div class="carousel-slide">
-                <div class="testimonial-card">
-                    <p class="testimonial-quote">"[Quote pending. Add a 2 to 3 sentence endorsement from this person about working with Jady.]"</p>
-                    <div class="testimonial-author">
-                        <div class="testimonial-author-photo">
-                            <img src="images/testimonials/person-1.png" alt="Testimonial author 1" onerror="this.style.display='none'">
-                        </div>
-                        <div class="testimonial-author-info">
-                            <p class="testimonial-name">[Person 1 name]</p>
-                            <p class="testimonial-role">[Role, Company]</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Testimonial 2 -->
-            <div class="carousel-slide">
-                <div class="testimonial-card">
-                    <p class="testimonial-quote">"[Quote pending. Add a 2 to 3 sentence endorsement from this person about working with Jady.]"</p>
-                    <div class="testimonial-author">
-                        <div class="testimonial-author-photo">
-                            <img src="images/testimonials/person-2.png" alt="Testimonial author 2" onerror="this.style.display='none'">
-                        </div>
-                        <div class="testimonial-author-info">
-                            <p class="testimonial-name">[Person 2 name]</p>
-                            <p class="testimonial-role">[Role, Company]</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Testimonial 3 -->
-            <div class="carousel-slide">
-                <div class="testimonial-card">
-                    <p class="testimonial-quote">"[Quote pending. Add a 2 to 3 sentence endorsement from this person about working with Jady.]"</p>
-                    <div class="testimonial-author">
-                        <div class="testimonial-author-photo">
-                            <img src="images/testimonials/person-3.png" alt="Testimonial author 3" onerror="this.style.display='none'">
-                        </div>
-                        <div class="testimonial-author-info">
-                            <p class="testimonial-name">[Person 3 name]</p>
-                            <p class="testimonial-role">[Role, Company]</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <button class="carousel-arrow carousel-next" data-carousel-next aria-label="Next testimonial">&#10095;</button>
-
-        <div class="carousel-dots" data-carousel-dots>
-            <button class="carousel-dot is-active" data-carousel-dot="0" aria-label="Go to testimonial 1"></button>
-            <button class="carousel-dot" data-carousel-dot="1" aria-label="Go to testimonial 2"></button>
-            <button class="carousel-dot" data-carousel-dot="2" aria-label="Go to testimonial 3"></button>
-        </div>
-    </div>
-</section>
-
-<script>
-(function() {
-    const carousel = document.querySelector('[data-carousel]');
-    if (!carousel) return;
-    const track = carousel.querySelector('[data-carousel-track]');
-    const prevBtn = carousel.querySelector('[data-carousel-prev]');
-    const nextBtn = carousel.querySelector('[data-carousel-next]');
-    const dots = carousel.querySelectorAll('[data-carousel-dot]');
-    let currentIndex = 0;
-    const totalSlides = dots.length;
-
-    function go(index) {
-        currentIndex = (index + totalSlides) % totalSlides;
-        track.style.transform = 'translateX(-' + (currentIndex * 100) + '%)';
-        dots.forEach(function(dot, i) {
-            dot.classList.toggle('is-active', i === currentIndex);
-        });
-    }
-
-    prevBtn.addEventListener('click', function() { go(currentIndex - 1); });
-    nextBtn.addEventListener('click', function() { go(currentIndex + 1); });
-    dots.forEach(function(dot, i) {
-        dot.addEventListener('click', function() { go(i); });
-    });
-
-    let autoplay = setInterval(function() { go(currentIndex + 1); }, 7000);
-    carousel.addEventListener('mouseenter', function() { clearInterval(autoplay); });
-    carousel.addEventListener('mouseleave', function() {
-        autoplay = setInterval(function() { go(currentIndex + 1); }, 7000);
-    });
-})();
-</script>
-
-
-        <!-- Publications -->
-<section id="publications">
-    <h2 class="section-title">Publications</h2>
-
-    <div class="publications-list">
-
-        <!-- Revista Tecnologia e Sociedade (UTFPR) -->
-        <div class="publication-item">
-                <div class="pub-logo">
-                <img src="images/logos/utfpr-logo.png" alt="Revista Tecnologia e Sociedade, UTFPR" onerror="this.style.display='none'">
-            </div>
-                <div class="pub-content">
-                    <h3>Cybersecurity Challenges: An Analysis of the Brazilian Public Administration</h3>
-            <p class="pub-meta">Revista Tecnologia e Sociedade (UTFPR) | v. 22, n. 69, p. 157-178 | 2026</p>
-            <p>
-                Peer-reviewed study identifying the main cybersecurity governance challenges faced by the Brazilian public administration, from the perspective of managers and specialists in the field.
-            </p>
-            <p class="pub-meta">
-                <a href="https://periodicos.utfpr.edu.br/rts/article/view/20157" target="_blank">Ler o artigo</a> · DOI: 10.3895/rts.v22n69.20157
-            </p>
-                </div>
-            </div>
-
-        <!-- MSc Thesis, Stockholm University with Deep Forestry -->
-        <div class="publication-item">
-                <div class="pub-logo">
-                <img src="images/logos/stockholm-university-logo.png" alt="Stockholm University" onerror="this.style.display='none'">
-            </div>
-                <div class="pub-content">
-                    <h4>Automated Detection of Safe Landing Locations in Below-Canopy Forest Conditions</h4>
-            <p class="pub-meta">MSc Thesis, Department of Computer and Systems Sciences (DSV), Stockholm University | with Deep Forestry AB | Supervisor: Prof. Rahim Rahmani | 2026</p>
-            <p>
-                Master's thesis on finding where a drone can safely land under the forest canopy, from sensor data collected in real stands. Written inside an industrial research project and defended at DSV.
-            </p>
-                </div>
-            </div>
-
-        <!-- Professional Master's Dissertation, University of Brasilia -->
-        <div class="publication-item">
-                <div class="pub-logo">
-                <img src="images/logos/unb-logo.png" alt="University of Brasilia" onerror="this.style.display='none'">
-            </div>
-                <div class="pub-content">
-                    <h4>An Information Security Control Baseline to Mitigate Business Risk in the Sanitation Sector</h4>
-            <p class="pub-meta">Professional Master's Dissertation, PPEE, University of Brasilia | record PPEE.DM-124/2026 | Supervisor: Prof. Rafael Rabelo Nunes | 2026</p>
-            <p>
-                Dissertation proposing a baseline of information security controls for water and sanitation utilities, built from the business risks the sector actually carries rather than from a generic framework.
-            </p>
-                </div>
-            </div>
-
-        <!-- Elsevier Computers & Security -->
-        <div class="publication-item">
-                <div class="pub-logo">
-                <img src="images/logos/elsevier-logo.png" alt="Elsevier Journal">
-            </div>
-                <div class="pub-content">
-                    <h4>Enhancing Cybersecurity in the Judiciary: Integrating Additional Controls into the CIS Framework</h4>
-            <p class="pub-meta">Computers & Security (Elsevier) | 2025</p>
-            <p>
-                Co-authored peer-reviewed study proposing an expanded CIS cybersecurity model for digital protection across the Brazilian judiciary. Published in one of the world’s leading cybersecurity journals.
-            </p>
-            <p class="pub-meta">
-                DOI: <a href="https://doi.org/10.1016/j.cose.2025.104584" target="_blank">10.1016/j.cose.2025.104584</a>
-            </p>
-                </div>
-            </div>
-
-        <!-- IEEE DataPort dataset behind the Computers & Security study -->
-        <div class="publication-item">
-                <div class="pub-logo">
-                <img src="images/logos/ieee-logo.png" alt="IEEE DataPort" onerror="this.style.display='none'">
-            </div>
-                <div class="pub-content">
-                    <h4>Security Controls for Judiciary Risk Management</h4>
-            <p class="pub-meta">Dataset, IEEE DataPort | 2025</p>
-            <p>
-                Open dataset of the security controls assessed in the judiciary study, published so the analysis behind the Computers &amp; Security paper can be reproduced and reused.
-            </p>
-            <p class="pub-meta">
-                DOI: <a href="https://doi.org/10.21227/h9q6-sv58" target="_blank">10.21227/h9q6-sv58</a>
-            </p>
-                </div>
-            </div>
-
-        <!-- NAVUS Journal of Technology and Management -->
-        <div class="publication-item">
-                <div class="pub-logo">
-                <img src="images/logos/navus-logo.png" alt="NAVUS Journal">
-            </div>
-                <div class="pub-content">
-                    <h4>Proteção Cibernética no Judiciário Brasileiro: Um Estudo Comparativo das Estruturas de Segurança em Tribunais Estaduais</h4>
-                    <p class="pub-meta">In Portuguese. Cybersecurity Protection in the Brazilian Judiciary: A Comparative Study of State Court Security Structures</p>
-            <p class="pub-meta">NAVUS Journal of Technology and Management | 2024</p>
-            <p>
-                Research analyzing cybersecurity maturity and structural gaps in state courts across Brazil. Provides recommendations on governance, risk, and compliance to strengthen digital resilience.
-            </p>
-            <p class="pub-meta">
-                DOI: <a href="https://doi.org/10.22279/navus.v14.2032" target="_blank">10.22279/navus.v14.2032</a>
-            </p>
-                </div>
-            </div>
-
-        <!-- ENANGRAD 2025 Conference Paper -->
-        <div class="publication-item">
-                <div class="pub-logo">
-                <img src="images/logos/enangrad-logo.png" alt="ENANGRAD" onerror="this.style.display='none'">
-            </div>
-                <div class="pub-content">
-                    <h4>Critical Infrastructure Under Threat: Business Risks for Cybersecurity in Metropolitan Transport Systems</h4>
-            <p class="pub-meta">ENANGRAD 2025 (Brazilian National Meeting of Administration Programs) | Technology, AI and Digital Transformation track</p>
-            <p>
-                Peer-reviewed conference paper on cybersecurity business risk in metropolitan transport systems. Examines operational and governance exposures in critical-infrastructure environments and the controls needed to mitigate them.
-            </p>
-                </div>
-            </div>
-
-    </div>
-</section>
-
-
-                <!-- Experience -->
-        <section id="experience">
-            <h2 class="section-title">Experience</h2>
-
-            <div class="timeline-item">
-                <div class="company-logo">
-                    <img src="images/logos/aarhus-university-logo.png" alt="Aarhus University logo" onerror="this.parentElement.style.display='none'">
-                </div>
-                <div class="timeline-content">
-                    <div class="timeline-header">
-                        <div>
-                            <h3>Aarhus University</h3>
-                            <p class="role">PhD Fellow, Digital Twins for District Cooling (SWiM)</p>
-                        </div>
-                        <div class="date">2026 - Present | Aarhus, Denmark</div>
-                    </div>
-                    <ul>
-                        <li>Verifying that district cooling installations are commissioned as they were designed, combining Building Information Modelling, AI and digital twins.</li>
-                        <li>Part of SWiM, funded by the Grundfos Foundation, supervised by Peter Gorm Larsen and Carl Schultz, at the intersection of AI safety, cybersecurity, and critical-infrastructure resilience.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="company-logo">
-                    <img src="images/logos/soiqet-logo.png" alt="SoiQet logo" onerror="this.parentElement.style.display='none'">
-                </div>
-                <div class="timeline-content">
-                    <div class="timeline-header">
-                        <div>
-                            <h3>SoiQet Social IQ Set</h3>
-                            <p class="role">Founder and CEO</p>
-                        </div>
-                        <div class="date">2025 - Present | Aarhus, Denmark</div>
-                    </div>
-                    <ul>
-                        <li>Founded SoiQet, an LLM-powered platform integrating 6 social networks for content managers at small businesses and influencers: RAG-based AI content generation, scheduling, and analytics on GCP.</li>
-                        <li>Prototyped full product on Lovable, then migrated to production on GCP (Python, Node.js, Supabase, React), applying prompt engineering to optimize LLM outputs for content quality across all integrated networks.</li>
-                        <li>Own product vision, engineering, and go-to-market as Head of Engineering and CEO, from early validation through platform growth.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="company-logo">
-                    <img src="images/logos/treepp-logo.png" alt="Tree++ logo" onerror="this.parentElement.style.display='none'">
-                </div>
-                <div class="timeline-content">
-                    <div class="timeline-header">
-                        <div>
-                            <h3>Tree++ (Climate Tech Startup)</h3>
-                            <p class="role">Co-founder and Head of Innovation</p>
-                        </div>
-                        <div class="date">2024 - Present | Aarhus, Denmark</div>
-                    </div>
-                    <ul>
-                        <li>Lead technical strategy and fundraising for a climate-tech platform with 1,000+ trees planted across 10 countries (2026), connecting volunteers and landowners via an AI-powered carbon footprint calculator and QR-based carbon credit tracking.</li>
-                        <li>Built computer vision pipeline to analyze imagery for carbon credit consumption monitoring, and an ML matchmaking system connecting offsetting requests to volunteers and landowners.</li>
-                        <li>Hired and lead the engineering team, handling performance management, delivery standards, and budget planning.</li>
-                    </ul>
-                    <div class="item-award">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width: 16px; height: 16px; display: inline-block; vertical-align: middle; margin-right: 4px;">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 18.75h-9m9 0a3 3 0 0 1 3 3h-15a3 3 0 0 1 3-3m9 0v-3.375c0-.621-.503-1.125-1.125-1.125h-.871M7.5 18.75v-3.375c0-.621.504-1.125 1.125-1.125h.872m5.007 0H9.497m5.007 0a7.454 7.454 0 0 1-.982-3.172M9.497 14.25a7.454 7.454 0 0 0 .981-3.172M5.25 4.236c-.982.143-1.954.317-2.916.52A6.003 6.003 0 0 0 7.73 9.728M5.25 4.236V4.5c0 2.108.966 3.99 2.48 5.228M5.25 4.236V2.721C7.456 2.41 9.71 2.25 12 2.25c2.291 0 4.545.16 6.75.47v1.516M7.73 9.728a6.726 6.726 0 0 0 2.748 1.35m8.272-6.842V4.5c0 2.108-.966 3.99-2.48 5.228m2.48-5.492a46.32 46.32 0 0 1 2.916.52 6.003 6.003 0 0 1-5.395 4.972m0 0a6.726 6.726 0 0 1-2.749 1.35m0 0a6.772 6.772 0 0 1-3.044 0" />
-                        </svg>
-                        Award: Impact Cup Drivhuset (2025)
-                    </div>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="company-logo">
-                    <img src="images/logos/brb-logo.png" alt="Bank of Brasília logo" onerror="this.parentElement.style.display='none'">
-                </div>
-                <div class="timeline-content">
-                    <div class="timeline-header">
-                        <div>
-                            <h3>Bank of Brasília BRB</h3>
-                            <p class="role">IT Analyst and DevOps Engineer</p>
-                        </div>
-                        <div class="date">2014 - 2016, 2024 - Present | Brasília, Brazil</div>
-                    </div>
-                    <ul>
-                        <li>Built a production AI chatbot (Python, TensorFlow, NLP) during a Silicon Valley engagement that cut customer response time by 40% for 100K+ users.</li>
-                        <li>Led system design and implementation of DevSecOps CI/CD pipelines across Jenkins, GitLab, Docker, OpenShift, and Kubernetes, reducing deployment time by 60%.</li>
-                        <li>Built Power BI dashboards for the C-suite and maintained compliance with BACEN and GDPR-equivalent data protection standards.</li>
-                        <li>Partnered directly with the CIO, CFO, and COO to align IT delivery, compliance, and investment priorities with business goals.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="company-logo">
-                    <img src="images/logos/brb-logo.png" alt="Bank of Brasília logo" onerror="this.parentElement.style.display='none'">
-                </div>
-                <div class="timeline-content">
-                    <div class="timeline-header">
-                        <div>
-                            <h3>Bank of Brasília BRB</h3>
-                            <p class="role">IT Manager</p>
-                        </div>
-                        <div class="date">2016 - 2024 | Brasília, Brazil</div>
-                    </div>
-                    <ul>
-                        <li>Managed a $1M+ IT budget with full P&L accountability, reducing operating costs by 15% and generating $150K+ in savings through vendor renegotiation and contract restructuring.</li>
-                        <li>Led a team of 10+ IT professionals across hiring, performance reviews, OKR planning, career development, and adoption of COBIT, ITIL, Agile, and Lean IT practices.</li>
-                        <li>Redesigned Change and Configuration Management processes, improving compliance and audit accuracy by 40% and lowering regulatory exposure.</li>
-                        <li>Led Lean IT and DevSecOps transformation efforts that reduced operational waste by 20% and improved execution standards across the department.</li>
-                    </ul>
-                    <div class="item-award">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width: 16px; height: 16px; display: inline-block; vertical-align: middle; margin-right: 4px;">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 18.75h-9m9 0a3 3 0 0 1 3 3h-15a3 3 0 0 1 3-3m9 0v-3.375c0-.621-.503-1.125-1.125-1.125h-.871M7.5 18.75v-3.375c0-.621.504-1.125 1.125-1.125h.872m5.007 0H9.497m5.007 0a7.454 7.454 0 0 1-.982-3.172M9.497 14.25a7.454 7.454 0 0 0 .981-3.172M5.25 4.236c-.982.143-1.954.317-2.916.52A6.003 6.003 0 0 0 7.73 9.728M5.25 4.236V4.5c0 2.108.966 3.99 2.48 5.228M5.25 4.236V2.721C7.456 2.41 9.71 2.25 12 2.25c2.291 0 4.545.16 6.75.47v1.516M7.73 9.728a6.726 6.726 0 0 0 2.748 1.35m8.272-6.842V4.5c0 2.108-.966 3.99-2.48 5.228m2.48-5.492a46.32 46.32 0 0 1 2.916.52 6.003 6.003 0 0 1-5.395 4.972m0 0a6.726 6.726 0 0 1-2.749 1.35m0 0a6.772 6.772 0 0 1-3.044 0" />
-                        </svg>
-                        Award: Strategic Configuration Management Efinance (2019)
-                    </div>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="company-logo">
-                    <img src="images/logos/ibict-logo.png" alt="IBICT logo" onerror="this.parentElement.style.display='none'">
-                </div>
-                <div class="timeline-content">
-                    <div class="timeline-header">
-                        <div>
-                            <h3>Brazilian Institute of Information in Science and Technology - IBICT</h3>
-                            <p class="role">Research Engineer</p>
-                        </div>
-                        <div class="date">2022 | Brasília, Brazil</div>
-                    </div>
-                    <ul>
-                        <li>Customized Archivematica for Kubernetes and OpenShift deployment, enabling scalable digital preservation infrastructure for government agencies managing millions of digital assets.</li>
-                        <li>Supported national initiatives in knowledge management, data governance, and digital transformation for public sector with improved automation workflows.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="company-logo">
-                    <img src="images/logos/mcid-logo.png" alt="MCID logo" onerror="this.parentElement.style.display='none'">
-                </div>
-                <div class="timeline-content">
-                    <div class="timeline-header">
-                        <div>
-                            <h3>Ministry of Integration and Regional Development MCID</h3>
-                            <p class="role">Software Engineer</p>
-                        </div>
-                        <div class="date">2014 | Brasília, Brazil</div>
-                    </div>
-                    <ul>
-                        <li>Modernized legacy PHP and MySQL systems improving scalability, maintainability, and performance for national integration services.</li>
-                        <li>Developed responsive web and mobile applications increasing citizen access to government digital services and platforms.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="company-logo">
-                    <img src="images/logos/senai-logo.png" alt="SENAI logo" onerror="this.parentElement.style.display='none'">
-                </div>
-                <div class="timeline-content">
-                    <div class="timeline-header">
-                        <div>
-                            <h3>SENAI National Industrial Training Service</h3>
-                            <p class="role">Web Developer and Designer</p>
-                        </div>
-                        <div class="date">2010 - 2012 | Brasília, Brazil</div>
-                    </div>
-                    <ul>
-                        <li>Developed e-learning platforms supporting 2,000+ students with interactive learning modules, progress tracking, and assessment tools.</li>
-                        <li>Built PHP and MySQL systems for statewide education programs, optimized UX for digital curriculum delivery and multi-device access.</li>
-                    </ul>
-                    <div class="item-award">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width: 16px; height: 16px; display: inline-block; vertical-align: middle; margin-right: 4px;">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 18.75h-9m9 0a3 3 0 0 1 3 3h-15a3 3 0 0 1 3-3m9 0v-3.375c0-.621-.503-1.125-1.125-1.125h-.871M7.5 18.75v-3.375c0-.621.504-1.125 1.125-1.125h.872m5.007 0H9.497m5.007 0a7.454 7.454 0 0 1-.982-3.172M9.497 14.25a7.454 7.454 0 0 0 .981-3.172M5.25 4.236c-.982.143-1.954.317-2.916.52A6.003 6.003 0 0 0 7.73 9.728M5.25 4.236V4.5c0 2.108.966 3.99 2.48 5.228M5.25 4.236V2.721C7.456 2.41 9.71 2.25 12 2.25c2.291 0 4.545.16 6.75.47v1.516M7.73 9.728a6.726 6.726 0 0 0 2.748 1.35m8.272-6.842V4.5c0 2.108-.966 3.99-2.48 5.228m2.48-5.492a46.32 46.32 0 0 1 2.916.52 6.003 6.003 0 0 1-5.395 4.972m0 0a6.726 6.726 0 0 1-2.749 1.35m0 0a6.772 6.772 0 0 1-3.044 0" />
-                        </svg>
-                        Award: WorldSkills National Phase Web Design (2012)
-                    </div>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="company-logo">
-                    <img src="images/logos/deepforestry-logo.png" alt="Deep Forestry logo" onerror="this.parentElement.style.display='none'">
-                </div>
-                <div class="timeline-content">
-                    <div class="timeline-header">
-                        <div>
-                            <h3>Deep Forestry</h3>
-                            <p class="role">AI Research Engineer (MSc Thesis)</p>
-                        </div>
-                        <div class="date">Jan to May 2026 | Stockholm, Sweden</div>
-                    </div>
-                    <ul>
-                        <li>MSc thesis: designed and evaluated a hybrid geometric-neural pipeline for real-time autonomous landing zone detection in below-canopy forests using LiDAR point clouds (RANSAC, PointNet, PointNet++, DGCNN).</li>
-                        <li>Achieved 29x latency reduction (5.8s to 200ms) through KD-Tree and voxel-downsampling optimizations on real forest flight data collected with Deep Forestry's autonomous drone platform.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="company-logo">
-                    <img src="images/logos/su-heroes-logo.png" alt="SU Heroes logo" onerror="this.parentElement.style.display='none'">
-                </div>
-                <div class="timeline-content">
-                    <div class="timeline-header">
-                        <div>
-                            <h3>SU Heroes - Hackathon Team</h3>
-                            <p class="role">Team Leader</p>
-                        </div>
-                    </div>
-                    <ul>
-                        <li>Lead multidisciplinary teams building applied AI automation and agentic AI systems, mentor students and engineers in AI/ML, cloud architecture, and rapid prototyping.</li>
-                    </ul>
-                    <div class="item-award">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width: 16px; height: 16px; display: inline-block; vertical-align: middle; margin-right: 4px;">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 18.75h-9m9 0a3 3 0 0 1 3 3h-15a3 3 0 0 1 3-3m9 0v-3.375c0-.621-.503-1.125-1.125-1.125h-.871M7.5 18.75v-3.375c0-.621.504-1.125 1.125-1.125h.872m5.007 0H9.497m5.007 0a7.454 7.454 0 0 1-.982-3.172M9.497 14.25a7.454 7.454 0 0 0 .981-3.172M5.25 4.236c-.982.143-1.954.317-2.916.52A6.003 6.003 0 0 0 7.73 9.728M5.25 4.236V4.5c0 2.108.966 3.99 2.48 5.228M5.25 4.236V2.721C7.456 2.41 9.71 2.25 12 2.25c2.291 0 4.545.16 6.75.47v1.516M7.73 9.728a6.726 6.726 0 0 0 2.748 1.35m8.272-6.842V4.5c0 2.108-.966 3.99-2.48 5.228m2.48-5.492a46.32 46.32 0 0 1 2.916.52 6.003 6.003 0 0 1-5.395 4.972m0 0a6.726 6.726 0 0 1-2.749 1.35m0 0a6.772 6.772 0 0 1-3.044 0" />
-                        </svg>
-                        1st Place EpiMinds Google AI Hackathon (2026)
-                        <br>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width: 16px; height: 16px; display: inline-block; vertical-align: middle; margin-right: 4px;">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 18.75h-9m9 0a3 3 0 0 1 3 3h-15a3 3 0 0 1 3-3m9 0v-3.375c0-.621-.503-1.125-1.125-1.125h-.871M7.5 18.75v-3.375c0-.621.504-1.125 1.125-1.125h.872m5.007 0H9.497m5.007 0a7.454 7.454 0 0 1-.982-3.172M9.497 14.25a7.454 7.454 0 0 0 .981-3.172M5.25 4.236c-.982.143-1.954.317-2.916.52A6.003 6.003 0 0 0 7.73 9.728M5.25 4.236V4.5c0 2.108.966 3.99 2.48 5.228M5.25 4.236V2.721C7.456 2.41 9.71 2.25 12 2.25c2.291 0 4.545.16 6.75.47v1.516M7.73 9.728a6.726 6.726 0 0 0 2.748 1.35m8.272-6.842V4.5c0 2.108-.966 3.99-2.48 5.228m2.48-5.492a46.32 46.32 0 0 1 2.916.52 6.003 6.003 0 0 1-5.395 4.972m0 0a6.726 6.726 0 0 1-2.749 1.35m0 0a6.772 6.772 0 0 1-3.044 0" />
-                        </svg>
-                        1st Place Kong AI Assisted-Coding Hackathon (2025)
-                        <br>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width: 16px; height: 16px; display: inline-block; vertical-align: middle; margin-right: 4px;">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 18.75h-9m9 0a3 3 0 0 1 3 3h-15a3 3 0 0 1 3-3m9 0v-3.375c0-.621-.503-1.125-1.125-1.125h-.871M7.5 18.75v-3.375c0-.621.504-1.125 1.125-1.125h.872m5.007 0H9.497m5.007 0a7.454 7.454 0 0 1-.982-3.172M9.497 14.25a7.454 7.454 0 0 0 .981-3.172M5.25 4.236c-.982.143-1.954.317-2.916.52A6.003 6.003 0 0 0 7.73 9.728M5.25 4.236V4.5c0 2.108.966 3.99 2.48 5.228M5.25 4.236V2.721C7.456 2.41 9.71 2.25 12 2.25c2.291 0 4.545.16 6.75.47v1.516M7.73 9.728a6.726 6.726 0 0 0 2.748 1.35m8.272-6.842V4.5c0 2.108-.966 3.99-2.48 5.228m2.48-5.492a46.32 46.32 0 0 1 2.916.52 6.003 6.003 0 0 1-5.395 4.972m0 0a6.726 6.726 0 0 1-2.749 1.35m0 0a6.772 6.772 0 0 1-3.044 0" />
-                        </svg>
-                        1st Place Kolomolo AI-Assisted Coding Hackathon (2025)
-                    </div>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="company-logo">
-                    <img src="images/logos/stockholm-university-logo.png" alt="Stockholm University logo" onerror="this.parentElement.style.display='none'">
-                </div>
-                <div class="timeline-content">
-                    <div class="timeline-header">
-                        <div>
-                            <h3>Stockholm University SU</h3>
-                            <p class="role">Teaching Assistant - Internet of Things</p>
-                        </div>
-                    </div>
-                    <ul>
-                        <li>Support 200+ students in IoT coursework: Python programming, sensor integration (MQTT), edge computing, and data processing pipelines.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="company-logo">
-                    <img src="images/logos/drivhuset-logo.png" alt="Drivhuset logo" onerror="this.parentElement.style.display='none'">
-                </div>
-                <div class="timeline-content">
-                    <div class="timeline-header">
-                        <div>
-                            <h3>Drivhuset Stockholm SU</h3>
-                            <p class="role">Student Ambassador</p>
-                        </div>
-                    </div>
-                    <ul>
-                        <li>Support founders and students in entrepreneurship programs, mentor on technology strategy and product development, promote innovation activities across Stockholm University.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="company-logo">
-                    <img src="images/logos/devopsdays-logo.png" alt="DevOpsDays logo" onerror="this.parentElement.style.display='none'">
-                </div>
-                <div class="timeline-content">
-                    <div class="timeline-header">
-                        <div>
-                            <h3>DevOpsDays Brasília</h3>
-                            <p class="role">Volunteer Organizer</p>
-                        </div>
-                    </div>
-                    <ul>
-                        <li>Coordinate technical conferences with 250+ participants, develop partnerships with industry and academia, curate DevSecOps and AI/ML content.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="company-logo">
-                    <img src="images/logos/allaskafamat-logo.png" alt="Alla Ska Få Mat logo" onerror="this.parentElement.style.display='none'">
-                </div>
-                <div class="timeline-content">
-                    <div class="timeline-header">
-                        <div>
-                            <h3>Alla Ska Få Mat</h3>
-                            <p class="role">Volunteer and Web Developer</p>
-                        </div>
-                    </div>
-                    <ul>
-                        <li>Built and maintain the website for a nonprofit that distributes weekly meals to vulnerable families and homeless individuals in Stockholm. Also support volunteer operations on the ground.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="company-logo">
-                    <img src="images/logos/geeffektivt-logo.svg" alt="Ge Effektivt logo" onerror="this.parentElement.style.display='none'">
-                </div>
-                <div class="timeline-content">
-                    <div class="timeline-header">
-                        <div>
-                            <h3>Ge Effektivt Stiftelsen Effekt</h3>
-                            <p class="role">Volunteer Frontend Developer</p>
-                        </div>
-                        <div class="date">2026</div>
-                    </div>
-                    <ul>
-                        <li>Contributed mobile layout fixes to geeffektivt.se (Next.js + Sanity CMS, multi-country effective-altruism donation platform): replaced overflow:scroll with overflow-x:hidden on the mobile navbar, published a <code>--cookie-banner-height</code> CSS custom property via ResizeObserver to dynamically reposition the floating Give button above the cookie banner, restored fixed-bottom mobile button group with 2rem footer margin. Reviewed and approved by the in-house designer.</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- Education -->
-        <section id="education">
-            <h2 class="section-title">Education</h2>
-            
-            <div class="timeline-item">
-                <div class="institution-logo">
-                    <img src="images/logos/stockholm-university-logo.png" alt="Stockholm University logo" onerror="this.parentElement.style.display='none'">
-                </div>
-                <div class="timeline-content">
-                    <div class="timeline-header">
-                        <div>
-                            <h3>Stockholm University SU</h3>
-                            <p class="role">Master of Science in Computer and Systems Sciences (AI and IoT)</p>
-                        </div>
-                    </div>
-                    <ul>
-                        <li>Specialization: Machine Learning, Deep Learning, Computer Vision, Natural Language Processing, IoT Systems, Autonomous Systems.</li>
-                        <li>MSc thesis in collaboration with Deep Forestry: hybrid geometric-neural pipeline for real-time autonomous landing zone detection in below-canopy forests using LiDAR point clouds.</li>
-                        <li>Student Ambassador at Drivhuset Stockholm, Teaching Assistant in Internet of Things (IoT).</li>
-                        <li>Member of the Network for Global Professionals (NFGP) by the Swedish Institute.</li>
-                    </ul>
-                    <div class="item-award">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width: 16px; height: 16px; display: inline-block; vertical-align: middle; margin-right: 4px;">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 18.75h-9m9 0a3 3 0 0 1 3 3h-15a3 3 0 0 1 3-3m9 0v-3.375c0-.621-.503-1.125-1.125-1.125h-.871M7.5 18.75v-3.375c0-.621.504-1.125 1.125-1.125h.872m5.007 0H9.497m5.007 0a7.454 7.454 0 0 1-.982-3.172M9.497 14.25a7.454 7.454 0 0 0 .981-3.172M5.25 4.236c-.982.143-1.954.317-2.916.52A6.003 6.003 0 0 0 7.73 9.728M5.25 4.236V4.5c0 2.108.966 3.99 2.48 5.228M5.25 4.236V2.721C7.456 2.41 9.71 2.25 12 2.25c2.291 0 4.545.16 6.75.47v1.516M7.73 9.728a6.726 6.726 0 0 0 2.748 1.35m8.272-6.842V4.5c0 2.108-.966 3.99-2.48 5.228m2.48-5.492a46.32 46.32 0 0 1 2.916.52 6.003 6.003 0 0 1-5.395 4.972m0 0a6.726 6.726 0 0 1-2.749 1.35m0 0a6.772 6.772 0 0 1-3.044 0" />
-                        </svg>
-                        Award: Swedish Institute Scholarship for Global Professionals (SISGP)
-                    </div>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="institution-logo">
-                    <img src="images/logos/unb-logo.png" alt="UnB logo" onerror="this.parentElement.style.display='none'">
-                </div>
-                <div class="timeline-content">
-                    <div class="timeline-header">
-                        <div>
-                            <h3>University of Brasília UnB</h3>
-                            <p class="role">Master of Engineering in Cybersecurity</p>
-                        </div>
-                    </div>
-                    <ul>
-                        <li>Specialization: Risk management, AI for cybersecurity, critical infrastructure protection, and security governance frameworks.</li>
-                        <li>Published research in top-tier journal (Impact Factor: 5.6) on cybersecurity frameworks for judicial systems.</li>
-                    </ul>
-                    <div class="item-award">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width: 16px; height: 16px; display: inline-block; vertical-align: middle; margin-right: 4px;">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" />
-                        </svg>
-                        Publication: <a href="https://www.sciencedirect.com/science/article/pii/S0167404825002731" target="_blank">Elsevier's Computers & Security Journal (2025)</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="institution-logo">
-                    <img src="images/logos/mit-logo.png" alt="MIT logo" onerror="this.parentElement.style.display='none'">
-                </div>
-                <div class="timeline-content">
-                    <div class="timeline-header">
-                        <div>
-                            <h3>Massachusetts Institute of Technology MIT</h3>
-                            <p class="role">Designing and Building AI Products</p>
-                        </div>
-                    </div>
-                    <ul>
-                        <li>Specialization: 40-hour executive program on AI product development, deployment strategies, and scaling ML systems in production environments.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="institution-logo">
-                    <img src="images/logos/descomplica-logo.png" alt="Descomplica logo" onerror="this.parentElement.style.display='none'">
-                </div>
-                <div class="timeline-content">
-                    <div class="timeline-header">
-                        <div>
-                            <h3>Descomplica</h3>
-                            <p class="role">MBA in Innovation, Technology & Entrepreneurship</p>
-                        </div>
-                    </div>
-                    <ul>
-                        <li>Focus: Business model innovation, technology strategy, startup development, and lean startup methodology.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="institution-logo">
-                    <img src="images/logos/descomplica-logo.png" alt="Descomplica logo" onerror="this.parentElement.style.display='none'">
-                </div>
-                <div class="timeline-content">
-                    <div class="timeline-header">
-                        <div>
-                            <h3>Descomplica</h3>
-                            <p class="role">Postgraduate in Data Analysis</p>
-                        </div>
-                    </div>
-                    <ul>
-                        <li>Focus: Statistical modeling, machine learning algorithms, predictive analytics, data visualization, and business intelligence.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="institution-logo">
-                    <img src="images/logos/fgv-logo.png" alt="FGV logo" onerror="this.parentElement.style.display='none'">
-                </div>
-                <div class="timeline-content">
-                    <div class="timeline-header">
-                        <div>
-                            <h3>Fundação Getulio Vargas FGV</h3>
-                            <p class="role">MBA in Project Management</p>
-                        </div>
-                    </div>
-                    <ul>
-                        <li>Specialization: Agile methodologies, Scrum, PMBOK, risk management, stakeholder management, and change management for IT project delivery.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="institution-logo">
-                    <img src="images/logos/upis-logo.png" alt="UPIS logo" onerror="this.parentElement.style.display='none'">
-                </div>
-                <div class="timeline-content">
-                    <div class="timeline-header">
-                        <div>
-                            <h3>Faculdades Integradas UPIS</h3>
-                            <p class="role">BSc in Information Systems</p>
-                        </div>
-                    </div>
-                    <ul>
-                        <li>Focus: Algorithms, data structures, software engineering, database systems, and technology entrepreneurship fundamentals.</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- Certifications -->
-        <section id="certifications">
-            <h2 class="section-title">Certifications</h2>
-            <div class="certifications-cta">
-                <a href="badges/" class="badges-button" target="_blank" rel="noopener">
-                    View Verified Badges
-                </a>
-            </div>
-            <div class="certifications-list">
-                <div class="cert-section">
-                    <h3>Leadership</h3>
-                    <ul>
-                        <li>EA Sweden Fellowship, Effective Altruism (2026)</li>
-                        <li>Women's Leadership Program (SOUL, 2024)</li>
-                        <li>Self-Leadership Program (Hyper Island and Swedish Institute, 2024)</li>
-                        <li>Collaborative Approaches to Societal Issues (Stockholm School of Entrepreneurship, 2024)</li>
-                    </ul>
-                </div>
-
-                <div class="cert-section">
-                    <h4>AI &amp; Data</h4>
-                    <ul>
-                        <li>BlueDot Impact AI Safety Fellowship, AGI Strategy (2026)</li>
-                        <li>BlueDot Impact AI Safety Fellowship, Technical AI Safety (2026)</li>
-                        <li>Business Intelligence Foundation (Certiprof, 2024)</li>
-                        <li>Data Analysis (ENAP, 2023)</li>
-                        <li>Designing and Building AI Products (MIT, 2022)</li>
-                    </ul>
-                </div>
-
-                <div class="cert-section">
-                    <h4>IT Governance</h4>
-                    <ul>
-                        <li>DevOps Master (EXIN, 2020)</li>
-                        <li>Lean IT Foundation (EXIN, 2019)</li>
-                        <li>COBIT 5 Foundation (ISACA, 2015)</li>
-                        <li>ITIL V3 Foundation (EXIN, 2015)</li>
-                    </ul>
-                </div>
-
-                <div class="cert-section">
-                    <h4>Agile & Process</h4>
-                    <ul>
-                        <li>Lean Six Sigma White Belt (Certiprof, 2024)</li>
-                        <li>Scrum Foundation (Certiprof, 2019)</li>
-                    </ul>
-                </div>
-
-                <div class="cert-section">
-                    <h4>Language</h4>
-                    <ul>
-                        <li>TOEFL iBT (ETS, 2024)</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- Footer -->
-        <footer>
-            <p>&copy; <span id="footer-year"></span> Jady Pamella.<script>document.getElementById('footer-year').textContent=new Date().getFullYear();</script> Built with <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" style="width: 16px; height: 16px; display: inline-block; vertical-align: middle; color: #ef4444;"><path d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" /></svg> for innovation and sustainability.</p>
-        </footer>
-    </main>
+<div aria-hidden="true" class="coral-bar"></div>
+</main>
+<footer class="site-footer">
+<div class="wrap footer-grid">
+<p class="motto">May good people always find each other, and may we make the world a better place together.</p>
+<p class="mono">© 2026 Jady Pamella. All rights reserved. Aarhus, Denmark</p>
+</div>
+</footer>
+<script defer="" src="/js/site.js"></script>
 </body>
 </html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BrandLens: Brand Sentiment Analysis Using BERT | Jady Pamella</title>
+<meta name="description" content="Sesame Workshop Introduction Understanding how people perceive a brand is essential for businesses in today’s digital and highly connected world. Public se">
+<link rel="canonical" href="https://jadypamella.com/blog/brandlens-brand-sentiment-analysis-using-bert/">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#222222">
+<meta property="og:title" content="BrandLens: Brand Sentiment Analysis Using BERT | Jady Pamella">
+<meta property="og:description" content="Sesame Workshop Introduction Understanding how people perceive a brand is essential for businesses in today’s digital and highly connected world. Public se">
+<meta property="og:image" content="https://jadypamella.com/assets/img/og.png">
+<meta property="og:url" content="https://jadypamella.com/blog/brandlens-brand-sentiment-analysis-using-bert/">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="/assets/img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,800;1,500&display=swap">
+<link rel="stylesheet" href="/css/site.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "BrandLens: Brand Sentiment Analysis Using BERT", "datePublished": "2025-06-15", "dateModified": "2025-06-15", "author": {"@type": "Person", "name": "Jady Pamella", "url": "https://jadypamella.com/"}, "publisher": {"@type": "Person", "name": "Jady Pamella"}, "mainEntityOfPage": "https://jadypamella.com/blog/brandlens-brand-sentiment-analysis-using-bert/", "isBasedOn": "https://medium.com/@jadypamella/brandlens-brand-sentiment-analysis-using-bert-020064c2c0b9"}</script>
+<script>try{var t=localStorage.getItem("theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to Content</a>
+<!--
+  ❤️ This website was developed with love and dedication by Jady Pamella
+  🌐 Portfolio: https://jadypamella.com
+-->
+<header class="site-header">
+  <a class="brand" href="/" aria-label="Jady Pamella, Home"><img src="/assets/img/logo.png" alt="" width="36" height="36" loading="lazy" decoding="async"><span>Jady Pamella</span></a>
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+    <span class="menu-icon" aria-hidden="true"></span><span class="menu-label">Menu</span>
+  </button>
+  <nav id="site-nav" class="site-nav" aria-label="Main"><ul><li><a href="/#about">About</a></li><li><a href="/#projects">Projects</a></li><li><a href="/#events">Events</a></li><li><a href="/#publications">Publications</a></li><li><a href="/#experience">Experience</a></li><li><a href="/#skills">Skills</a></li><li><a href="/blog/" aria-current="page">Writing</a></li><li><a href="/#contact">Contact</a></li></ul></nav>
+</header>
+<main id="main">
+<article class="article wrap-narrow">
+  <p class="mono"><a href="/blog/">Writing</a> · 15 June 2025 · AI · NLP · Machine Learning</p>
+  <h1>BrandLens: Brand Sentiment Analysis Using BERT</h1>
+  <p class="byline">By Jady Pamella. First published on <a href="https://medium.com/@jadypamella/brandlens-brand-sentiment-analysis-using-bert-020064c2c0b9" target="_blank" rel="noopener">Medium</a>.</p>
+  <div class="prose"><figure><img alt="" loading="lazy" src="image-1.png"/><figcaption>Sesame Workshop</figcaption></figure><h3>Introduction</h3><p>Understanding how people perceive a brand is essential for businesses in today’s digital and highly connected world. Public sentiment reflects trust, reputation, and customer experience, factors that directly influence a brand’s market performance. Natural Language Processing (NLP) provides tools to analyze these sentiments automatically and at scale.</p><p>As part of the NLP course at Stockholm University, our team developed BrandLens, a system designed to classify public sentiment about brands using two different approaches: a classical machine learning model (Logistic Regression) and a transformer-based deep learning model (BERT). This article summarizes our methodology, results, and reflections from the project.</p><h3>Objective</h3><p>The goal of BrandLens is to build an AI-powered NLP system capable of classifying brand-related public opinions into positive, neutral, or negative categories. The system leverages data from the <a href="https://www.kaggle.com/datasets/crowdflower/twitter-airline-sentiment" rel="noopener" target="_blank">Twitter US Airline Sentiment dataset</a>, with over 14,000 manually labeled tweets related to U.S. airline companies.</p><p>In addition to developing the sentiment analysis pipeline, we sought to compare the performance of two contrasting approaches: Logistic Regression with TF-IDF vectorization and BERT fine-tuned on the same dataset.</p><h3>Methodology</h3><p>To ensure fair comparison, both models were trained and evaluated using the same train/test split and identical preprocessing steps.</p><h4>Logistic Regression Pipeline</h4><ul><li>Text vectorization using TF-IDF (max 5000 features)</li><li>Model trained using scikit-learn</li><li>Evaluation through precision, recall, F1-score, and accuracy</li></ul><h4>BERT Pipeline</h4><ul><li>Tokenization using the cardiffnlp/twitter-roberta-base-sentiment tokenizer</li><li>Fine-tuning via Hugging Face Trainer API (1 epoch, reduced batch size)</li><li>Sentiment output mapped to the same label schema</li></ul><p>Additionally, we implemented:</p><ul><li>Named Entity Recognition (NER) with SpaCy</li><li>Keyword extraction with NLTK</li><li>Model prediction analysis for selected example tweets</li></ul><h3>Results</h3><p>Both models were evaluated based on classification metrics and qualitative predictions. Below is a summary of the results:</p><figure><img alt="" loading="lazy" src="image-2.jpg"/><figcaption>Figure 1: Model Performance Comparison</figcaption></figure><p>As seen in the chart, BERT outperformed Logistic Regression in all metrics. It showed particularly strong improvements in identifying positive and neutral sentiments, which tend to be more difficult to classify due to language subtlety.</p><p>It becomes clear why BERT laid the foundation for the large language models (LLMs) that dominate the field today, such as RoBERTa, ALBERT, T5, GPT-4, and Claude.</p><h3>Qualitative Predictions</h3><p>To validate the models, we tested three real-world-style tweets:</p><p>Tweet 1: “I love how Delta treats its passengers!”</p><ul><li>Logistic Regression → <em>Neutral</em></li><li>BERT → <em>Positive</em> (Confidence: 0.98)</li></ul><p>Tweet 2: “Worst experience ever with United Airlines.”</p><ul><li>Logistic Regression → <em>Negative</em></li><li>BERT → <em>Negative</em> (Confidence: 0.99)</li></ul><p>Tweet 3: “Flight was delayed but I finally made it.”</p><ul><li>Logistic Regression → <em>Negative</em></li><li>BERT → <em>Negative</em> (Confidence: 0.88)</li></ul><p>These examples demonstrate BERT’s superior ability to capture emotional tone, context, and nuance in informal text such as tweets.</p><h3>Challenges</h3><p>Despite the promising results, several challenges were encountered:</p><ul><li>Data imbalance, with significantly fewer positive samples compared to negative ones</li><li>Detection of sarcasm and irony, which often mislead models</li><li>Ambiguity in neutral statements, which can contain mixed tones</li><li>Social media noise, including abbreviations, emojis, and inconsistent grammar</li></ul><h3>Future Work</h3><p>BrandLens has the potential to evolve beyond tweet analysis. Future extensions may include:</p><ul><li>Integration with real-time streaming APIs for live brand monitoring</li><li>Support for multilingual classification across global markets</li><li>Development of a dashboard interface for business stakeholders</li><li>Improved handling of sarcasm, humor, and emotional shifts in text</li><li>Exploration of zero-shot or few-shot classification with larger models like GPT-4 or DeBERTa</li></ul><h3>Conclusion</h3><p>The BrandLens project showcased the power of NLP in extracting structured insights from unstructured text. Our comparative approach highlighted how classical models provide quick and interpretable results, while modern transformer architectures like BERT offer superior accuracy and context understanding. BrandLens stands as a scalable framework for brand sentiment monitoring that can be adapted to broader business and research applications.</p><h3>References</h3><ul><li>Bird, S., Klein, E., &amp; Loper, E. (2009). Natural Language Processing with Python. O’Reilly Media.</li><li>Devlin, J., Chang, M. W., Lee, K., &amp; Toutanova, K. (2019). BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding. arXiv preprint arXiv:1810.04805.</li><li>Vaswani, A. et al. (2017). Attention is All You Need. Advances in Neural Information Processing Systems. Crowdflower. Twitter US Airline Sentiment Dataset. Available at: <a href="https://www.kaggle.com/datasets/crowdflower/twitter-airline-sentiment" rel="noopener" target="_blank">https://www.kaggle.com/datasets/crowdflower/twitter-airline-sentiment</a></li><li>Wolf, T. et al. (2020). Transformers: State-of-the-Art Natural Language Processing. arXiv:1910.03771.</li><li>SpaCy Documentation. <a href="https://spacy.io/" rel="noopener" target="_blank">https://spacy.io/</a></li><li>NLTK Documentation. <a href="https://www.nltk.org/" rel="noopener" target="_blank">https://www.nltk.org/</a></li></ul></div>
+  <div class="links"><a class="pill" href="https://medium.com/@jadypamella/brandlens-brand-sentiment-analysis-using-bert-020064c2c0b9" target="_blank" rel="noopener">Read the Original on Medium <svg aria-hidden="true" viewBox="0 0 24 24" width="16" height="16"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></a><a class="pill" href="/blog/">All Writing</a></div>
+</article>
+</main>
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <p class="motto">May good people always find each other, and may we make the world a better place together.</p>
+    <p class="mono">© 2026 Jady Pamella. All rights reserved. Aarhus, Denmark</p>
+  </div>
+</footer>
+<script src="/js/site.js" defer></script>
+</body>
+</html>
