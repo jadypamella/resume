@@ -481,3 +481,5 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 
 .footer-grid { flex-direction: row; flex-wrap: wrap; justify-content: center; align-items: baseline; gap: .25rem 1.5rem; }
 .site-footer .motto { font-size: .875rem; max-width: none; }
+
+.footer-grid { flex-direction: column; align-items: center; gap: .35rem; }
