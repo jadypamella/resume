@@ -1347,6 +1347,13 @@
                 transform: none;
             }
 
+            /* The top nav bar and Core Expertise already cover these, so the
+               visitor reaches the hero without scrolling past duplicates */
+            body:has(.nav-menu) .sidebar-nav,
+            .sidebar-section:has(.accordion) {
+                display: none;
+            }
+
             /* Main content takes full width */
             .main-content {
                 margin-left: 0 !important;

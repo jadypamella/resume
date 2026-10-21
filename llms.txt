@@ -1,22 +1,22 @@
-# Jady Pamella, AI Engineer focused on AI Safety, PhD Researcher in Digital Twins
+# Jady Pamella, AI Engineer focused on AI Safety, PhD Fellow in Digital Twins
 # https://jadypamella.com
 # llms.txt, AI-readable profile summary
 
-> AI Engineer focused on AI Safety and PhD researcher in digital twins for critical-infrastructure trust at Aarhus University. 12+ years shipping production systems across banking, climate-tech, and AI products. Her work turns on one question: can you trust what the machine says is real, from a deepfake in the feed to a digital twin of a water plant?
+> AI Engineer focused on AI Safety and PhD Fellow in digital twins for district cooling at Aarhus University. 12+ years shipping production systems across banking, climate-tech, and AI products. Her work turns on one question: can you trust what the machine says is real, from a deepfake in the feed to a digital twin of a water plant?
 
 ## Who is Jady Pamella?
 
-Jady Pamella is an AI Engineer focused on AI Safety and a PhD researcher at Aarhus University, based in Aarhus, Denmark, with 12 years of experience in AI/ML, DevSecOps, cloud architecture, and cybersecurity. She has been coding since age 12 and has shipped production systems at scale across banking (Bank of Brasilia), government (IBICT, MCID), and climate tech (Tree++, Deep Forestry). Her PhD studies digital twins for trust and security in critical infrastructure such as water and cooling systems.
+Jady Pamella is an AI Engineer focused on AI Safety and a PhD Fellow at Aarhus University, based in Aarhus, Denmark, with 12 years of experience in AI/ML, DevSecOps, cloud architecture, and cybersecurity. She has been coding since age 12 and has shipped production systems at scale across banking (Bank of Brasilia), government (IBICT, MCID), and climate tech (Tree++, Deep Forestry). Her PhD studies digital twins for district cooling, verifying that installations run as they were designed.
 
 She is also focused on AI safety and digital twins, part of the EA Sweden Fellowship 2026 cohort and the BlueDot Impact AI safety courses.
 
 She is:
 
-- PhD Researcher at Aarhus University (2026 to present), working on digital twins for trust and security in critical infrastructure, at the intersection of AI safety, cybersecurity, and critical-infrastructure resilience.
+- PhD Fellow at Aarhus University (2026 to present), working on digital twins for district cooling, verifying that installations run as they were designed, at the intersection of AI safety, cybersecurity, and critical-infrastructure resilience.
 - Founder and CEO of SoiQet (soiqet.com), an LLM-powered multi-tenant platform on Azure with in-house RAG, fine-tuned LLM, structured outputs, Stripe billing, Supabase row-level security, and OAuth integrations across six social networks.
-- Co-Founder and Chief Innovation Officer of Tree++ (treepp.org), a climate-tech matchmaking platform that enabled 1,000+ trees planted across 10 countries via a computer-vision pipeline for carbon-credit monitoring and an ML matchmaking system she built from zero to production.
+- Co-founder and Head of Innovation of Tree++ (treepp.org), a climate-tech matchmaking platform that enabled 1,000+ trees planted across 10 countries via a computer-vision pipeline for carbon-credit monitoring and an ML matchmaking system she built from zero to production.
 - AI Research Engineer (MSc thesis) at Deep Forestry (2026), where she built a hybrid geometric-neural pipeline on NVIDIA Jetson Orin NX with F1 0.926 at 53 ms per frame, a 29x latency reduction on real LiDAR flight data.
-- AI and DevSecOps Engineer at Bank of Brasilia (BRB), where she also served as IT Manager from 2016 to 2024 with a 1M USD annual budget and a team of 10+, before stepping back into hands-on AI engineering in 2024.
+- IT Analyst and DevOps Engineer at Bank of Brasilia (BRB), where she also served as IT Manager from 2016 to 2024 with a 1M USD annual budget and a team of 10+, before stepping back into hands-on AI engineering in 2024.
 - Cybersecurity Research Engineer at LabRisk (University of Brasilia) since 2024.
 - Peer-reviewed researcher in Elsevier Computers and Security (2025) and Revista Tecnologia e Sociedade (UTFPR, 2026).
 - Swedish Institute Scholar for Global Professionals (SISGP).
@@ -43,7 +43,7 @@ Lattes: http://lattes.cnpq.br/1337645265735489
 Credly: https://www.credly.com/users/jadypamella
 Calendly: https://calendly.com/jadypamella/meeting
 Location: Aarhus, Denmark
-Work authorization: Danish residence and work permit as a PhD researcher at Aarhus University.
+Work authorization: Danish residence and work permit as a PhD Fellow at Aarhus University.
 Open to: research collaboration on AI safety, digital twins, and trustworthy critical-infrastructure AI, plus speaking and advisory work.
 
 ## Publications

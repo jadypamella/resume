@@ -19,10 +19,10 @@
         .container { width: 210mm; max-width: 210mm; margin: 0 auto; padding: 0 3mm 0 6mm; background: white; }
 
         /* Header without photo: name + positioning + contact bar */
-        .header { padding: 3mm 0 2mm; margin-bottom: 4mm; }
+        .header { padding: 3mm 0 2mm; margin-bottom: 3mm; }
         .header h1 { font-size: 22pt; font-weight: 800; color: #4A90B5; margin-bottom: 3px; text-transform: uppercase; letter-spacing: 0.5px; }
         .header .title { font-size: 8.25pt; color: #555; margin-bottom: 6px; font-weight: 500; line-height: 1.35; max-width: 200mm; white-space: nowrap; overflow: hidden; }
-        .header .positioning { font-size: 8.75pt; color: #555; line-height: 1.4; max-width: 195mm; text-align: justify; margin-bottom: 5px; }
+        .header .positioning { font-size: 8.75pt; color: #555; line-height: 1.4; max-width: 195mm; text-align: left; margin-bottom: 5px; }
 
         .contact-bar { display: flex; flex-wrap: nowrap; gap: 10px; font-size: 7.5pt; line-height: 1.4; white-space: nowrap; overflow: hidden; }
         .contact-bar div { color: #4A90B5; font-weight: 500; display: flex; align-items: center; gap: 5px; flex-shrink: 0; }
@@ -77,7 +77,7 @@
 
         @media print {
             html, body { margin: 0; padding: 0; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-            .container { width: 210mm; max-width: 210mm; padding: 3mm 3mm 3mm 6mm; margin: 0; }
+            .container { width: 210mm; max-width: 210mm; padding: 1mm 3mm 0 6mm; margin: 0; }
             a { color: #4A90B5 !important; text-decoration: none !important; }
             .header { page-break-inside: avoid; page-break-after: avoid; }
             .experience-item, .left-block { page-break-inside: avoid; }
@@ -97,9 +97,9 @@
         <!-- Header (no photo) -->
         <div class="header">
             <h1>JADY PAMELLA</h1>
-            <div class="title">AI Engineer focused on AI Safety · PhD Researcher in Digital Twins, Aarhus University · Elsevier 2025 · EA Sweden Fellow 2026 · BlueDot AGI Strategy + Technical AI Safety</div>
+            <div class="title">AI Engineer focused on AI Safety | PhD Fellow, Aarhus University | Elsevier 2025 | EA Sweden Fellow 2026 | BlueDot Impact</div>
             <div class="positioning">
-                AI Engineer focused on AI safety who builds trustworthy production AI. 12 years shipping AI inside regulated environments (a public-sector bank, federal research labs, and climate tech), from LLM platforms and RAG pipelines to computer vision and MLOps at safety-critical latency budgets. PhD at Aarhus University on trustworthy digital twins for critical infrastructure (water and cooling systems) adds depth in AI safety, cybersecurity, and critical-infrastructure resilience. Peer-reviewed in Elsevier Computers and Security.
+                AI Engineer focused on AI safety who builds trustworthy production AI. 12 years shipping AI inside regulated environments (a public-sector bank, federal research labs, and climate tech), from LLM platforms and RAG pipelines to computer vision and MLOps at safety-critical latency budgets. PhD at Aarhus University on digital twins for district cooling (SWiM, funded by the Grundfos Foundation) adds depth in AI safety, cybersecurity, and critical-infrastructure resilience. Peer-reviewed in Elsevier Computers and Security.
             </div>
             <div class="contact-bar">
                 <div>
@@ -108,7 +108,7 @@
                 </div>
                 <div>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" /></svg>
-                    <a href="https://wa.me/5561996845956">+55 61 99684 5956</a>
+                    <a href="tel:+4591678029">+45 91 67 80 29</a>
                 </div>
                 <div>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" /></svg>
@@ -151,11 +151,11 @@
                     <div class="section-title">Education</div>
                     <div class="left-block">
                         <div class="label"><span class="accent">Stockholm University, DSV</span></div>
-                        <div class="meta">MSc Computer and Systems Sciences (AI and IoT). 2024 to 2026. Swedish Institute Scholar (SISGP).</div>
+                        <div class="meta">MSc Computer and Systems Sciences (AI and IoT). Aug 2024 to May 2026. Swedish Institute Scholar (SISGP).</div>
                     </div>
                     <div class="left-block">
                         <div class="label"><span class="accent">University of Brasilia, PPEE</span></div>
-                        <div class="meta">MEng Electrical Engineering, concentration in Cybersecurity and Risk Management. 2024 to 2026.</div>
+                        <div class="meta">MEng Electrical Engineering, concentration in Cybersecurity and Risk Management. Mar 2024 to May 2026.</div>
                     </div>
                     <div class="left-block">
                         <div class="label"><span class="accent">UPIS Faculdades Integradas</span></div>
@@ -223,19 +223,19 @@
 
                     <div class="experience-item">
                         <div class="company-header">
-                            <div class="role-company"><span class="company">Aarhus University</span> - <span class="role">PhD Researcher, Digital Twins for Critical-Infrastructure Trust</span></div>
-                            <div class="date-location">2026 - Present (Aarhus, Denmark)</div>
+                            <div class="role-company"><span class="company">Aarhus University</span> - <span class="role">PhD Fellow, Digital Twins for District Cooling (SWiM)</span></div>
+                            <div class="date-location">Aug 2026 - Present (Aarhus)</div>
                         </div>
-                        <div class="role-sub">Digital twins for trust and security in critical infrastructure, at the intersection of AI safety, cybersecurity, and critical-infrastructure resilience.</div>
+                        <div class="role-sub">Digital twins for district cooling in the SWiM project, at the intersection of AI safety, cybersecurity, and critical-infrastructure resilience.</div>
                         <ul class="duties">
-                            <li>Research on <strong>digital twins for trust and security in critical infrastructure</strong>, verifying that a virtual model faithfully and securely represents the physical system, with a focus on water and cooling systems.</li>
+                            <li>Verifying that <strong>district cooling installations are commissioned as they were designed</strong>, combining Building Information Modelling, AI and digital twins. Part of SWiM, a five-year project on sustainable water-based cooling for megacities funded by the Grundfos Foundation, supervised by Peter Gorm Larsen and Carl Schultz.</li>
                         </ul>
                     </div>
 
                     <div class="experience-item">
                         <div class="company-header">
                             <div class="role-company"><span class="company">Deep Forestry AB</span> - <span class="role">AI Research Engineer</span></div>
-                            <div class="date-location">2026 (Stockholm)</div>
+                            <div class="date-location">Dec 2025 - Jun 2026 (Uppsala)</div>
                         </div>
                         <div class="role-sub">MSc thesis on safe landing-zone detection for autonomous drones in below-canopy forests.</div>
                         <ul class="duties">
@@ -247,7 +247,7 @@
                     <div class="experience-item">
                         <div class="company-header">
                             <div class="role-company"><span class="company">SoiQet</span> - <span class="role">Founder and CEO</span></div>
-                            <div class="date-location">2025 - Present (Aarhus)</div>
+                            <div class="date-location">Aug 2025 - Present (Aarhus)</div>
                         </div>
                         <div class="role-sub">AI-powered social media platform for creators, brands, and teams (Plug Into Social Intelligence), from prototype to production.</div>
                         <ul class="duties">
@@ -270,7 +270,7 @@
                     <div class="experience-item">
                         <div class="company-header">
                             <div class="role-company"><span class="company">LabRisk, University of Brasilia</span> - <span class="role">Cybersecurity Research Engineer</span></div>
-                            <div class="date-location">2024 - Present (Brasilia)</div>
+                            <div class="date-location">Aug 2024 - Present (Brasilia)</div>
                         </div>
                         <ul class="duties">
                             <li>Research on risk management, AI for critical-infrastructure cybersecurity, and security governance frameworks. Output includes the 2025 Elsevier <em>Computers and Security</em> paper extending the CIS framework for the Brazilian judiciary, and the 2025 ENANGRAD conference paper on cybersecurity business risks in metropolitan transport systems.</li>
@@ -279,8 +279,8 @@
 
                     <div class="experience-item">
                         <div class="company-header">
-                            <div class="role-company"><span class="company">Bank of Brasilia - BRB</span> - <span class="role">AI and Data Engineer / DevOps</span></div>
-                            <div class="date-location">2014 - Present (Brasilia)</div>
+                            <div class="role-company"><span class="company">Bank of Brasilia - BRB</span> - <span class="role">IT Analyst and DevOps Engineer</span></div>
+                            <div class="date-location">Dec 2014 - Present (Brasilia)</div>
                         </div>
                         <ul class="duties">
                             <li>Delivered a production NLP chatbot (Python, TensorFlow) that <strong>cut response time 40% for 100K+ users</strong>, then led the build-vs-buy pivot that routes <strong>40% of BRB customer service through the resulting WhatsApp channel</strong>. Built GDPR-aligned analytics for the instant payments system on PySpark.</li>
@@ -290,8 +290,8 @@
 
                     <div class="experience-item">
                         <div class="company-header">
-                            <div class="role-company"><span class="company">Bank of Brasilia - BRB</span> - <span class="role">IT Manager</span></div>
-                            <div class="date-location">2016 - 2024 (Brasilia)</div>
+                            <div class="role-company"><span class="company">Bank of Brasilia - BRB</span> - <span class="role">IT Manager and Engineering Manager</span></div>
+                            <div class="date-location">May 2016 - Jul 2024 (Brasilia)</div>
                         </div>
                         <ul class="duties">
                             <li>Owned a <strong>$1M+ annual IT budget</strong> and a <strong>team of 10+ engineers</strong>. Cut operating cost <strong>15%</strong>, saved <strong>$150K+ in vendor renegotiation</strong>, lifted audit accuracy <strong>40%</strong> in a regulated banking environment.</li>
@@ -300,11 +300,11 @@
 
                     <div class="experience-item">
                         <div class="company-header">
-                            <div class="role-company"><span class="company">Tree++</span> - <span class="role">Co-founder and Chief Innovation Officer</span></div>
-                            <div class="date-location">2024 - Present (Aarhus)</div>
+                            <div class="role-company"><span class="company">Tree++</span> - <span class="role">Co-founder and Head of Innovation</span></div>
+                            <div class="date-location">Oct 2024 - Present (Stockholm)</div>
                         </div>
                         <ul class="duties">
-                            <li>Climate-tech non-profit. Building a <strong>computer-vision pipeline for carbon-credit monitoring</strong> on satellite imagery, plus an AI matchmaking platform between offset buyers, volunteers, and landowners. Drivhuset Impact Cup 2025, operating across 10 countries.</li>
+                            <li>Climate-tech non-profit. Built the core <strong>computer-vision pipeline and ML matchmaking system</strong> from zero to production, enabling 1,000+ trees planted across 10 countries.</li>
                         </ul>
                     </div>
 
@@ -314,14 +314,10 @@
                     <div class="section-title">Awards and Recognition</div>
                     <ul class="duties">
                         <li><strong>1st place, EpiMinds Google AI Hackathon (2026).</strong> Shipped a Multi-Agent Crisis Response System (MACS) in a single day.</li>
-                        <li><strong>1st place, Kong AI-Assisted Coding Hackathon (2025).</strong></li>
-                        <li><strong>1st place, Kolomolo AI-Assisted Coding Hackathon (2025).</strong></li>
-                        <li><strong>Judge, Apart Research Global South AI Safety Hackathon (2026).</strong> Technical AI Safety, AI Governance and AI Security tracks, scored against the Apart Sprint rubric.</li>
-                        <li><strong>Speaker, "New Tech, Old Rules" panel, Nordic Tech Week, Stockholm (2026).</strong> Identity, fraud and AI safety.</li>
-                        <li>Swedish Institute Scholarship for Global Professionals, SISGP (2024).</li>
-                        <li>Impact Cup, Drivhuset Stockholm (2025).</li>
-                        <li>Strategic Configuration Management Award, Efinance Brasil (2019).</li>
-                    </ul>
+                                                <li><strong>1st place, Kong and Kolomolo AI-Assisted Coding Hackathons (2025).</strong></li>
+                        <li><strong>Judge, Apart Research Global South AI Safety Hackathon (2026).</strong> Technical AI Safety, Governance and Security tracks.</li>
+                        <li><strong>Speaker, Nordic Tech Week "New Tech, Old Rules" panel (2026).</strong></li>
+                                            </ul>
                 </div>
 
 
