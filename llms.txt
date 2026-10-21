@@ -2,7 +2,7 @@
 > AI Engineer Focused on Digital Twins and AI Safety. PhD Fellow at Aarhus University. I build production AI you can trust, from LLMs and RAG to digital twins, so people can still tell what is real. My PhD at Aarhus University is on digital twins for district cooling, checking that critical infrastructure runs as it was designed.
 
 ## Core Pages
-- [Home](https://jadypamella.com/): about, featured projects, hackathons, publications, experience, education, skills and contact
+- [Home](https://jadypamella.com/): about, featured projects, events, publications, experience, education, skills and contact
 - [Writing](https://jadypamella.com/blog/): articles first published on Medium
 
 ## Featured Projects
