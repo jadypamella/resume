@@ -477,12 +477,10 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .mini > :not(.mini-logo) { grid-column: 2; }
 .mini-logo { grid-row: 1 / span 4; width: 48px; height: 48px; object-fit: contain; background: #fff; border-radius: 10px; padding: 4px; }
 
-.footer-grid { flex-direction: column; justify-content: center; align-items: center; text-align: center; }
 
-.footer-grid { flex-direction: row; flex-wrap: wrap; justify-content: center; align-items: baseline; gap: .25rem 1.5rem; }
 .site-footer .motto { font-size: .875rem; max-width: none; }
 
-.footer-grid { flex-direction: column; align-items: center; gap: .35rem; }
+.footer-grid { flex-direction: column; align-items: center; text-align: center; gap: .35rem; }
 
 /* ---------- Calmer cards and motion: one neutral tile, aligned grid, no spinning or sliding */
 .tile-cream, .tile-coral, .tile-gold, .tile-ink { background: var(--ink-2); border: 1px solid var(--line); }
