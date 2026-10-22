@@ -482,15 +482,5 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 
 .footer-grid { flex-direction: column; align-items: center; text-align: center; gap: .35rem; }
 
-/* ---------- Calmer cards and motion: one neutral tile, aligned grid, no spinning or sliding */
-.tile-cream, .tile-coral, .tile-gold, .tile-ink { background: var(--ink-2); border: 1px solid var(--line); }
-.project:nth-child(even) { margin-top: 0 !important; }
-.project-media img { width: 96px; height: 96px; box-shadow: none; border: 1px solid var(--line); transition: none; }
-.project:hover .project-media img { transform: none; }
-.project-media { transition: border-color var(--t); }
-.project:hover .project-media { border-color: var(--coral); }
-.project .eyebrow { color: var(--muted); }
-.ring { animation: none; }
-.marquee-track { animation: none; }
-.stack-btn:hover .stack-word { transform: none; }
-.js .reveal { transform: translateY(10px); transition: opacity .4s ease-out, transform .4s ease-out; }
+/* ---------- Every project tile in the brand pink */
+.tile-cream, .tile-coral, .tile-gold, .tile-ink { background: var(--brand); border: 0; }
