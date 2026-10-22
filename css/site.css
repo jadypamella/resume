@@ -484,3 +484,6 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 
 /* ---------- Every project tile in the brand pink */
 .tile-cream, .tile-coral, .tile-gold, .tile-ink { background: var(--brand); border: 0; }
+
+/* ---------- Room between the Writing intro and the first post */
+.blog-head .intro { margin-top: 1rem; margin-bottom: clamp(2rem, 5vw, 3.5rem); }
