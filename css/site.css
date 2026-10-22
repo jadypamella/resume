@@ -156,7 +156,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .section-head h2 { font-size: clamp(2.5rem, 5.5vw, 4.5rem); font-weight: 800; color: var(--cream); }
 .section-head.sub { margin-top: clamp(3rem, 6vw, 5rem); margin-bottom: 1rem; }
 .h-sub { font-size: clamp(1.75rem, 3.5vw, 2.5rem); font-weight: 800; color: var(--cream); }
-.intro { max-width: 60ch; color: var(--muted); font-size: 1.0625rem; }
+.intro { max-width: none; color: var(--muted); font-size: 1.0625rem; }
 
 /* ---------- Hero */
 .hero { padding: calc(var(--header-h) + clamp(2rem, 5vw, 3.5rem)) 0 clamp(2.5rem, 4vw, 3.5rem); position: relative; }
