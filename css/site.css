@@ -239,12 +239,10 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .project .links { margin-top: .25rem; }
 @media (min-width: 700px) {
   .projects { grid-template-columns: repeat(2, 1fr); }
-  .project:nth-child(even) { margin-top: 4rem; }
 }
 @media (min-width: 1200px) {
   .projects { grid-template-columns: repeat(4, 1fr); }
   .project-media { aspect-ratio: 5 / 4; }
-  .project:nth-child(even) { margin-top: 3.5rem; }
 }
 
 .minis { display: grid; gap: 1px; background: var(--line); border-block: 1px solid var(--line); grid-template-columns: 1fr; }
