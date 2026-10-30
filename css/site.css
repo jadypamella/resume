@@ -493,3 +493,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 
 /* Standalone links get a 44px tap area on touch screens; links inside sentences keep the text height */
 .sources .src, .dots li > a:only-child, p.mono > a:only-child, article li > a:only-child { display: inline-flex; align-items: center; min-height: 44px; }
+
+/* Rendering cost: keep the endless animations on their own layer and skip layout of off-screen sections until they come near the viewport */
+.ring, .marquee-track { will-change: transform; }
+main > section:not(:first-of-type) { content-visibility: auto; contain-intrinsic-size: auto 900px; }
