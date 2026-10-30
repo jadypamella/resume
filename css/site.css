@@ -381,7 +381,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .prose ul, .prose ol { padding-left: 1.4rem; }
 .prose ul { list-style: disc; } .prose ol { list-style: decimal; }
 .prose li + li { margin-top: .4em; }
-.prose img { border-radius: 12px; margin-inline: auto; }
+.prose img { border-radius: 12px; margin-inline: auto; max-width: 100%; height: auto; }
 .prose figure { margin: 2em 0; }
 .prose figcaption { font: 400 .875rem var(--mono); color: var(--muted); margin-top: .5rem; text-align: center; }
 .prose blockquote { margin: 1.5em 0; padding-left: 1.25rem; border-left: 3px solid var(--coral); color: var(--cream); font-style: italic; }
