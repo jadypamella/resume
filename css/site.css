@@ -351,7 +351,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .contact-line { margin-bottom: 1.5rem; word-break: break-word; }
 .contact-line a { color: var(--ink); text-underline-offset: 3px; }
 .profiles { display: flex; flex-wrap: wrap; gap: .25rem 1.25rem; margin-top: 1.75rem; }
-.profiles a { display: inline-flex; align-items: center; min-height: 44px; color: var(--ink); font-weight: 600; text-underline-offset: 4px; text-decoration-color: var(--coral-deep); }
+.profiles a { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; min-width: 44px; color: var(--ink); font-weight: 600; text-underline-offset: 4px; text-decoration-color: var(--coral-deep); }
 .profiles a:hover { color: var(--coral-deep); }
 .coral-bar { height: 12px; background: var(--brand); }
 
@@ -439,6 +439,9 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .post-card p { color: var(--muted); }
 .post-card .when { font-size: .875rem; }
 .writing .src, .post-card .src { color: var(--coral); font-weight: 700; }
+/* Tap targets at least 44px without moving the layout. */
+.section-head > .src { display: inline-flex; align-items: center; min-height: 44px; }
+.post-card h3 a { display: inline-block; padding-block: 7px; margin-block: -7px; }
 
 @media (max-width: 760px) {
     .post-card, .post-card:nth-child(odd) { grid-template-columns: 1fr; gap: 16px; }
