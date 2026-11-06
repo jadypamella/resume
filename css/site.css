@@ -499,3 +499,11 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 
 /* Keep the endless animations on their own layer so they do not repaint the page */
 .ring, .marquee-track { will-change: transform; }
+
+/* Language switch: EN | PT, the current one as plain text. */
+.lang-switch { order: 3; display: flex; align-items: center; gap: .25rem; font-weight: 700; font-size: .9rem; }
+.lang-switch > * { display: inline-grid; place-items: center; min-width: 44px; min-height: 44px; border-radius: 999px; }
+.lang-switch a { color: var(--muted, inherit); text-decoration: none; }
+.lang-switch a:hover { color: var(--coral); }
+.lang-switch a:focus-visible { outline: 3px solid var(--coral); outline-offset: 2px; }
+.lang-switch [aria-current] { color: var(--text); text-decoration: underline; text-decoration-color: var(--coral); text-underline-offset: 4px; }
