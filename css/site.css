@@ -16,6 +16,9 @@
   --coral-deep: #b4234a;   /* coral for text on cream (5.3:1) */
   --brand: #e03859;        /* brand coral, used only for large fills */
   --gold: #FF6B81;
+  --band: #b4234a;          /* deep coral band, the same in both themes (white text 6:1) */
+  --on-band: #FFFFFF;
+  --band-ink: #0A0A0A;
   --paper-muted: var(--paper-muted);
   --paper-line: rgba(10, 10, 10, .18);
   --paper-strong: rgba(10, 10, 10, .35);
@@ -540,5 +543,33 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   .reel-copy, .reel-toggle { display: none; }
   .reel-card a:hover { transform: none; }
 }
-.reel-cta { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem 2rem; margin-top: clamp(1.5rem, 3vw, 2.5rem); padding: clamp(1.25rem, 3vw, 2rem); border: 1px solid var(--line); border-radius: var(--radius); background: var(--ink-2); }
-.reel-cta p { font-size: clamp(1.25rem, 2.4vw, 1.75rem); font-weight: 800; color: var(--cream); letter-spacing: -0.02em; max-width: 34ch; }
+
+/* Quote band: one loud block after the reel, the same in the dark and light themes. */
+.reel-cta {
+  position: relative; overflow: hidden; isolation: isolate;
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1.5rem 2.5rem;
+  margin-top: clamp(2rem, 4vw, 3rem); padding: clamp(1.75rem, 4.5vw, 3.5rem);
+  border-radius: calc(var(--radius) + 8px); color: var(--on-band);
+  background: linear-gradient(115deg, var(--band) 0%, var(--band) 45%, var(--brand) 100%);
+}
+.reel-cta::before, .reel-cta::after {
+  content: ""; position: absolute; z-index: -1; border-radius: 50%; border: 2px solid rgba(255, 255, 255, .16);
+}
+.reel-cta::before { width: 26rem; height: 26rem; right: -7rem; top: -12rem; }
+.reel-cta::after { width: 16rem; height: 16rem; right: 9rem; bottom: -11rem; }
+.reel-cta-text { display: grid; gap: 1.25rem; max-width: 40rem; }
+.reel-cta-title { font-size: clamp(1.875rem, 4.2vw, 3.25rem); font-weight: 800; line-height: 1.05; letter-spacing: -0.035em; }
+.reel-cta-services { display: flex; flex-wrap: wrap; gap: .5rem; }
+.reel-cta-services li {
+  padding: .4rem .9rem; border: 1px solid rgba(255, 255, 255, .55); border-radius: 999px;
+  font-size: .9375rem; font-weight: 600;
+}
+.reel-cta-btn {
+  min-height: 60px; padding: 0 1.9rem; font-size: 1.125rem; font-weight: 800;
+  background: var(--band-ink); color: var(--on-band); box-shadow: 0 12px 30px -12px rgba(0, 0, 0, .55);
+}
+.reel-cta-btn svg { transition: transform var(--t); }
+.reel-cta-btn:hover { background: var(--on-band); color: var(--band-ink); }
+.reel-cta-btn:hover svg { transform: translate(3px, -3px); }
+.reel-cta :focus-visible { outline-color: var(--on-band); }
+@media (max-width: 600px) { .reel-cta-btn { width: 100%; } }
