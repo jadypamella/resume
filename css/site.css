@@ -543,16 +543,10 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 
 /* Quote band: the site coral, with the stage colour as text (8:1 dark theme, 6:1 light theme). */
 .reel-cta {
-  position: relative; overflow: hidden; isolation: isolate;
   display: grid; grid-template-columns: 1fr; align-items: center; gap: 1.5rem 2.5rem;
   margin-top: clamp(2rem, 4vw, 3rem); padding: clamp(1.75rem, 4.5vw, 3.5rem);
   border-radius: calc(var(--radius) + 8px); background: var(--coral); color: var(--ink);
 }
-.reel-cta::before, .reel-cta::after {
-  content: ""; position: absolute; z-index: -1; border-radius: 50%; border: 2px solid currentColor; opacity: .14;
-}
-.reel-cta::before { width: 26rem; height: 26rem; right: -7rem; top: -12rem; }
-.reel-cta::after { width: 16rem; height: 16rem; right: 12rem; bottom: -11rem; }
 .reel-cta-text { display: grid; gap: 1.25rem; max-width: 40rem; }
 .reel-cta-title { font-size: clamp(1.875rem, 4.2vw, 3.25rem); font-weight: 800; line-height: 1.05; letter-spacing: -0.035em; }
 .reel-cta-services { display: flex; flex-wrap: wrap; gap: .5rem; }
