@@ -2,7 +2,7 @@
 > AI Engineer Focused on Digital Twins and AI Safety. PhD Fellow at Aarhus University. I build production AI you can trust, from LLMs and RAG to digital twins, so people can still tell what is real. My PhD at Aarhus University is on digital twins for district cooling, checking that critical infrastructure runs as it was designed.
 
 ## Core Pages
-- [Home](https://jadypamella.com/): about, featured projects, events, publications, experience, education, skills and contact
+- [Home](https://jadypamella.com/): about, featured projects, freelance projects, events, publications, experience, education, skills and contact
 - [Writing](https://jadypamella.com/blog/): articles first published on Medium
 
 ## Featured Projects
@@ -10,6 +10,19 @@
 - FactOrFakeAI: AI Literacy and Content Authenticity. Educational posts on Instagram and TikTok as @factororfakeai.
 - LabRisk: Cybersecurity and Risk Lab, University of Brasília. Paper published in Computers and Security, Elsevier, 2025, with the open dataset on IEEE DataPort.
 - Tree++: Climate Tech. 1,000+ trees planted across 10 countries.
+
+## Freelance Projects
+Websites Jady designed and built for clients:
+- [Alla Ska Få Mat](https://allaskafamat.se/): food charity, Sweden
+- [LabRisk](https://labrisk.unb.br/): research lab, University of Brasília
+- [Rafael Rabelo Nunes](https://rafael.rabelo.org/): academic website
+- [Jady & Luis](https://jelender.com/): wedding website
+- [IBEPES](https://www.ibepes.org.br/): research institute, WordPress theme
+- [Prêmio Infosfera](https://premio.infosfera.inf.br/): public-sector information award
+- [DevOpsDays Brasília](https://devopsdaysbsb.com.br/): community conference
+- [Insphas](https://www.insphas.com.br/): psychology institute
+- [Tree++](https://treepp.org/): reforestation non-profit
+- [SoiQet](https://soiqet.com/): AI social media platform
 
 ## Writing
 - [Quantum Computing: What’s the Fuss About](https://jadypamella.com/blog/quantum-computing-whats-the-fuss-about/)

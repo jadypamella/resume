@@ -38,6 +38,19 @@
     });
   });
 
+  // The freelance reel moves for longer than five seconds, so it needs its own pause control (WCAG 2.2.2).
+  document.querySelectorAll("[data-reel]").forEach((section) => {
+    const button = section.querySelector(".reel-toggle");
+    if (!button) return;
+    button.hidden = false;
+    button.addEventListener("click", () => {
+      const paused = button.getAttribute("aria-pressed") !== "true";
+      button.setAttribute("aria-pressed", String(paused));
+      button.textContent = paused ? button.dataset.play : button.dataset.pause;
+      section.dataset.paused = String(paused);
+    });
+  });
+
   const items = document.querySelectorAll(".reveal");
   const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   if (reduced || !("IntersectionObserver" in window)) {

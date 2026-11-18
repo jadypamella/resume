@@ -507,3 +507,36 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .lang-switch a:hover { color: var(--coral); }
 .lang-switch a:focus-visible { outline: 3px solid var(--coral); outline-offset: 2px; }
 .lang-switch [aria-current] { color: var(--text); text-decoration: underline; text-decoration-color: var(--coral); text-underline-offset: 4px; }
+
+/* ---------- Freelance carousel: an endless reel of site screenshots */
+.reel-head { display: flex; flex-wrap: wrap; align-items: center; gap: .75rem 1rem; }
+.reel-toggle { background: transparent; cursor: pointer; }
+.reel-toggle[hidden] { display: none; }
+.reel-viewport {
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
+}
+.reel-track { display: flex; width: max-content; animation: slide 70s linear infinite; }
+.reel:hover .reel-track, .reel:focus-within .reel-track, .freelance[data-paused="true"] .reel-track { animation-play-state: paused; }
+.reel-set { display: flex; gap: clamp(1rem, 2vw, 1.5rem); padding-right: clamp(1rem, 2vw, 1.5rem); }
+.reel-card { flex: none; width: clamp(260px, 30vw, 400px); }
+.reel-card a {
+  display: grid; gap: .35rem; padding: .75rem .75rem 1rem; text-decoration: none; color: var(--text);
+  background: var(--ink-2); border: 1px solid var(--line); border-radius: var(--radius);
+  transition: border-color var(--t), transform var(--t);
+}
+.reel-card a:hover { border-color: var(--coral); transform: translateY(-4px); }
+.reel-card img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; object-position: top; border-radius: calc(var(--radius) - 6px); background: #fff; margin-bottom: .5rem; }
+.reel-name { display: inline-flex; align-items: center; gap: .35rem; font-size: 1.125rem; font-weight: 800; color: var(--cream); }
+.reel-name svg { color: var(--coral); transition: transform var(--t); }
+.reel-card a:hover .reel-name svg { transform: translate(2px, -2px); }
+.reel-type { color: var(--muted); font-size: .875rem; }
+
+/* Without motion the reel becomes a row the visitor scrolls by hand. */
+@media (prefers-reduced-motion: reduce) {
+  .reel-viewport { overflow-x: auto; scroll-snap-type: x mandatory; -webkit-mask-image: none; mask-image: none; padding: 0 var(--gutter) 1rem; }
+  .reel-card { scroll-snap-align: start; }
+  .reel-copy, .reel-toggle { display: none; }
+  .reel-card a:hover { transform: none; }
+}
