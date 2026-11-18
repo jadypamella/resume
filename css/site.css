@@ -16,6 +16,7 @@
   --coral-deep: #b4234a;   /* coral for text on cream (5.3:1) */
   --brand: #e03859;        /* brand coral, used only for large fills */
   --gold: #FF6B81;
+  --on-brand: #FFFFFF;     /* text on the brand fill, the same in both themes (4.3:1, large text only) */
   --paper-muted: var(--paper-muted);
   --paper-line: rgba(10, 10, 10, .18);
   --paper-strong: rgba(10, 10, 10, .35);
@@ -541,16 +542,16 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   .reel-card a:hover { transform: none; }
 }
 
-/* Quote band: the site coral, with the stage colour as text (8:1 dark theme, 6:1 light theme). */
+/* Quote band: the brand fill of the Featured Work tiles. All its text is large and bold, since white on it is 4.3:1. */
 .reel-cta {
   display: grid; grid-template-columns: 1fr; align-items: center; gap: 1.5rem 2.5rem;
   margin-top: clamp(2rem, 4vw, 3rem); padding: clamp(1.75rem, 4.5vw, 3.5rem);
-  border-radius: calc(var(--radius) + 8px); background: var(--coral); color: var(--ink);
+  border-radius: calc(var(--radius) + 8px); background: var(--brand); color: var(--on-brand);
 }
 .reel-cta-text { display: grid; gap: 1.25rem; max-width: 40rem; }
 .reel-cta-title { font-size: clamp(1.875rem, 4.2vw, 3.25rem); font-weight: 800; line-height: 1.05; letter-spacing: -0.035em; }
 .reel-cta-services { display: flex; flex-wrap: wrap; gap: .5rem; }
-.reel-cta-services li { padding: .4rem .9rem; border: 1px solid currentColor; border-radius: 999px; font-size: .9375rem; font-weight: 600; }
+.reel-cta-services li { padding: .45rem 1rem; border: 1.5px solid currentColor; border-radius: 999px; font-size: 1.1875rem; font-weight: 700; }
 .reel-cta-link {
   display: inline-flex; align-items: center; gap: 1rem; min-height: 44px;
   font-size: clamp(1.5rem, 2.6vw, 2.25rem); font-weight: 800; letter-spacing: -0.03em;
@@ -563,6 +564,6 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   transition: transform .5s var(--ease), background var(--t), color var(--t);
 }
 .reel-cta-circle svg { width: 45%; height: 45%; }
-.reel-cta-link:hover .reel-cta-circle { transform: rotate(45deg); background: var(--ink); color: var(--coral); border-color: var(--ink); }
-.reel-cta :focus-visible { outline-color: var(--ink); }
+.reel-cta-link:hover .reel-cta-circle { transform: rotate(45deg); background: var(--on-brand); color: var(--brand); }
+.reel-cta :focus-visible { outline-color: var(--on-brand); }
 @media (min-width: 900px) { .reel-cta { grid-template-columns: 1fr auto; } }
