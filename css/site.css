@@ -564,7 +564,17 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   padding: .4rem .9rem; border: 1px solid rgba(255, 255, 255, .55); border-radius: 999px;
   font-size: .9375rem; font-weight: 600;
 }
-.reel-cta-btn { background: var(--band-ink); color: var(--on-band); }
-.reel-cta-btn:hover { background: var(--on-band); color: var(--band-ink); }
 .reel-cta :focus-visible { outline-color: var(--on-band); }
-@media (max-width: 600px) { .reel-cta-btn { width: 100%; } }
+.reel-cta-link {
+  display: inline-flex; align-items: center; gap: 1rem; min-height: 44px;
+  font-size: clamp(1.5rem, 2.6vw, 2.25rem); font-weight: 800; letter-spacing: -0.03em;
+  color: var(--on-band); text-decoration: none;
+}
+.reel-cta-circle {
+  display: inline-grid; place-items: center; width: clamp(56px, 6vw, 80px); aspect-ratio: 1;
+  border: 2px solid var(--on-band); border-radius: 50%;
+  transition: transform .5s var(--ease), background var(--t), color var(--t);
+}
+.reel-cta-circle svg { width: 45%; height: 45%; }
+.reel-cta-link > span:first-child { white-space: nowrap; }
+.reel-cta-link:hover .reel-cta-circle { transform: rotate(45deg); background: var(--on-band); color: var(--band); }
