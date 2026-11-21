@@ -9,17 +9,25 @@ from playwright.sync_api import sync_playwright
 HERE = Path(__file__).resolve().parent
 
 TARGETS = [HERE.parent / "assets" / "cv", HERE.parent]
-EXPECTED_PAGES = {"Jady_Pamella_CV": 1, "Jady_Pamella_CV_Academic": 2}
+EXPECTED_PAGES = {
+    "Jady_Pamella_CV": 1,
+    "Jady_Pamella_CV_Academic": 2,
+    "Jady_Pamella_CV_PT": 1,
+    "Jady_Pamella_CV_Academic_PT": 2,
+}
 
 
 def main() -> int:
+    # Names on the command line build only those CVs, so one language can be
+    # rebuilt without touching the PDFs of the other.
+    wanted = {n: EXPECTED_PAGES[n] for n in sys.argv[1:]} or EXPECTED_PAGES
     out_dir = HERE / "out"
     out_dir.mkdir(exist_ok=True)
     failed = False
     with sync_playwright() as p:
         browser = p.chromium.launch()
         page = browser.new_page()
-        for name, expected in EXPECTED_PAGES.items():
+        for name, expected in wanted.items():
             page.goto((HERE / f"{name}.html").as_uri(), wait_until="networkidle")
             page.evaluate("document.fonts.ready")
             pdf = out_dir / f"{name}.pdf"
@@ -32,7 +40,7 @@ def main() -> int:
         print("Page count mismatch, nothing copied.")
         return 1
     for target in TARGETS:
-        for name in EXPECTED_PAGES:
+        for name in wanted:
             shutil.copy2(out_dir / f"{name}.pdf", target / f"{name}.pdf")
     return 0
 
